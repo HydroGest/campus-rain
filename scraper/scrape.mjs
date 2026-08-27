@@ -222,7 +222,9 @@ async function fetchCaiyunNowcast(page, lat, lng) {
       method: "POST",
       headers: { "Content-Type": "application/json;charset=utf-8" },
       body: JSON.stringify({
-        url: `https://api.caiyunapp.com/v2.5/<t2.5>/${lng},${lat}/weather?dailysteps=0&hourlysteps=0&alert=false`
+        url:
+          `https://api.caiyunapp.com/v2.5/<t2.5>/${lng},${lat}/weather` +
+          `?dailysteps=16&hourlysteps=120&alert=false&begin=${Math.floor(Date.now() / 1000) - 86400}`
       })
     });
     if (!res.ok) return null;
@@ -316,6 +318,59 @@ async function fetchCurrentSk(code) {
   return parseCurrentSk(text);
 }
 
+async function fetchOpenMeteoNowcast(lat, lng) {
+  const url =
+    `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}` +
+    `&minutely_15=precipitation,precipitation_probability&timezone=Asia%2FShanghai&forecast_minutely_15=24`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Open-Meteo ${res.status}`);
+  const data = await res.json();
+  const values = data.minutely_15?.precipitation || [];
+  const probs = data.minutely_15?.precipitation_probability || [];
+  if (!values.length) throw new Error("Open-Meteo 无数据");
+  const threshold = 0.02;
+  const rainy = values.map((v) => Number(v) >= threshold);
+  const firstRain = rainy.findIndex(Boolean);
+  const rainNow = firstRain === 0;
+  let rainStartsInMin = null;
+  let rainEndsInMin = null;
+  if (firstRain >= 0) {
+    rainStartsInMin = firstRain * 15;
+    if (rainNow) {
+      const endIdx = rainy.findIndex((v, i) => i > 0 && !v);
+      rainEndsInMin = endIdx >= 0 ? endIdx * 15 : null;
+    }
+  }
+  const avg = (arr) => {
+    const xs = arr.map(Number).filter(Number.isFinite);
+    return xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : 0;
+  };
+  const a0 = avg(values.slice(0, 4));
+  const a1 = avg(values.slice(4, 8));
+  let trend = "none";
+  if (a0 >= threshold || a1 >= threshold) {
+    const diff = a1 - a0;
+    trend = Math.abs(diff) < 0.02 ? "steady" : diff > 0 ? "up" : "down";
+  }
+  return {
+    source: "Open-Meteo 15分钟临近预报（无Key）",
+    serverTime: Math.floor(Date.now() / 1000),
+    intervalMinutes: 15,
+    precipitation15: values.map(Number),
+    probability: probs.map(Number),
+    rainyMinutes2h: rainy.filter(Boolean).length * 15,
+    dryMinutes2h: rainy.filter((v) => !v).length * 15,
+    maxIntensity: values.reduce((m, v) => Math.max(m, Number(v) || 0), 0),
+    rainNow,
+    rainStartsInMin,
+    rainEndsInMin,
+    trend,
+    nearestRainKm: null,
+    nearestRainIntensity: null,
+    localIntensity: null
+  };
+}
+
 async function fetchCaiyunBatch(page, items) {
   return page.evaluate(async (list) => {
     async function one({ id, lng, lat }) {
@@ -323,7 +378,9 @@ async function fetchCaiyunBatch(page, items) {
         method: "POST",
         headers: { "Content-Type": "application/json;charset=utf-8" },
         body: JSON.stringify({
-          url: `https://api.caiyunapp.com/v2.5/<t2.5>/${lng},${lat}/weather?dailysteps=0&hourlysteps=0&alert=false`
+          url:
+            `https://api.caiyunapp.com/v2.5/<t2.5>/${lng},${lat}/weather` +
+            `?dailysteps=16&hourlysteps=120&alert=false&begin=${Math.floor(Date.now() / 1000) - 86400}`
         })
       });
       if (!res.ok) return { id, raw: null };
@@ -413,6 +470,17 @@ async function run() {
       }
     }
   }
+
+  const missingNowcast = target.filter(
+    (l) => !nowcastByLoc.has(l.id) && Number.isFinite(l.lat) && Number.isFinite(l.lng)
+  );
+  await mapLimit(missingNowcast, 6, async (loc) => {
+    try {
+      nowcastByLoc.set(loc.id, await fetchOpenMeteoNowcast(loc.lat, loc.lng));
+    } catch (e) {
+      console.error(`[warn] ${loc.id} Open-Meteo 兜底失败: ${e.message}`);
+    }
+  });
 
   for (const loc of target) {
     try {
