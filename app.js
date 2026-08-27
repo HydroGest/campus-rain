@@ -22,7 +22,6 @@
     summary: document.getElementById("summary"),
     timeline: document.getElementById("timeline"),
     hourly: document.getElementById("hourly"),
-    api: document.getElementById("api"),
     footerNote: document.getElementById("footer-note")
   };
 
@@ -248,13 +247,31 @@
     });
     const hourlyRain = soonHourly.filter((h) => h.rain);
     const radarRain = !expired && (rainNow || rainStartsInMin != null);
-    let conflictHtml = "";
+    const conflicts = [];
     if (hourlyRain.length && !radarRain) {
       const times = hourlyRain.slice(0, 2).map((h) => `${fmtHour(h.time)} ${h.weather}`).join("、");
-      conflictHtml = `<div class="nowcast-conflict">逐小时预报显示 ${times} 有雨，但雷达临近预报暂未检出雨带。2小时内以此栏目数据为准，仍建议留意预报调整。</div>`;
+      conflicts.push(`逐小时预报显示 ${times} 有雨，但雷达临近预报暂未检出雨带。2小时内以此栏目数据为准，仍建议留意预报调整。`);
     } else if (!hourlyRain.length && radarRain) {
-      conflictHtml = `<div class="nowcast-conflict">雷达临近预报显示未来可能有雨，但逐小时预报暂未标注降雨。2小时内以此栏目数据为准，仍建议留意短时阵雨。</div>`;
+      conflicts.push("雷达临近预报显示未来可能有雨，但逐小时预报暂未标注降雨。2小时内以此栏目数据为准，仍建议留意短时阵雨。");
     }
+    const localRain = (Number(n.localIntensity) || 0) >= 0.02;
+    const districtRainText = /雨|雷|冰雹/.test(entry.current?.weather || "");
+    if (!expired && radarRain && !districtRainText) {
+      conflicts.push(
+        `本校区雷达显示有弱降水，区县实况暂报${entry.current?.weather || "无雨"}；降雨可能只落在局部，出门建议带伞。`
+      );
+    } else if (!expired && !radarRain && districtRainText) {
+      conflicts.push(
+        `区县实况报${entry.current?.weather}，但本校区雷达暂未检出雨带；可能雨带还没到校区，出门前留意。`
+      );
+    }
+    const conflictHtml = conflicts.map((c) => `<div class="nowcast-conflict">${c}</div>`).join("");
+    const nearestRainText =
+      n.nearestRainKm > 0
+        ? `${n.nearestRainKm.toFixed(1)} km`
+        : localRain || (Number(n.nearestRainIntensity) || 0) >= 0.02 || rainNow
+          ? "本校区已有回波"
+          : "附近无雨";
 
     els.nowcast.innerHTML = `
       <div class="panel-head">
@@ -283,8 +300,8 @@
               <div class="value">${rainyMinutes} 分钟</div>
             </div>
             <div class="stat-cell">
-              <div class="label">最近雨带（更新时）</div>
-              <div class="value">${n.nearestRainKm > 0 ? `${n.nearestRainKm.toFixed(1)} km` : "附近无雨"}</div>
+              <div class="label">最近雨带（雷达）</div>
+              <div class="value">${nearestRainText}</div>
             </div>
           </div>
         </div>
@@ -596,76 +613,6 @@
     }
   }
 
-  const API_FALLBACK = {
-    name: "雨否 API",
-    version: "1.0.0",
-    deployNote: "GitHub Pages 静态构建仅提供 data/weather.json；/api/weather 需要另行部署 Cloudflare Worker 后才可用。",
-    spatialScope: "nowcast 为本校区点位（雷达回波外推），hourly/current 为所在区县站（数值模式/实况站）",
-    cache: "请求天气数据时建议追加 ?t=时间戳 防缓存；Worker 接口服务端缓存 5 分钟",
-    endpoints: [
-      {
-        name: "实时校区天气（Cloudflare Worker）",
-        method: "GET",
-        url: "/api/weather?code=101280101&lat=23.096943&lng=113.297711",
-        deploy: "cloudflare",
-        desc: "返回 current / hourly / nowcast 等字段",
-        params: [
-          { name: "code", desc: "中国天气网区县代码（9 位数字）" },
-          { name: "lat/lng", desc: "校区 GCJ-02 坐标，用于分钟级雷达临近预报" }
-        ]
-      },
-      {
-        name: "静态数据快照（GitHub Pages）",
-        method: "GET",
-        url: "/data/weather.json?t={timestamp}",
-        deploy: "github-pages",
-        desc: "按 campus id 索引的全量校区天气与分钟级临近预报",
-        params: [{ name: "t", desc: "缓存破坏时间戳，建议每次请求追加" }]
-      }
-    ]
-  };
-
-  async function renderApi() {
-    let spec = null;
-    try {
-      const res = await fetch(`api.json?t=${Date.now()}`, { cache: "no-store" });
-      if (res.ok) spec = await res.json();
-    } catch {}
-    const s = spec || API_FALLBACK;
-    const deployLabel = { cloudflare: "Cloudflare Worker", "github-pages": "GitHub Pages", both: "通用" };
-    const endpoints = (s.endpoints || [])
-      .map(
-        (e) => `
-          <div class="api-endpoint">
-            <div class="api-row">
-              <span class="api-method">${e.method || "GET"}</span>
-              <span class="api-deploy deploy-${e.deploy || "both"}">${deployLabel[e.deploy] || "通用"}</span>
-              <code class="api-url">${e.url}</code>
-            </div>
-            ${e.desc ? `<p class="api-desc">${e.desc}</p>` : ""}
-            ${e.params && e.params.length
-              ? `<div class="api-params">${e.params
-                  .map((p) => `<span class="api-param"><code>${p.name}</code> ${p.desc}</span>`)
-                  .join("")}</div>`
-              : ""}
-          </div>
-        `
-      )
-      .join("");
-    els.api.innerHTML = `
-      <div class="panel-head">
-        <h2>API 说明</h2>
-        <span class="panel-meta">${s.name || "雨否 API"} · v${s.version || "1.0"}</span>
-      </div>
-      <div class="panel-body">
-        ${s.deployNote ? `<div class="api-note api-deploy-note">${s.deployNote}</div>` : ""}
-        ${s.spatialScope ? `<div class="api-note">${s.spatialScope}</div>` : ""}
-        ${endpoints}
-        ${s.cache ? `<div class="api-note">${s.cache}</div>` : ""}
-      </div>
-    `;
-  }
-
   function init() {
     buildSelect();
     const saved = localStorage.getItem(STORAGE_KEY);
@@ -682,7 +629,6 @@
       loadSelected();
     });
     loadSelected();
-    renderApi();
     if (config.refreshMinutes > 0) {
       setInterval(() => {
         state.weatherByCode = {};
