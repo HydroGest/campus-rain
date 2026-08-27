@@ -385,7 +385,7 @@
 
   function renderHero(loc, entry) {
     const cur = entry.current || {};
-    const isRainyNow = /雨|雷|冰雹|冻/.test(cur.weather || "");
+    const pointRain = (Number(entry.nowcast?.localIntensity) || 0) >= 0.02;
     els.hero.innerHTML = `
       <div class="hero-grid">
         <div class="hero-location">
@@ -400,7 +400,8 @@
         <div class="hero-conditions">
           <div class="condition-cell">
             <div class="label">当前降雨</div>
-            <div class="value">${isRainyNow ? "有雨" : "无雨"}</div>
+            <div class="value">${pointRain ? "小雨（本校区）" : "无雨"}</div>
+            <div class="sub">区县实况：${cur.weather || "无雨"}</div>
           </div>
           <div class="condition-cell">
             <div class="label">24小时雨量</div>
