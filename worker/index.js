@@ -159,7 +159,7 @@ async function scrapeOne(code, lat, lng) {
   return {
     code,
     name: "实时抓取",
-    source: "中国天气网 · 中央气象台",
+    source: "彩云天气雷达临近预报与中国天气网公开数据（第三方整理）",
     updatedAt: uptimeMatch?.[1] || null,
     current: parseCurrentSk(skText),
     hourly,

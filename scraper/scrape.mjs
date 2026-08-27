@@ -458,7 +458,7 @@ async function run() {
 
   const payload = {
     generatedAt: new Date().toISOString(),
-    source: "中国天气网 · 中央气象台",
+    source: "彩云天气雷达临近预报与中国天气网公开数据（第三方整理）",
     method: browser ? "playwright" : "fetch",
     locationCount: target.length,
     locations: results

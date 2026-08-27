@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: "15,45 * * * *"
+    - cron: "0,45 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -33,6 +33,12 @@ jobs:
       - name: 安装依赖
         working-directory: scraper
         run: npm ci
+
+      - name: 缓存 Chromium
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ hashFiles('scraper/package-lock.json') }}
 
       - name: 安装 Chromium
         working-directory: scraper

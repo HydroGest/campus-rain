@@ -80,7 +80,7 @@ python -m http.server 8000
    - Source 选择 `GitHub Actions`，然后保存。
 5. 到 Actions 页面找到 `更新天气数据` workflow，手动 `Run workflow` 一次。
 6. 等待首次运行完成，Pages 会自动生成站点地址 `https://你的用户名.github.io/你的仓库/`。
-7. 之后 workflow 每半小时抓取一次：更新 `data/weather.json`、提交并重新部署。手动刷新页面即可看到最新数据。
+7. 之后 workflow 每 45 分钟抓取一次：更新 `data/weather.json`、提交并重新部署。手动刷新页面即可看到最新数据。
 
 如果 Actions 运行失败，优先检查：
 
@@ -88,7 +88,7 @@ python -m http.server 8000
 - Workflow 是否有写权限（第 3 步）；
 - 页面是否正常显示静态文件（相对路径，仓库名不影响访问）。
 
-私有仓库注意：免费 Actions 分钟数约 2000 分钟/月，半小时一次可能偏紧，建议把 `.github/workflows/weather.yml` 中 cron 改为每小时一次，或改用 Cloudflare Worker 按需抓取。
+私有仓库注意：免费 Actions 分钟数约 2000 分钟/月，45 分钟一次仍可能偏紧，建议把 `.github/workflows/weather.yml` 中 cron 改为每小时一次，或改用 Cloudflare Worker 按需抓取。
 
 页面使用相对路径，仓库名不影响访问。
 

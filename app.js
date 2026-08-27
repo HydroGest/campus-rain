@@ -603,7 +603,9 @@
         state.weatherByCode[loc.id] = entry;
       }
 
-      els.footerNote.textContent = `数据来源：${state.sourceLabel} · ${state.allData ? state.allData.generatedAt || "" : ""}`.trim();
+      els.footerNote.textContent =
+        `数据来源：彩云天气雷达临近预报与中国天气网公开数据；第三方整理，仅供校园出行参考，请以气象部门官方发布为准。 · ` +
+        `${state.allData ? state.allData.generatedAt || "" : ""}`.trim();
       render(loc, entry);
       setStatus(`已更新 ${loc.university} ${loc.campus} · ${fmtUpdated(entry.updatedAt)}`);
     } catch (e) {
