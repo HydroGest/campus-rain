@@ -812,6 +812,38 @@ input:focus-visible {
   font-weight: 700;
 }
 
+.api-deploy {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 8px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.api-deploy.deploy-cloudflare {
+  background: #f6821f;
+  color: #fff;
+}
+
+.api-deploy.deploy-github-pages {
+  background: #24292f;
+  color: #fff;
+}
+
+.api-deploy.deploy-both {
+  background: var(--surface-2);
+  color: var(--ink-2);
+  border: 1px solid var(--line-strong);
+}
+
+.api-deploy-note {
+  border-left-color: var(--accent);
+  color: var(--ink-2);
+  font-weight: 600;
+}
+
 .api-url {
   font-family: Consolas, "Courier New", monospace;
   font-size: 12px;

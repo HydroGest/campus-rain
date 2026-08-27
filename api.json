@@ -1,11 +1,13 @@
 {
   "name": "雨否 Campus Rain API",
   "version": "1.0.0",
+  "deployNote": "GitHub Pages 静态构建仅提供 data/weather.json；/api/weather 需要另行部署 Cloudflare Worker 后才可用。",
   "endpoints": [
     {
       "name": "实时校区天气（Cloudflare Worker）",
       "method": "GET",
       "url": "/api/weather?code=101280101&lat=23.096943&lng=113.297711",
+      "deploy": "cloudflare",
       "desc": "返回 current / hourly / observed / nowcast 字段",
       "params": [
         { "name": "code", "required": true, "desc": "中国天气网区县代码（9 位数字）" },
@@ -18,6 +20,7 @@
       "name": "静态数据快照（GitHub Pages）",
       "method": "GET",
       "url": "/data/weather.json?t={timestamp}",
+      "deploy": "github-pages",
       "desc": "按 campus id 索引的全量校区天气与分钟级临近预报",
       "params": [
         { "name": "t", "required": false, "desc": "缓存破坏时间戳，建议每次请求追加" }
@@ -28,6 +31,7 @@
       "name": "校区列表",
       "method": "GET",
       "url": "/locations.js",
+      "deploy": "both",
       "desc": "CAMPUS_LOCATIONS 全局变量：校区、区县代码、GCJ-02 坐标",
       "params": [],
       "returns": "CAMPUS_LOCATIONS：校区、区县代码、GCJ-02 坐标"

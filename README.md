@@ -35,6 +35,13 @@
 
 项目提供 `api.json`（机器可读接口说明），页面底部也有对应的 API 说明卡。天气数据请求建议追加 `?t=<时间戳>` 防缓存；页面内部已使用 `cache: no-store` 并自动追加时间戳，`styles.css`、`app.js` 等静态资源也带版本号。
 
+部署方式不同，可用接口也不同：
+
+- GitHub Pages（静态构建）：只有 `data/weather.json`、`locations.js` 和前端资源，没有 `/api/weather`。
+- Cloudflare Worker：既托管静态资源，也提供 `/api/weather?code=...&lat=...&lng=...` 实时抓取接口。
+
+API 卡片中每个接口都标了“Cloudflare Worker / GitHub Pages / 通用”徽标，避免在静态站点里误用动态接口。
+
 ## 本地运行
 
 ```bash

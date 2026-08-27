@@ -599,6 +599,7 @@
   const API_FALLBACK = {
     name: "雨否 API",
     version: "1.0.0",
+    deployNote: "GitHub Pages 静态构建仅提供 data/weather.json；/api/weather 需要另行部署 Cloudflare Worker 后才可用。",
     spatialScope: "nowcast 为本校区点位（雷达回波外推），hourly/current 为所在区县站（数值模式/实况站）",
     cache: "请求天气数据时建议追加 ?t=时间戳 防缓存；Worker 接口服务端缓存 5 分钟",
     endpoints: [
@@ -606,6 +607,7 @@
         name: "实时校区天气（Cloudflare Worker）",
         method: "GET",
         url: "/api/weather?code=101280101&lat=23.096943&lng=113.297711",
+        deploy: "cloudflare",
         desc: "返回 current / hourly / nowcast 等字段",
         params: [
           { name: "code", desc: "中国天气网区县代码（9 位数字）" },
@@ -616,6 +618,7 @@
         name: "静态数据快照（GitHub Pages）",
         method: "GET",
         url: "/data/weather.json?t={timestamp}",
+        deploy: "github-pages",
         desc: "按 campus id 索引的全量校区天气与分钟级临近预报",
         params: [{ name: "t", desc: "缓存破坏时间戳，建议每次请求追加" }]
       }
@@ -629,12 +632,14 @@
       if (res.ok) spec = await res.json();
     } catch {}
     const s = spec || API_FALLBACK;
+    const deployLabel = { cloudflare: "Cloudflare Worker", "github-pages": "GitHub Pages", both: "通用" };
     const endpoints = (s.endpoints || [])
       .map(
         (e) => `
           <div class="api-endpoint">
             <div class="api-row">
               <span class="api-method">${e.method || "GET"}</span>
+              <span class="api-deploy deploy-${e.deploy || "both"}">${deployLabel[e.deploy] || "通用"}</span>
               <code class="api-url">${e.url}</code>
             </div>
             ${e.desc ? `<p class="api-desc">${e.desc}</p>` : ""}
@@ -653,6 +658,7 @@
         <span class="panel-meta">${s.name || "雨否 API"} · v${s.version || "1.0"}</span>
       </div>
       <div class="panel-body">
+        ${s.deployNote ? `<div class="api-note api-deploy-note">${s.deployNote}</div>` : ""}
         ${s.spatialScope ? `<div class="api-note">${s.spatialScope}</div>` : ""}
         ${endpoints}
         ${s.cache ? `<div class="api-note">${s.cache}</div>` : ""}
