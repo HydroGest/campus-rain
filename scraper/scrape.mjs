@@ -270,6 +270,77 @@ async function launchBrowser() {
   return await chromium.launch({ headless: true });
 }
 
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function mapLimit(items, limit, fn) {
+  const results = new Array(items.length);
+  let i = 0;
+  async function worker() {
+    while (i < items.length) {
+      const idx = i++;
+      results[idx] = await fn(items[idx], idx);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, () => worker()));
+  return results;
+}
+
+async function fetchWeatherPage(code, browser) {
+  const url = `https://www.weather.com.cn/weather1dn/${code}.shtml`;
+  let lastErr = null;
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      const text = await fetchText(url);
+      if (!extractBlock(text, "hour3data")) throw new Error("hour3data missing");
+      return text;
+    } catch (e) {
+      lastErr = e;
+      await sleep(600 * (attempt + 1));
+    }
+  }
+  if (browser) {
+    const page = await browser.newPage();
+    try {
+      await page.goto(url, { waitUntil: "domcontentloaded", timeout: 45000 });
+      await page.waitForFunction(() => document.body.innerText.includes("逐小时预报"), { timeout: 15000 }).catch(() => {});
+      return await page.content();
+    } finally {
+      await page.close();
+    }
+  }
+  throw lastErr;
+}
+
+async function fetchCurrentSk(code) {
+  const text = await fetchText(`https://d1.weather.com.cn/sk_2d/${code}.html?_=${Date.now()}`, undefined, "utf8");
+  return parseCurrentSk(text);
+}
+
+async function fetchCaiyunBatch(page, items) {
+  return page.evaluate(async (list) => {
+    async function one({ id, lng, lat }) {
+      const res = await fetch("/api/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json;charset=utf-8" },
+        body: JSON.stringify({
+          url: `https://api.caiyunapp.com/v2.5/<t2.5>/${lng},${lat}/weather?dailysteps=0&hourlysteps=0&alert=false`
+        })
+      });
+      if (!res.ok) return { id, raw: null };
+      const j = await res.json();
+      return {
+        id,
+        raw: {
+          minutely: j?.result?.minutely || null,
+          realtime: j?.result?.realtime || null,
+          serverTime: j?.server_time ?? null
+        }
+      };
+    }
+    return Promise.all(list.map(one));
+  }, items);
+}
+
 async function run() {
   const args = process.argv.slice(2);
   const modeArg = args.find((a) => a.startsWith("--mode="))?.split("=")[1] || "auto";
@@ -304,28 +375,70 @@ async function run() {
     }
   }
 
-  for (const loc of target) {
-    const pageUrl = `https://www.weather.com.cn/weather1dn/${loc.code}.shtml`;
-    let pageText;
-    let nowcast = null;
+  const uniqueCodes = [...new Set(target.map((l) => l.code))];
+  const pageTextByCode = new Map();
+  const currentByCode = new Map();
+
+  await mapLimit(uniqueCodes, 5, async (code) => {
     try {
-      if (caiyunPage && Number.isFinite(loc.lat) && Number.isFinite(loc.lng)) {
-        try {
-          nowcast = await fetchCaiyunNowcast(caiyunPage, loc.lat, loc.lng);
-        } catch (e) {
-          console.error(`[warn] ${loc.university} ${loc.campus} 临近预报失败: ${e.message}`);
+      pageTextByCode.set(code, await fetchWeatherPage(code, browser));
+    } catch (e) {
+      console.error(`[warn] ${code} 页面抓取失败: ${e.message}`);
+    }
+  });
+  await mapLimit(uniqueCodes, 6, async (code) => {
+    try {
+      currentByCode.set(code, await fetchCurrentSk(code));
+    } catch (e) {
+      console.error(`[warn] ${code} 实况抓取失败: ${e.message}`);
+    }
+  });
+
+  const nowcastByLoc = new Map();
+  if (caiyunPage) {
+    const items = target
+      .filter((l) => Number.isFinite(l.lat) && Number.isFinite(l.lng))
+      .map((l) => ({ id: l.id, lng: l.lng, lat: l.lat }));
+    for (let i = 0; i < items.length; i += 8) {
+      const chunk = items.slice(i, i + 8);
+      try {
+        const batch = await fetchCaiyunBatch(caiyunPage, chunk);
+        for (const b of batch) {
+          if (b && b.raw) {
+            nowcastByLoc.set(b.id, computeNowcast(b.raw.minutely, b.raw.realtime, b.raw.serverTime));
+          }
         }
+      } catch (e) {
+        console.error(`[warn] 彩云批量抓取失败: ${e.message}`);
       }
-      if (browser) {
-        const page = await browser.newPage();
-        await page.goto(pageUrl, { waitUntil: "domcontentloaded", timeout: 45000 });
-        await page.waitForFunction(() => document.body.innerText.includes("逐小时预报"), { timeout: 15000 }).catch(() => {});
-        pageText = await page.content();
-        await page.close();
-      } else {
-        pageText = await fetchText(pageUrl);
-      }
-      results[loc.id] = await scrapeOne(loc.code, loc.city, pageText, nowcast);
+    }
+  }
+
+  for (const loc of target) {
+    try {
+      const pageText = pageTextByCode.get(loc.code);
+      if (!pageText) throw new Error("页面数据缺失");
+      const hourly = await fetchHourly(loc.code, pageText);
+      const observe = extractBlock(pageText, "observe24h_data");
+      const observed = parseObserved(observe);
+      const uptimeMatch = pageText.match(/var uptime="([^"]+)";/);
+      const current = currentByCode.get(loc.code) || null;
+      const next24 = hourly.slice(0, 24);
+      const highs = next24.map((h) => h.temp).filter((t) => Number.isFinite(t));
+      results[loc.id] = {
+        code: loc.code,
+        id: loc.id,
+        name: loc.city,
+        updatedAt: uptimeMatch?.[1] || null,
+        current,
+        hourly,
+        observed,
+        nowcast: nowcastByLoc.get(loc.id) || null,
+        today: {
+          high: highs.length ? Math.max(...highs) : null,
+          low: highs.length ? Math.min(...highs) : null
+        }
+      };
     } catch (e) {
       console.error(`[warn] ${loc.university} ${loc.campus} (${loc.code}): ${e.message}`);
       results[loc.id] = {
