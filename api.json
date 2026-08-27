@@ -1,0 +1,39 @@
+{
+  "name": "雨否 Campus Rain API",
+  "version": "1.0.0",
+  "endpoints": [
+    {
+      "name": "实时校区天气（Cloudflare Worker）",
+      "method": "GET",
+      "url": "/api/weather?code=101280101&lat=23.096943&lng=113.297711",
+      "desc": "返回 current / hourly / observed / nowcast 字段",
+      "params": [
+        { "name": "code", "required": true, "desc": "中国天气网区县代码（9 位数字）" },
+        { "name": "lat", "required": false, "desc": "校区纬度（GCJ-02），用于分钟级雷达临近预报" },
+        { "name": "lng", "required": false, "desc": "校区经度（GCJ-02）" }
+      ],
+      "returns": "current / hourly / observed / nowcast"
+    },
+    {
+      "name": "静态数据快照（GitHub Pages）",
+      "method": "GET",
+      "url": "/data/weather.json?t={timestamp}",
+      "desc": "按 campus id 索引的全量校区天气与分钟级临近预报",
+      "params": [
+        { "name": "t", "required": false, "desc": "缓存破坏时间戳，建议每次请求追加" }
+      ],
+      "returns": "按 campus id 索引的全量校区天气与分钟级临近预报"
+    },
+    {
+      "name": "校区列表",
+      "method": "GET",
+      "url": "/locations.js",
+      "desc": "CAMPUS_LOCATIONS 全局变量：校区、区县代码、GCJ-02 坐标",
+      "params": [],
+      "returns": "CAMPUS_LOCATIONS：校区、区县代码、GCJ-02 坐标"
+    }
+  ],
+  "cache": "请求天气数据时建议追加 ?t=时间戳 防缓存；Worker 接口服务端缓存 5 分钟",
+  "update": "GitHub Actions 每 30 分钟更新 data/weather.json；CF Worker 模式按需实时抓取",
+  "spatialScope": "nowcast 为本校区点位（雷达回波外推），hourly/current 为所在区县站（数值模式/实况站）"
+}

@@ -1,0 +1,64 @@
+name: 更新天气数据
+
+on:
+  schedule:
+    - cron: "15,45 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: weather-pages
+  cancel-in-progress: true
+
+jobs:
+  scrape-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: scraper/package-lock.json
+
+      - name: 安装依赖
+        working-directory: scraper
+        run: npm ci
+
+      - name: 安装 Chromium
+        working-directory: scraper
+        run: npx playwright install --with-deps chromium
+
+      - name: 浏览器抓取天气数据
+        working-directory: scraper
+        run: node scrape.mjs --mode=browser
+
+      - name: 提交数据变更
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/weather.json
+          if git diff --cached --quiet; then
+            echo "数据无变化"
+          else
+            git commit -m "chore: 更新天气数据"
+            git push
+          fi
+
+      - name: 配置 GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: 上传 Pages 产物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: 部署 GitHub Pages
+        uses: actions/deploy-pages@v4
