@@ -1,5 +1,7 @@
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $Root
+$env:GIT_SSH_COMMAND = "ssh -o ConnectTimeout=15 -o BatchMode=yes"
+$env:GIT_TERMINAL_PROMPT = "0"
 
 function Git {
   param([string[]]$Args)
