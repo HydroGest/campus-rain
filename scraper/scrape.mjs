@@ -103,7 +103,8 @@ async function fetchText(url, referer, encoding) {
       Referer: referer || "https://www.weather.com.cn/",
       Accept: "*/*",
       "Accept-Language": "zh-CN,zh;q=0.9"
-    }
+    },
+    signal: AbortSignal.timeout(20000)
   });
   if (!res.ok) throw new Error(`${res.status} ${url}`);
   const buf = Buffer.from(await res.arrayBuffer());
@@ -386,7 +387,7 @@ async function fetchOpenMeteoNowcast(lat, lng) {
   const url =
     `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}` +
     `&minutely_15=precipitation,precipitation_probability&timezone=Asia%2FShanghai&forecast_minutely_15=24`;
-  const res = await fetch(url);
+  const res = await fetch(url, { signal: AbortSignal.timeout(15000) });
   if (!res.ok) throw new Error(`Open-Meteo ${res.status}`);
   const data = await res.json();
   const values = data.minutely_15?.precipitation || [];
@@ -436,30 +437,33 @@ async function fetchOpenMeteoNowcast(lat, lng) {
 }
 
 async function fetchCaiyunBatch(page, items) {
-  return page.evaluate(async (list) => {
-    async function one({ id, lng, lat }) {
-      const res = await fetch("/api/", {
-        method: "POST",
-        headers: { "Content-Type": "application/json;charset=utf-8" },
-        body: JSON.stringify({
-          url:
-            `https://api.caiyunapp.com/v2.5/<t2.5>/${lng},${lat}/weather` +
-            `?dailysteps=16&hourlysteps=120&alert=false&begin=${Math.floor(Date.now() / 1000) - 86400}`
-        })
-      });
-      if (!res.ok) return { id, raw: null };
-      const j = await res.json();
-      return {
-        id,
-        raw: {
-          minutely: j?.result?.minutely || null,
-          realtime: j?.result?.realtime || null,
-          serverTime: j?.server_time ?? null
-        }
-      };
-    }
-    return Promise.all(list.map(one));
-  }, items);
+  return Promise.race([
+    page.evaluate(async (list) => {
+      async function one({ id, lng, lat }) {
+        const res = await fetch("/api/", {
+          method: "POST",
+          headers: { "Content-Type": "application/json;charset=utf-8" },
+          body: JSON.stringify({
+            url:
+              `https://api.caiyunapp.com/v2.5/<t2.5>/${lng},${lat}/weather` +
+              `?dailysteps=16&hourlysteps=120&alert=false&begin=${Math.floor(Date.now() / 1000) - 86400}`
+          })
+        });
+        if (!res.ok) return { id, raw: null };
+        const j = await res.json();
+        return {
+          id,
+          raw: {
+            minutely: j?.result?.minutely || null,
+            realtime: j?.result?.realtime || null,
+            serverTime: j?.server_time ?? null
+          }
+        };
+      }
+      return Promise.all(list.map(one));
+    }, items),
+    new Promise((_, reject) => setTimeout(() => reject(new Error("彩云批量请求超时")), 25000))
+  ]);
 }
 
 async function run() {
