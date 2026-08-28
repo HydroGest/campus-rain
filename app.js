@@ -266,11 +266,12 @@
       );
     }
     const conflictHtml = conflicts.map((c) => `<div class="nowcast-conflict">${c}</div>`).join("");
-    const nearestRainText =
-      n.nearestRainKm > 0
+    const nearestRainText = rainNow || localRain
+      ? "本校区正在下雨"
+      : n.nearestRainKm > 0
         ? `${n.nearestRainKm.toFixed(1)} km`
-        : localRain || (Number(n.nearestRainIntensity) || 0) >= 0.02 || rainNow
-          ? "本校区已有回波"
+        : (Number(n.nearestRainIntensity) || 0) >= 0.02
+          ? "附近有回波"
           : "附近无雨";
 
     els.nowcast.innerHTML = `

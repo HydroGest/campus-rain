@@ -392,7 +392,7 @@ const CAMPUS_LOCATIONS = [
 // 坐标来源：OpenStreetMap/Photon 逐校区核验（WGS-84）后转为 GCJ-02；
 // 华师大学城、广东药科大学城在 OSM 未收录，保留校区级近似值。
 const CAMPUS_COORDS = {
-  "sysu-south": [23.096943, 113.297711],
+  "sysu-south": [23.095264314434292, 113.30130574756747],
   "sysu-east": [23.066613, 113.390095],
   "sysu-north": [23.128292, 113.290079],
   "sysu-zhuhai": [22.347967, 113.591497],
