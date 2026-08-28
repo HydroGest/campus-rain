@@ -272,6 +272,70 @@ async function launchBrowser() {
   return await chromium.launch({ headless: true });
 }
 
+function writeIotPayload(payload, results, target) {
+  const iotDir = path.join(PROJECT_ROOT, "data", "iot");
+  fs.mkdirSync(iotDir, { recursive: true });
+  const summary = [];
+  for (const loc of target) {
+    const e = results[loc.id];
+    if (!e) continue;
+    const n = e.nowcast || {};
+    const c = e.current || {};
+    const probArr = Array.isArray(n.probability) ? n.probability.map(Number) : [];
+    const probMax = probArr.length ? Math.max(...probArr) : Number(n.probability) || 0;
+    const item = {
+      campus: loc.id,
+      name: `${loc.university} ${loc.campus}`,
+      city: loc.city,
+      code: loc.code,
+      lat: loc.lat,
+      lng: loc.lng,
+      updatedAt: payload.generatedAt,
+      now: {
+        temp: c.temp ?? null,
+        weather: c.weather ?? null,
+        rainNow: Boolean(n.rainNow),
+        rainStartsInMin: n.rainStartsInMin ?? null,
+        rainEndsInMin: n.rainEndsInMin ?? null,
+        trend: n.trend ?? "none",
+        probPct: Math.round(probMax * 100),
+        rainMinutes2h: n.rainyMinutes2h ?? 0,
+        localIntensity: n.localIntensity ?? null,
+        nearestKm: n.nearestRainKm ?? null,
+        expiresAt: n.serverTime ? (Number(n.serverTime) + 7200) * 1000 : null
+      },
+      hourly24: (e.hourly || []).slice(0, 24).map((h) => ({
+        h: h.time ? new Date(h.time).getHours() : null,
+        t: h.temp,
+        rain: h.rain,
+        lv: h.rainLevel
+      }))
+    };
+    fs.writeFileSync(path.join(iotDir, `${loc.id}.json`), JSON.stringify(item), "utf8");
+    summary.push({
+      campus: loc.id,
+      name: item.name,
+      city: loc.city,
+      code: loc.code,
+      lat: loc.lat,
+      lng: loc.lng,
+      rainNow: item.now.rainNow,
+      startsIn: item.now.rainStartsInMin,
+      endsIn: item.now.rainEndsInMin,
+      trend: item.now.trend,
+      probPct: item.now.probPct,
+      temp: item.now.temp,
+      weather: item.now.weather,
+      updatedAt: payload.generatedAt
+    });
+  }
+  fs.writeFileSync(
+    path.join(iotDir, "summary.json"),
+    JSON.stringify({ generatedAt: payload.generatedAt, campuses: summary }),
+    "utf8"
+  );
+}
+
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function mapLimit(items, limit, fn) {
@@ -533,6 +597,7 @@ async function run() {
   };
   fs.mkdirSync(path.dirname(outFile), { recursive: true });
   fs.writeFileSync(outFile, JSON.stringify(payload, null, 2), "utf8");
+  writeIotPayload(payload, results, target);
   console.log(`OK ${outFile} (${target.length} locations)`);
 }
 

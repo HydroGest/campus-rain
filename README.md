@@ -42,6 +42,20 @@
 
 `api.json` 中每个接口都标了部署方式（Cloudflare Worker / GitHub Pages / 通用），避免在静态站点里误用动态接口。
 
+## 物联网轻量数据
+
+大 JSON 不方便 IoT 设备解析，项目额外生成 `data/iot/`：
+
+- `data/iot/<campus-id>.json`：单个校区轻量数据（约 1.5 KB），字段含 `now`（温度、天气、是否降雨、开始/停止分钟、趋势、概率、强度、过期时间）和 `hourly24`
+- `data/iot/summary.json`：43 个校区汇总，适合定时轮询
+
+示例：
+
+```bash
+curl "https://rain.yurikale.top/data/iot/sysu-south.json?t=$(date +%s)"
+curl "https://rain.yurikale.top/data/iot/summary.json?t=$(date +%s)"
+```
+
 ## 本地运行
 
 ```bash
