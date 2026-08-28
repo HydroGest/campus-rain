@@ -90,6 +90,27 @@ python -m http.server 8000
 
 私有仓库注意：免费 Actions 分钟数约 2000 分钟/月，45 分钟一次仍可能偏紧，建议把 `.github/workflows/weather.yml` 中 cron 改为每小时一次，或改用 Cloudflare Worker 按需抓取。
 
+### 本机定时更新（GitHub cron 不稳定时的兜底）
+
+仓库根目录提供两个脚本：
+
+- `update.ps1`：抓取数据 → 提交 `data/weather.json` → 推送 `main`（推送会触发 Pages 重新部署）
+- `install-task.ps1`：注册 Windows 任务计划 `campus-rain-update`，每 45 分钟运行一次 `update.ps1`
+
+首次使用：
+
+```powershell
+cd D:\Users\Administrator\Documents\campus-rain
+powershell -ExecutionPolicy Bypass -File .\update.ps1
+powershell -ExecutionPolicy Bypass -File .\install-task.ps1
+```
+
+卸载任务：
+
+```powershell
+Unregister-ScheduledTask -TaskName campus-rain-update -Confirm:$false
+```
+
 页面使用相对路径，仓库名不影响访问。
 
 ## 部署到 Cloudflare Workers
