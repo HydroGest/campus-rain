@@ -292,19 +292,59 @@ function writeIotPayload(payload, results, target) {
       lat: loc.lat,
       lng: loc.lng,
       updatedAt: payload.generatedAt,
-      now: {
-        temp: c.temp ?? null,
-        weather: c.weather ?? null,
-        rainNow: Boolean(n.rainNow),
-        rainStartsInMin: n.rainStartsInMin ?? null,
-        rainEndsInMin: n.rainEndsInMin ?? null,
-        trend: n.trend ?? "none",
-        probPct: Math.round(probMax * 100),
-        rainMinutes2h: n.rainyMinutes2h ?? 0,
-        localIntensity: n.localIntensity ?? null,
-        nearestKm: n.nearestRainKm ?? null,
-        expiresAt: n.serverTime ? (Number(n.serverTime) + 7200) * 1000 : null
-      },
+      now: (() => {
+        const serverMs = n.serverTime ? Number(n.serverTime) * 1000 : null;
+        const nowMs = Date.now();
+        const elapsedMin = serverMs ? Math.floor((nowMs - serverMs) / 60000) : 0;
+        const radarValid = serverMs !== null && elapsedMin < 120;
+        const startsMin = radarValid && n.rainStartsInMin != null
+          ? Math.max(0, n.rainStartsInMin - elapsedMin)
+          : null;
+        const endsMin = radarValid && n.rainEndsInMin != null
+          ? Math.max(0, n.rainEndsInMin - elapsedMin)
+          : null;
+        const p10 = Array.isArray(n.precipitation2h) && n.precipitation2h.length >= 120
+          ? Array.from({ length: 12 }, (_, i) => {
+              let mx = 0;
+              for (let j = 0; j < 10; j++) {
+                const v = Number(n.precipitation2h[i * 10 + j]) || 0;
+                if (v > mx) mx = v;
+              }
+              return Math.round(mx * 100) / 100;
+            })
+          : null;
+        let nextRainAt = null;
+        let nextRainSource = null;
+        if (radarValid && startsMin !== null) {
+          nextRainAt = serverMs + Number(n.rainStartsInMin) * 60000;
+          nextRainSource = "radar";
+        } else {
+          const rainyHour = (e.hourly || []).find(
+            (h) => h.rain && h.time && new Date(h.time).getTime() >= nowMs - 3600000
+          );
+          if (rainyHour) {
+            nextRainAt = new Date(rainyHour.time).getTime();
+            nextRainSource = "hourly";
+          }
+        }
+        return {
+          temp: c.temp ?? null,
+          weather: c.weather ?? null,
+          humidity: c.humidity != null ? parseInt(c.humidity) : null,
+          rainNow: Boolean(n.rainNow),
+          rainStartsInMin: startsMin,
+          rainEndsInMin: endsMin,
+          trend: n.trend ?? "none",
+          probPct: Math.round(probMax * 100),
+          rainMinutes2h: n.rainyMinutes2h ?? 0,
+          localIntensity: n.localIntensity ?? null,
+          nearestKm: n.nearestRainKm ?? null,
+          precipitation10: p10,
+          nextRainAt,
+          nextRainSource,
+          expiresAt: n.serverTime ? (Number(n.serverTime) + 7200) * 1000 : null
+        };
+      })(),
       hourly24: (e.hourly || []).slice(0, 24).map((h) => ({
         h: h.time ? new Date(h.time).getHours() : null,
         t: h.temp,
