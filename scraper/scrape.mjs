@@ -320,7 +320,7 @@ function writeIotPayload(payload, results, target) {
           nextRainSource = "radar";
         } else {
           const rainyHour = (e.hourly || []).find(
-            (h) => h.rain && h.time && new Date(h.time).getTime() >= nowMs - 3600000
+            (h) => h.rain && h.time && new Date(h.time).getTime() >= nowMs
           );
           if (rainyHour) {
             nextRainAt = new Date(rainyHour.time).getTime();
