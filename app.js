@@ -254,6 +254,22 @@
     } else if (!hourlyRain.length && radarRain) {
       conflicts.push("雷达临近预报显示未来可能有雨，但逐小时预报暂未标注降雨。2小时内以此栏目数据为准，仍建议留意短时阵雨。");
     }
+    const alt = entry.nowcastAlt;
+    if (alt && !expired && !(rainNow || rainStartsInMin != null)) {
+      const altBase = alt.serverTime ? new Date(Number(alt.serverTime) * 1000).getTime() : Date.now();
+      const altElapsed = Math.max(0, Math.floor((Date.now() - altBase) / 60000));
+      const altStartMin =
+        alt.rainNow
+          ? 0
+          : alt.rainStartsInMin != null
+            ? Math.max(0, alt.rainStartsInMin - altElapsed)
+            : null;
+      if (altStartMin != null && altStartMin < 120) {
+        conflicts.push(
+          `彩云雷达暂未检出雨带，但数值临近预报提示约 ${altStartMin} 分钟后可能有雨；建议带伞以防万一。`
+        );
+      }
+    }
     const localRain = (Number(n.localIntensity) || 0) >= 0.02;
     const districtRainText = /雨|雷|冰雹/.test(entry.current?.weather || "");
     if (!expired && radarRain && !districtRainText) {

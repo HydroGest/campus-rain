@@ -342,6 +342,7 @@ function writeIotPayload(payload, results, target) {
           precipitation10: p10,
           nextRainAt,
           nextRainSource,
+          startsInAlt: e.nowcastAlt?.rainStartsInMin ?? null,
           expiresAt: n.serverTime ? (Number(n.serverTime) + 7200) * 1000 : null
         };
       })(),
@@ -367,6 +368,7 @@ function writeIotPayload(payload, results, target) {
       probPct: item.now.probPct,
       temp: item.now.temp,
       weather: item.now.weather,
+      startsInAlt: item.now.startsInAlt,
       updatedAt: payload.generatedAt
     });
   }
@@ -590,6 +592,18 @@ async function run() {
     }
   });
 
+  const altNowcastByLoc = new Map();
+  const altItems = target.filter(
+    (l) => nowcastByLoc.has(l.id) && Number.isFinite(l.lat) && Number.isFinite(l.lng)
+  );
+  await mapLimit(altItems, 8, async (loc) => {
+    try {
+      altNowcastByLoc.set(loc.id, await fetchOpenMeteoNowcast(loc.lat, loc.lng));
+    } catch (e) {
+      console.error(`[warn] ${loc.id} Open-Meteo 辅助预报失败: ${e.message}`);
+    }
+  });
+
   for (const loc of target) {
     try {
       const pageText = pageTextByCode.get(loc.code);
@@ -610,6 +624,7 @@ async function run() {
         hourly,
         observed,
         nowcast: nowcastByLoc.get(loc.id) || null,
+        nowcastAlt: altNowcastByLoc.get(loc.id) || null,
         today: {
           high: highs.length ? Math.max(...highs) : null,
           low: highs.length ? Math.min(...highs) : null
@@ -625,7 +640,8 @@ async function run() {
         current: null,
         hourly: [],
         observed: [],
-        nowcast: null
+        nowcast: null,
+        nowcastAlt: null
       };
     }
   }
