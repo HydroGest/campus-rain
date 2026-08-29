@@ -105,9 +105,9 @@
   }
 
   function nowcastMinutes(n) {
-    if (n?.precipitation2h) return n.precipitation2h;
+    if (n?.precipitation2h) return n.precipitation2h.slice(0, 120);
     if (n?.precipitation15) {
-      return n.precipitation15.flatMap((v) => Array(15).fill(v));
+      return n.precipitation15.flatMap((v) => Array(15).fill(v)).slice(0, 120);
     }
     return [];
   }
@@ -175,7 +175,10 @@
     const maxIntensity = minutes.reduce((m, v) => Math.max(m, Number(v) || 0), 0);
     const periodCount = Math.max(1, Math.ceil(minutes.length / 30));
     const probArr = Array.isArray(n.probability) ? n.probability.map(Number).slice(0, periodCount) : [];
-    const probMax = probArr.length ? Math.max(...probArr) : Number(n.probability) || 0;
+    const probMax = Math.min(
+      1,
+      probArr.length ? Math.max(...probArr) : Number(n.probability) || 0
+    );
 
     let verdict = "未来2小时无雨";
     let verdictSub = "适合外出，暂不需要带伞";
