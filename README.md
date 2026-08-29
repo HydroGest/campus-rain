@@ -108,7 +108,8 @@ python -m http.server 8000
 
 仓库根目录提供两个脚本：
 
-- `update.ps1`：抓取数据 → 提交 `data/weather.json` → 推送 `main`（推送会触发 Pages 重新部署）
+- `update.ps1`：直接触发 GitHub Actions `workflow_dispatch`，由 CI 完成抓取、提交和 Pages 部署（最轻量）
+- `update-local.ps1`：本机直接抓取 → 提交 → 推送（需要 Node/Playwright，网络不稳定时的备用方案）
 - `install-task.ps1`：注册 Windows 任务计划 `campus-rain-update`，每 45 分钟运行一次 `update.ps1`
 
 首次使用：
