@@ -72,3 +72,10 @@ jobs:
 
       - name: 部署 GitHub Pages
         uses: actions/deploy-pages@v4
+
+      - name: 清理 jsDelivr CDN 缓存
+        run: |
+          for f in data/weather.json data/iot/*.json; do
+            curl -s -o /dev/null -w "purged %{http_code} $f\n" \
+              "https://purge.jsdelivr.net/gh/HydroGest/campus-rain@main/$f"
+          done
