@@ -1,10 +1,4 @@
 name = "campus-rain"
+account_id = "c8eeb1006ba61e420613cbc0104cf0be"
 main = "worker/index.js"
 compatibility_date = "2025-01-01"
-
-# 同时托管静态站点：部署后访问 *.workers.dev 即显示页面，
-# /api/weather?code=101280101 返回实时抓取的逐小时数据。
-[assets]
-directory = "."
-binding = "ASSETS"
-not_found_handling = "single-page-application"

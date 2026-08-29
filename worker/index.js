@@ -181,6 +181,37 @@ function corsHeaders() {
   };
 }
 
+const IOT_RAW_BASE = "https://raw.githubusercontent.com/HydroGest/campus-rain/main/data/iot";
+
+async function handleIot(request) {
+  const url = new URL(request.url);
+  const campus = (url.searchParams.get("campus") || "sysu-south").trim();
+  if (!/^[a-z0-9-]+$/.test(campus)) {
+    return new Response(JSON.stringify({ error: "invalid campus" }), {
+      status: 400,
+      headers: { "Content-Type": "application/json", "Cache-Control": "no-store" }
+    });
+  }
+  const rawUrl = IOT_RAW_BASE + "/" + encodeURIComponent(campus) + ".json";
+  try {
+    const upstream = await fetch(rawUrl, { headers: { "User-Agent": "campus-rain-worker" } });
+    const body = await upstream.text();
+    return new Response(body, {
+      status: upstream.status,
+      headers: {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "no-store, max-age=0",
+        "Access-Control-Allow-Origin": "*"
+      }
+    });
+  } catch (e) {
+    return new Response(JSON.stringify({ error: e.message }), {
+      status: 502,
+      headers: { "Content-Type": "application/json", "Cache-Control": "no-store" }
+    });
+  }
+}
+
 async function handleApi(request, env) {
   const url = new URL(request.url);
   const code = (url.searchParams.get("code") || "").trim();
@@ -217,13 +248,16 @@ export default {
     if (request.method === "OPTIONS") {
       return new Response(null, { headers: corsHeaders() });
     }
+    if (url.pathname.startsWith("/api/iot")) {
+      return handleIot(request);
+    }
     if (url.pathname.startsWith("/api/")) {
       return handleApi(request, env);
     }
     if (env.ASSETS) {
       return env.ASSETS.fetch(request);
     }
-    return new Response("Campus Rain API is running. Use /api/weather?code=101280101", {
+    return new Response("Campus Rain API is running. Use /api/iot?campus=sysu-south or /api/weather?code=101280101", {
       headers: { "Content-Type": "text/plain; charset=utf-8" }
     });
   }
