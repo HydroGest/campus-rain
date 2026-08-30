@@ -1,7 +1,7 @@
 $ErrorActionPreference = "Stop"
 
 $Script = Join-Path (Split-Path -Parent $MyInvocation.MyCommand.Path) "update.ps1"
-$Action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$Script`""
+$Action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-NoProfile -NonInteractive -WindowStyle Hidden -ExecutionPolicy Bypass -File `"$Script`""
 $Trigger = New-ScheduledTaskTrigger -Once -At (Get-Date) -RepetitionInterval (New-TimeSpan -Minutes 45) -RepetitionDuration (New-TimeSpan -Days 3650)
 
 Register-ScheduledTask -TaskName "campus-rain-update" -Action $Action -Trigger $Trigger -Description "campus rain weather data updater" -Force
