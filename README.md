@@ -126,6 +126,24 @@ powershell -ExecutionPolicy Bypass -File .\install-task.ps1
 Unregister-ScheduledTask -TaskName campus-rain-update -Confirm:$false
 ```
 
+### 服务器定时更新（Tailscale 主机）
+
+仓库根目录提供 `server-update.sh`，在 Linux 服务器上每 15 分钟由 cron 执行（脚本内部保证至少间隔 45 分钟）：
+
+```bash
+# 1. 准备 token（GitHub 有 workflow 触发权限的 PAT）
+printf '%s' '你的token' > ~/.campus-rain-token
+chmod 600 ~/.campus-rain-token
+
+# 2. 复制脚本并安装 cron
+scp server-update.sh yurikale@yurikale-beacon:/home/yurikale/campus-rain-update.sh
+ssh yurikale@yurikale-beacon \
+  "chmod +x /home/yurikale/campus-rain-update.sh && \
+   (crontab -l 2>/dev/null; echo '*/15 * * * * /home/yurikale/campus-rain-update.sh >> /home/yurikale/campus-rain-update.log 2>&1') | crontab -"
+```
+
+脚本只会调用 GitHub Actions `workflow_dispatch`，不在服务器抓取天气数据。
+
 页面使用相对路径，仓库名不影响访问。
 
 ## 部署到 Cloudflare Workers
