@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T03:32:25.214Z",
+  "generatedAt": "2026-09-11T03:46:01.346Z",
   "source": "彩云天气雷达临近预报与中国天气网公开数据（第三方整理）",
   "method": "playwright",
   "locationCount": 43,
@@ -10,14 +10,14 @@
       "name": "广州",
       "updatedAt": "11:30更新",
       "current": {
-        "temp": 29.4,
+        "temp": 29.3,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "59%",
-        "windDir": "北风",
+        "humidity": "62%",
+        "windDir": "东北风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -1063,6 +1063,14 @@
       ],
       "observed": [
         {
+          "time": "11",
+          "temp": 29.1,
+          "humidity": 61,
+          "rainMm": 0,
+          "windDir": "东北风",
+          "windLevel": 2
+        },
+        {
           "time": "10",
           "temp": 27.5,
           "humidity": 61,
@@ -1253,19 +1261,11 @@
           "rainMm": 0,
           "windDir": "北风",
           "windLevel": 3
-        },
-        {
-          "time": "10",
-          "temp": 28,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "东风",
-          "windLevel": 1
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097541,
+        "serverTime": 1789098357,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -1409,7 +1409,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -1467,16 +1467,16 @@
       "code": "101280102",
       "id": "sysu-east",
       "name": "番禺",
-      "updatedAt": "07:30更新",
+      "updatedAt": "11:30更新",
       "current": {
         "temp": 28.9,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "62%",
+        "humidity": "61%",
         "windDir": "东北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:10"
+        "updatedAt": "09月11日(星期五) 11:25"
       },
       "hourly": [
         {
@@ -1521,7 +1521,7 @@
         },
         {
           "time": "2026-09-11T12:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -1531,7 +1531,7 @@
         },
         {
           "time": "2026-09-11T13:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -1541,7 +1541,7 @@
         },
         {
           "time": "2026-09-11T14:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -1551,7 +1551,7 @@
         },
         {
           "time": "2026-09-11T15:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -1561,7 +1561,7 @@
         },
         {
           "time": "2026-09-11T16:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 61,
           "weatherCode": "00",
           "weather": "晴",
@@ -1571,7 +1571,7 @@
         },
         {
           "time": "2026-09-11T17:00:00+08:00",
-          "temp": 32,
+          "temp": 31,
           "humidity": 60,
           "weatherCode": "00",
           "weather": "晴",
@@ -1591,7 +1591,7 @@
         },
         {
           "time": "2026-09-11T19:00:00+08:00",
-          "temp": 29,
+          "temp": 28,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -1601,7 +1601,7 @@
         },
         {
           "time": "2026-09-11T20:00:00+08:00",
-          "temp": 28,
+          "temp": 27,
           "humidity": 64,
           "weatherCode": "00",
           "weather": "晴",
@@ -1621,7 +1621,7 @@
         },
         {
           "time": "2026-09-11T22:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -1631,7 +1631,7 @@
         },
         {
           "time": "2026-09-11T23:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -2211,36 +2211,16 @@
         },
         {
           "time": "2026-09-14T11:00:00+08:00",
-          "temp": 31,
+          "temp": 29,
           "humidity": 67,
-          "weatherCode": "09",
-          "weather": "大雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
-          "rainLevel": "heavy"
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-14T14:00:00+08:00",
-          "temp": 31,
-          "humidity": 75,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T17:00:00+08:00",
-          "temp": 31,
-          "humidity": 73,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T20:00:00+08:00",
           "temp": 29,
           "humidity": 75,
           "weatherCode": "01",
@@ -2250,9 +2230,9 @@
           "rainLevel": "none"
         },
         {
-          "time": "2026-09-14T23:00:00+08:00",
-          "temp": 28,
-          "humidity": 83,
+          "time": "2026-09-14T17:00:00+08:00",
+          "temp": 29,
+          "humidity": 73,
           "weatherCode": "01",
           "weather": "多云",
           "windDirCode": "2",
@@ -2260,28 +2240,48 @@
           "rainLevel": "none"
         },
         {
+          "time": "2026-09-14T20:00:00+08:00",
+          "temp": 28,
+          "humidity": 75,
+          "weatherCode": "01",
+          "weather": "多云",
+          "windDirCode": "2",
+          "rain": false,
+          "rainLevel": "none"
+        },
+        {
+          "time": "2026-09-14T23:00:00+08:00",
+          "temp": 27,
+          "humidity": 83,
+          "weatherCode": "07",
+          "weather": "小雨",
+          "windDirCode": "2",
+          "rain": true,
+          "rainLevel": "light"
+        },
+        {
           "time": "2026-09-15T02:00:00+08:00",
           "temp": 27,
           "humidity": 89,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "7",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T05:00:00+08:00",
           "temp": 26,
           "humidity": 88,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T08:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 87,
           "weatherCode": "01",
           "weather": "多云",
@@ -2303,8 +2303,8 @@
           "time": "2026-09-15T14:00:00+08:00",
           "temp": 31,
           "humidity": 71,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
           "rainLevel": "light"
@@ -2313,8 +2313,8 @@
           "time": "2026-09-15T17:00:00+08:00",
           "temp": 33,
           "humidity": 66,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "2",
           "rain": true,
           "rainLevel": "light"
@@ -2323,8 +2323,8 @@
           "time": "2026-09-15T20:00:00+08:00",
           "temp": 30,
           "humidity": 70,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "3",
           "rain": true,
           "rainLevel": "light"
@@ -2333,31 +2333,31 @@
           "time": "2026-09-15T23:00:00+08:00",
           "temp": 27,
           "humidity": 82,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T02:00:00+08:00",
           "temp": 26,
           "humidity": 83,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-16T05:00:00+08:00",
           "temp": 26,
           "humidity": 86,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T08:00:00+08:00",
@@ -2451,47 +2451,47 @@
         },
         {
           "time": "2026-09-17T11:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 59,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "1",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T14:00:00+08:00",
-          "temp": 30,
+          "temp": 32,
           "humidity": 66,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T17:00:00+08:00",
-          "temp": 32,
+          "temp": 33,
           "humidity": 66,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T20:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 69,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T23:00:00+08:00",
-          "temp": 28,
+          "temp": 30,
           "humidity": 77,
           "weatherCode": "00",
           "weather": "晴",
@@ -2501,7 +2501,7 @@
         },
         {
           "time": "2026-09-18T02:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 79,
           "weatherCode": "07",
           "weather": "小雨",
@@ -2511,7 +2511,7 @@
         },
         {
           "time": "2026-09-18T05:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 83,
           "weatherCode": "01",
           "weather": "多云",
@@ -2521,6 +2521,14 @@
         }
       ],
       "observed": [
+        {
+          "time": "11",
+          "temp": 28.3,
+          "humidity": 62,
+          "rainMm": 0,
+          "windDir": "西北风",
+          "windLevel": 3
+        },
         {
           "time": "10",
           "temp": 27.3,
@@ -2712,19 +2720,11 @@
           "rainMm": 0,
           "windDir": "北风",
           "windLevel": 2
-        },
-        {
-          "time": "10",
-          "temp": 25.4,
-          "humidity": 83,
-          "rainMm": 0,
-          "windDir": "北风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097541,
+        "serverTime": 1789098357,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -2868,7 +2868,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -2918,7 +2918,7 @@
         "localIntensity": null
       },
       "today": {
-        "high": 32,
+        "high": 31,
         "low": 24
       }
     },
@@ -2928,14 +2928,14 @@
       "name": "广州",
       "updatedAt": "11:30更新",
       "current": {
-        "temp": 29.4,
+        "temp": 29.3,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "59%",
-        "windDir": "北风",
+        "humidity": "62%",
+        "windDir": "东北风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -3981,6 +3981,14 @@
       ],
       "observed": [
         {
+          "time": "11",
+          "temp": 29.1,
+          "humidity": 61,
+          "rainMm": 0,
+          "windDir": "东北风",
+          "windLevel": 2
+        },
+        {
           "time": "10",
           "temp": 27.5,
           "humidity": 61,
@@ -4171,19 +4179,11 @@
           "rainMm": 0,
           "windDir": "北风",
           "windLevel": 3
-        },
-        {
-          "time": "10",
-          "temp": 28,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "东风",
-          "windLevel": 1
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097541,
+        "serverTime": 1789098357,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -4327,7 +4327,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -4387,14 +4387,14 @@
       "name": "珠海",
       "updatedAt": "07:30更新",
       "current": {
-        "temp": 29.1,
+        "temp": 29.6,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "62%",
+        "humidity": "61%",
         "windDir": "东北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -5642,7 +5642,7 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097541,
+        "serverTime": 1789098357,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -5786,7 +5786,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -5846,14 +5846,14 @@
       "name": "深圳",
       "updatedAt": "11:30更新",
       "current": {
-        "temp": 29.7,
+        "temp": 29.9,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "60%",
+        "humidity": "58%",
         "windDir": "北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:10"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -7101,7 +7101,7 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097541,
+        "serverTime": 1789098357,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -7245,7 +7245,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -7305,14 +7305,14 @@
       "name": "广州",
       "updatedAt": "11:30更新",
       "current": {
-        "temp": 29.4,
+        "temp": 29.3,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "59%",
-        "windDir": "北风",
+        "humidity": "62%",
+        "windDir": "东北风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -8358,6 +8358,14 @@
       ],
       "observed": [
         {
+          "time": "11",
+          "temp": 29.1,
+          "humidity": 61,
+          "rainMm": 0,
+          "windDir": "东北风",
+          "windLevel": 2
+        },
+        {
           "time": "10",
           "temp": 27.5,
           "humidity": 61,
@@ -8548,19 +8556,11 @@
           "rainMm": 0,
           "windDir": "北风",
           "windLevel": 3
-        },
-        {
-          "time": "10",
-          "temp": 28,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "东风",
-          "windLevel": 1
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097541,
+        "serverTime": 1789098357,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -8704,7 +8704,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -8762,16 +8762,16 @@
       "code": "101280102",
       "id": "scut-uc",
       "name": "番禺",
-      "updatedAt": "07:30更新",
+      "updatedAt": "11:30更新",
       "current": {
         "temp": 28.9,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "62%",
+        "humidity": "61%",
         "windDir": "东北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:10"
+        "updatedAt": "09月11日(星期五) 11:25"
       },
       "hourly": [
         {
@@ -8816,7 +8816,7 @@
         },
         {
           "time": "2026-09-11T12:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -8826,7 +8826,7 @@
         },
         {
           "time": "2026-09-11T13:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -8836,7 +8836,7 @@
         },
         {
           "time": "2026-09-11T14:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -8846,7 +8846,7 @@
         },
         {
           "time": "2026-09-11T15:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -8856,7 +8856,7 @@
         },
         {
           "time": "2026-09-11T16:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 61,
           "weatherCode": "00",
           "weather": "晴",
@@ -8866,7 +8866,7 @@
         },
         {
           "time": "2026-09-11T17:00:00+08:00",
-          "temp": 32,
+          "temp": 31,
           "humidity": 60,
           "weatherCode": "00",
           "weather": "晴",
@@ -8886,7 +8886,7 @@
         },
         {
           "time": "2026-09-11T19:00:00+08:00",
-          "temp": 29,
+          "temp": 28,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -8896,7 +8896,7 @@
         },
         {
           "time": "2026-09-11T20:00:00+08:00",
-          "temp": 28,
+          "temp": 27,
           "humidity": 64,
           "weatherCode": "00",
           "weather": "晴",
@@ -8916,7 +8916,7 @@
         },
         {
           "time": "2026-09-11T22:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -8926,7 +8926,7 @@
         },
         {
           "time": "2026-09-11T23:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -9506,36 +9506,16 @@
         },
         {
           "time": "2026-09-14T11:00:00+08:00",
-          "temp": 31,
+          "temp": 29,
           "humidity": 67,
-          "weatherCode": "09",
-          "weather": "大雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
-          "rainLevel": "heavy"
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-14T14:00:00+08:00",
-          "temp": 31,
-          "humidity": 75,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T17:00:00+08:00",
-          "temp": 31,
-          "humidity": 73,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T20:00:00+08:00",
           "temp": 29,
           "humidity": 75,
           "weatherCode": "01",
@@ -9545,9 +9525,9 @@
           "rainLevel": "none"
         },
         {
-          "time": "2026-09-14T23:00:00+08:00",
-          "temp": 28,
-          "humidity": 83,
+          "time": "2026-09-14T17:00:00+08:00",
+          "temp": 29,
+          "humidity": 73,
           "weatherCode": "01",
           "weather": "多云",
           "windDirCode": "2",
@@ -9555,28 +9535,48 @@
           "rainLevel": "none"
         },
         {
+          "time": "2026-09-14T20:00:00+08:00",
+          "temp": 28,
+          "humidity": 75,
+          "weatherCode": "01",
+          "weather": "多云",
+          "windDirCode": "2",
+          "rain": false,
+          "rainLevel": "none"
+        },
+        {
+          "time": "2026-09-14T23:00:00+08:00",
+          "temp": 27,
+          "humidity": 83,
+          "weatherCode": "07",
+          "weather": "小雨",
+          "windDirCode": "2",
+          "rain": true,
+          "rainLevel": "light"
+        },
+        {
           "time": "2026-09-15T02:00:00+08:00",
           "temp": 27,
           "humidity": 89,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "7",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T05:00:00+08:00",
           "temp": 26,
           "humidity": 88,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T08:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 87,
           "weatherCode": "01",
           "weather": "多云",
@@ -9598,8 +9598,8 @@
           "time": "2026-09-15T14:00:00+08:00",
           "temp": 31,
           "humidity": 71,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
           "rainLevel": "light"
@@ -9608,8 +9608,8 @@
           "time": "2026-09-15T17:00:00+08:00",
           "temp": 33,
           "humidity": 66,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "2",
           "rain": true,
           "rainLevel": "light"
@@ -9618,8 +9618,8 @@
           "time": "2026-09-15T20:00:00+08:00",
           "temp": 30,
           "humidity": 70,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "3",
           "rain": true,
           "rainLevel": "light"
@@ -9628,31 +9628,31 @@
           "time": "2026-09-15T23:00:00+08:00",
           "temp": 27,
           "humidity": 82,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T02:00:00+08:00",
           "temp": 26,
           "humidity": 83,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-16T05:00:00+08:00",
           "temp": 26,
           "humidity": 86,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T08:00:00+08:00",
@@ -9746,47 +9746,47 @@
         },
         {
           "time": "2026-09-17T11:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 59,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "1",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T14:00:00+08:00",
-          "temp": 30,
+          "temp": 32,
           "humidity": 66,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T17:00:00+08:00",
-          "temp": 32,
+          "temp": 33,
           "humidity": 66,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T20:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 69,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T23:00:00+08:00",
-          "temp": 28,
+          "temp": 30,
           "humidity": 77,
           "weatherCode": "00",
           "weather": "晴",
@@ -9796,7 +9796,7 @@
         },
         {
           "time": "2026-09-18T02:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 79,
           "weatherCode": "07",
           "weather": "小雨",
@@ -9806,7 +9806,7 @@
         },
         {
           "time": "2026-09-18T05:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 83,
           "weatherCode": "01",
           "weather": "多云",
@@ -9816,6 +9816,14 @@
         }
       ],
       "observed": [
+        {
+          "time": "11",
+          "temp": 28.3,
+          "humidity": 62,
+          "rainMm": 0,
+          "windDir": "西北风",
+          "windLevel": 3
+        },
         {
           "time": "10",
           "temp": 27.3,
@@ -10007,19 +10015,11 @@
           "rainMm": 0,
           "windDir": "北风",
           "windLevel": 2
-        },
-        {
-          "time": "10",
-          "temp": 25.4,
-          "humidity": 83,
-          "rainMm": 0,
-          "windDir": "北风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097541,
+        "serverTime": 1789098357,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -10163,7 +10163,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -10213,7 +10213,7 @@
         "localIntensity": null
       },
       "today": {
-        "high": 32,
+        "high": 31,
         "low": 24
       }
     },
@@ -10223,14 +10223,14 @@
       "name": "广州",
       "updatedAt": "11:30更新",
       "current": {
-        "temp": 29.4,
+        "temp": 29.3,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "59%",
-        "windDir": "北风",
+        "humidity": "62%",
+        "windDir": "东北风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -11276,6 +11276,14 @@
       ],
       "observed": [
         {
+          "time": "11",
+          "temp": 29.1,
+          "humidity": 61,
+          "rainMm": 0,
+          "windDir": "东北风",
+          "windLevel": 2
+        },
+        {
           "time": "10",
           "temp": 27.5,
           "humidity": 61,
@@ -11466,19 +11474,11 @@
           "rainMm": 0,
           "windDir": "北风",
           "windLevel": 3
-        },
-        {
-          "time": "10",
-          "temp": 28,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "东风",
-          "windLevel": 1
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097541,
+        "serverTime": 1789098357,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -11622,7 +11622,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -11680,16 +11680,16 @@
       "code": "101280102",
       "id": "jnu-panyu",
       "name": "番禺",
-      "updatedAt": "07:30更新",
+      "updatedAt": "11:30更新",
       "current": {
         "temp": 28.9,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "62%",
+        "humidity": "61%",
         "windDir": "东北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:10"
+        "updatedAt": "09月11日(星期五) 11:25"
       },
       "hourly": [
         {
@@ -11734,7 +11734,7 @@
         },
         {
           "time": "2026-09-11T12:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -11744,7 +11744,7 @@
         },
         {
           "time": "2026-09-11T13:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -11754,7 +11754,7 @@
         },
         {
           "time": "2026-09-11T14:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -11764,7 +11764,7 @@
         },
         {
           "time": "2026-09-11T15:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -11774,7 +11774,7 @@
         },
         {
           "time": "2026-09-11T16:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 61,
           "weatherCode": "00",
           "weather": "晴",
@@ -11784,7 +11784,7 @@
         },
         {
           "time": "2026-09-11T17:00:00+08:00",
-          "temp": 32,
+          "temp": 31,
           "humidity": 60,
           "weatherCode": "00",
           "weather": "晴",
@@ -11804,7 +11804,7 @@
         },
         {
           "time": "2026-09-11T19:00:00+08:00",
-          "temp": 29,
+          "temp": 28,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -11814,7 +11814,7 @@
         },
         {
           "time": "2026-09-11T20:00:00+08:00",
-          "temp": 28,
+          "temp": 27,
           "humidity": 64,
           "weatherCode": "00",
           "weather": "晴",
@@ -11834,7 +11834,7 @@
         },
         {
           "time": "2026-09-11T22:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -11844,7 +11844,7 @@
         },
         {
           "time": "2026-09-11T23:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -12424,36 +12424,16 @@
         },
         {
           "time": "2026-09-14T11:00:00+08:00",
-          "temp": 31,
+          "temp": 29,
           "humidity": 67,
-          "weatherCode": "09",
-          "weather": "大雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
-          "rainLevel": "heavy"
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-14T14:00:00+08:00",
-          "temp": 31,
-          "humidity": 75,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T17:00:00+08:00",
-          "temp": 31,
-          "humidity": 73,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T20:00:00+08:00",
           "temp": 29,
           "humidity": 75,
           "weatherCode": "01",
@@ -12463,9 +12443,9 @@
           "rainLevel": "none"
         },
         {
-          "time": "2026-09-14T23:00:00+08:00",
-          "temp": 28,
-          "humidity": 83,
+          "time": "2026-09-14T17:00:00+08:00",
+          "temp": 29,
+          "humidity": 73,
           "weatherCode": "01",
           "weather": "多云",
           "windDirCode": "2",
@@ -12473,28 +12453,48 @@
           "rainLevel": "none"
         },
         {
+          "time": "2026-09-14T20:00:00+08:00",
+          "temp": 28,
+          "humidity": 75,
+          "weatherCode": "01",
+          "weather": "多云",
+          "windDirCode": "2",
+          "rain": false,
+          "rainLevel": "none"
+        },
+        {
+          "time": "2026-09-14T23:00:00+08:00",
+          "temp": 27,
+          "humidity": 83,
+          "weatherCode": "07",
+          "weather": "小雨",
+          "windDirCode": "2",
+          "rain": true,
+          "rainLevel": "light"
+        },
+        {
           "time": "2026-09-15T02:00:00+08:00",
           "temp": 27,
           "humidity": 89,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "7",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T05:00:00+08:00",
           "temp": 26,
           "humidity": 88,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T08:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 87,
           "weatherCode": "01",
           "weather": "多云",
@@ -12516,8 +12516,8 @@
           "time": "2026-09-15T14:00:00+08:00",
           "temp": 31,
           "humidity": 71,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
           "rainLevel": "light"
@@ -12526,8 +12526,8 @@
           "time": "2026-09-15T17:00:00+08:00",
           "temp": 33,
           "humidity": 66,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "2",
           "rain": true,
           "rainLevel": "light"
@@ -12536,8 +12536,8 @@
           "time": "2026-09-15T20:00:00+08:00",
           "temp": 30,
           "humidity": 70,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "3",
           "rain": true,
           "rainLevel": "light"
@@ -12546,31 +12546,31 @@
           "time": "2026-09-15T23:00:00+08:00",
           "temp": 27,
           "humidity": 82,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T02:00:00+08:00",
           "temp": 26,
           "humidity": 83,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-16T05:00:00+08:00",
           "temp": 26,
           "humidity": 86,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T08:00:00+08:00",
@@ -12664,47 +12664,47 @@
         },
         {
           "time": "2026-09-17T11:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 59,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "1",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T14:00:00+08:00",
-          "temp": 30,
+          "temp": 32,
           "humidity": 66,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T17:00:00+08:00",
-          "temp": 32,
+          "temp": 33,
           "humidity": 66,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T20:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 69,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T23:00:00+08:00",
-          "temp": 28,
+          "temp": 30,
           "humidity": 77,
           "weatherCode": "00",
           "weather": "晴",
@@ -12714,7 +12714,7 @@
         },
         {
           "time": "2026-09-18T02:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 79,
           "weatherCode": "07",
           "weather": "小雨",
@@ -12724,7 +12724,7 @@
         },
         {
           "time": "2026-09-18T05:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 83,
           "weatherCode": "01",
           "weather": "多云",
@@ -12734,6 +12734,14 @@
         }
       ],
       "observed": [
+        {
+          "time": "11",
+          "temp": 28.3,
+          "humidity": 62,
+          "rainMm": 0,
+          "windDir": "西北风",
+          "windLevel": 3
+        },
         {
           "time": "10",
           "temp": 27.3,
@@ -12925,19 +12933,11 @@
           "rainMm": 0,
           "windDir": "北风",
           "windLevel": 2
-        },
-        {
-          "time": "10",
-          "temp": 25.4,
-          "humidity": 83,
-          "rainMm": 0,
-          "windDir": "北风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097542,
+        "serverTime": 1789098358,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -13081,7 +13081,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -13131,7 +13131,7 @@
         "localIntensity": null
       },
       "today": {
-        "high": 32,
+        "high": 31,
         "low": 24
       }
     },
@@ -13141,14 +13141,14 @@
       "name": "广州",
       "updatedAt": "11:30更新",
       "current": {
-        "temp": 29.4,
+        "temp": 29.3,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "59%",
-        "windDir": "北风",
+        "humidity": "62%",
+        "windDir": "东北风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -14194,6 +14194,14 @@
       ],
       "observed": [
         {
+          "time": "11",
+          "temp": 29.1,
+          "humidity": 61,
+          "rainMm": 0,
+          "windDir": "东北风",
+          "windLevel": 2
+        },
+        {
           "time": "10",
           "temp": 27.5,
           "humidity": 61,
@@ -14384,19 +14392,11 @@
           "rainMm": 0,
           "windDir": "北风",
           "windLevel": 3
-        },
-        {
-          "time": "10",
-          "temp": 28,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "东风",
-          "windLevel": 1
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097542,
+        "serverTime": 1789098358,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -14540,7 +14540,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -14598,16 +14598,16 @@
       "code": "101280102",
       "id": "scnu-uc",
       "name": "番禺",
-      "updatedAt": "07:30更新",
+      "updatedAt": "11:30更新",
       "current": {
         "temp": 28.9,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "62%",
+        "humidity": "61%",
         "windDir": "东北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:10"
+        "updatedAt": "09月11日(星期五) 11:25"
       },
       "hourly": [
         {
@@ -14652,7 +14652,7 @@
         },
         {
           "time": "2026-09-11T12:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -14662,7 +14662,7 @@
         },
         {
           "time": "2026-09-11T13:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -14672,7 +14672,7 @@
         },
         {
           "time": "2026-09-11T14:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -14682,7 +14682,7 @@
         },
         {
           "time": "2026-09-11T15:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -14692,7 +14692,7 @@
         },
         {
           "time": "2026-09-11T16:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 61,
           "weatherCode": "00",
           "weather": "晴",
@@ -14702,7 +14702,7 @@
         },
         {
           "time": "2026-09-11T17:00:00+08:00",
-          "temp": 32,
+          "temp": 31,
           "humidity": 60,
           "weatherCode": "00",
           "weather": "晴",
@@ -14722,7 +14722,7 @@
         },
         {
           "time": "2026-09-11T19:00:00+08:00",
-          "temp": 29,
+          "temp": 28,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -14732,7 +14732,7 @@
         },
         {
           "time": "2026-09-11T20:00:00+08:00",
-          "temp": 28,
+          "temp": 27,
           "humidity": 64,
           "weatherCode": "00",
           "weather": "晴",
@@ -14752,7 +14752,7 @@
         },
         {
           "time": "2026-09-11T22:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -14762,7 +14762,7 @@
         },
         {
           "time": "2026-09-11T23:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -15342,36 +15342,16 @@
         },
         {
           "time": "2026-09-14T11:00:00+08:00",
-          "temp": 31,
+          "temp": 29,
           "humidity": 67,
-          "weatherCode": "09",
-          "weather": "大雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
-          "rainLevel": "heavy"
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-14T14:00:00+08:00",
-          "temp": 31,
-          "humidity": 75,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T17:00:00+08:00",
-          "temp": 31,
-          "humidity": 73,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T20:00:00+08:00",
           "temp": 29,
           "humidity": 75,
           "weatherCode": "01",
@@ -15381,9 +15361,9 @@
           "rainLevel": "none"
         },
         {
-          "time": "2026-09-14T23:00:00+08:00",
-          "temp": 28,
-          "humidity": 83,
+          "time": "2026-09-14T17:00:00+08:00",
+          "temp": 29,
+          "humidity": 73,
           "weatherCode": "01",
           "weather": "多云",
           "windDirCode": "2",
@@ -15391,28 +15371,48 @@
           "rainLevel": "none"
         },
         {
+          "time": "2026-09-14T20:00:00+08:00",
+          "temp": 28,
+          "humidity": 75,
+          "weatherCode": "01",
+          "weather": "多云",
+          "windDirCode": "2",
+          "rain": false,
+          "rainLevel": "none"
+        },
+        {
+          "time": "2026-09-14T23:00:00+08:00",
+          "temp": 27,
+          "humidity": 83,
+          "weatherCode": "07",
+          "weather": "小雨",
+          "windDirCode": "2",
+          "rain": true,
+          "rainLevel": "light"
+        },
+        {
           "time": "2026-09-15T02:00:00+08:00",
           "temp": 27,
           "humidity": 89,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "7",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T05:00:00+08:00",
           "temp": 26,
           "humidity": 88,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T08:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 87,
           "weatherCode": "01",
           "weather": "多云",
@@ -15434,8 +15434,8 @@
           "time": "2026-09-15T14:00:00+08:00",
           "temp": 31,
           "humidity": 71,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
           "rainLevel": "light"
@@ -15444,8 +15444,8 @@
           "time": "2026-09-15T17:00:00+08:00",
           "temp": 33,
           "humidity": 66,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "2",
           "rain": true,
           "rainLevel": "light"
@@ -15454,8 +15454,8 @@
           "time": "2026-09-15T20:00:00+08:00",
           "temp": 30,
           "humidity": 70,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "3",
           "rain": true,
           "rainLevel": "light"
@@ -15464,31 +15464,31 @@
           "time": "2026-09-15T23:00:00+08:00",
           "temp": 27,
           "humidity": 82,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T02:00:00+08:00",
           "temp": 26,
           "humidity": 83,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-16T05:00:00+08:00",
           "temp": 26,
           "humidity": 86,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T08:00:00+08:00",
@@ -15582,47 +15582,47 @@
         },
         {
           "time": "2026-09-17T11:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 59,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "1",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T14:00:00+08:00",
-          "temp": 30,
+          "temp": 32,
           "humidity": 66,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T17:00:00+08:00",
-          "temp": 32,
+          "temp": 33,
           "humidity": 66,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T20:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 69,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T23:00:00+08:00",
-          "temp": 28,
+          "temp": 30,
           "humidity": 77,
           "weatherCode": "00",
           "weather": "晴",
@@ -15632,7 +15632,7 @@
         },
         {
           "time": "2026-09-18T02:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 79,
           "weatherCode": "07",
           "weather": "小雨",
@@ -15642,7 +15642,7 @@
         },
         {
           "time": "2026-09-18T05:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 83,
           "weatherCode": "01",
           "weather": "多云",
@@ -15652,6 +15652,14 @@
         }
       ],
       "observed": [
+        {
+          "time": "11",
+          "temp": 28.3,
+          "humidity": 62,
+          "rainMm": 0,
+          "windDir": "西北风",
+          "windLevel": 3
+        },
         {
           "time": "10",
           "temp": 27.3,
@@ -15843,19 +15851,11 @@
           "rainMm": 0,
           "windDir": "北风",
           "windLevel": 2
-        },
-        {
-          "time": "10",
-          "temp": 25.4,
-          "humidity": 83,
-          "rainMm": 0,
-          "windDir": "北风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097541,
+        "serverTime": 1789098357,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -15999,7 +15999,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -16049,7 +16049,7 @@
         "localIntensity": null
       },
       "today": {
-        "high": 32,
+        "high": 31,
         "low": 24
       }
     },
@@ -16057,16 +16057,16 @@
       "code": "101280102",
       "id": "gdut-uc",
       "name": "番禺",
-      "updatedAt": "07:30更新",
+      "updatedAt": "11:30更新",
       "current": {
         "temp": 28.9,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "62%",
+        "humidity": "61%",
         "windDir": "东北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:10"
+        "updatedAt": "09月11日(星期五) 11:25"
       },
       "hourly": [
         {
@@ -16111,7 +16111,7 @@
         },
         {
           "time": "2026-09-11T12:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -16121,7 +16121,7 @@
         },
         {
           "time": "2026-09-11T13:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -16131,7 +16131,7 @@
         },
         {
           "time": "2026-09-11T14:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -16141,7 +16141,7 @@
         },
         {
           "time": "2026-09-11T15:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -16151,7 +16151,7 @@
         },
         {
           "time": "2026-09-11T16:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 61,
           "weatherCode": "00",
           "weather": "晴",
@@ -16161,7 +16161,7 @@
         },
         {
           "time": "2026-09-11T17:00:00+08:00",
-          "temp": 32,
+          "temp": 31,
           "humidity": 60,
           "weatherCode": "00",
           "weather": "晴",
@@ -16181,7 +16181,7 @@
         },
         {
           "time": "2026-09-11T19:00:00+08:00",
-          "temp": 29,
+          "temp": 28,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -16191,7 +16191,7 @@
         },
         {
           "time": "2026-09-11T20:00:00+08:00",
-          "temp": 28,
+          "temp": 27,
           "humidity": 64,
           "weatherCode": "00",
           "weather": "晴",
@@ -16211,7 +16211,7 @@
         },
         {
           "time": "2026-09-11T22:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -16221,7 +16221,7 @@
         },
         {
           "time": "2026-09-11T23:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -16801,36 +16801,16 @@
         },
         {
           "time": "2026-09-14T11:00:00+08:00",
-          "temp": 31,
+          "temp": 29,
           "humidity": 67,
-          "weatherCode": "09",
-          "weather": "大雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
-          "rainLevel": "heavy"
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-14T14:00:00+08:00",
-          "temp": 31,
-          "humidity": 75,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T17:00:00+08:00",
-          "temp": 31,
-          "humidity": 73,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T20:00:00+08:00",
           "temp": 29,
           "humidity": 75,
           "weatherCode": "01",
@@ -16840,9 +16820,9 @@
           "rainLevel": "none"
         },
         {
-          "time": "2026-09-14T23:00:00+08:00",
-          "temp": 28,
-          "humidity": 83,
+          "time": "2026-09-14T17:00:00+08:00",
+          "temp": 29,
+          "humidity": 73,
           "weatherCode": "01",
           "weather": "多云",
           "windDirCode": "2",
@@ -16850,28 +16830,48 @@
           "rainLevel": "none"
         },
         {
+          "time": "2026-09-14T20:00:00+08:00",
+          "temp": 28,
+          "humidity": 75,
+          "weatherCode": "01",
+          "weather": "多云",
+          "windDirCode": "2",
+          "rain": false,
+          "rainLevel": "none"
+        },
+        {
+          "time": "2026-09-14T23:00:00+08:00",
+          "temp": 27,
+          "humidity": 83,
+          "weatherCode": "07",
+          "weather": "小雨",
+          "windDirCode": "2",
+          "rain": true,
+          "rainLevel": "light"
+        },
+        {
           "time": "2026-09-15T02:00:00+08:00",
           "temp": 27,
           "humidity": 89,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "7",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T05:00:00+08:00",
           "temp": 26,
           "humidity": 88,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T08:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 87,
           "weatherCode": "01",
           "weather": "多云",
@@ -16893,8 +16893,8 @@
           "time": "2026-09-15T14:00:00+08:00",
           "temp": 31,
           "humidity": 71,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
           "rainLevel": "light"
@@ -16903,8 +16903,8 @@
           "time": "2026-09-15T17:00:00+08:00",
           "temp": 33,
           "humidity": 66,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "2",
           "rain": true,
           "rainLevel": "light"
@@ -16913,8 +16913,8 @@
           "time": "2026-09-15T20:00:00+08:00",
           "temp": 30,
           "humidity": 70,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "3",
           "rain": true,
           "rainLevel": "light"
@@ -16923,31 +16923,31 @@
           "time": "2026-09-15T23:00:00+08:00",
           "temp": 27,
           "humidity": 82,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T02:00:00+08:00",
           "temp": 26,
           "humidity": 83,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-16T05:00:00+08:00",
           "temp": 26,
           "humidity": 86,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T08:00:00+08:00",
@@ -17041,47 +17041,47 @@
         },
         {
           "time": "2026-09-17T11:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 59,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "1",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T14:00:00+08:00",
-          "temp": 30,
+          "temp": 32,
           "humidity": 66,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T17:00:00+08:00",
-          "temp": 32,
+          "temp": 33,
           "humidity": 66,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T20:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 69,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T23:00:00+08:00",
-          "temp": 28,
+          "temp": 30,
           "humidity": 77,
           "weatherCode": "00",
           "weather": "晴",
@@ -17091,7 +17091,7 @@
         },
         {
           "time": "2026-09-18T02:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 79,
           "weatherCode": "07",
           "weather": "小雨",
@@ -17101,7 +17101,7 @@
         },
         {
           "time": "2026-09-18T05:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 83,
           "weatherCode": "01",
           "weather": "多云",
@@ -17111,6 +17111,14 @@
         }
       ],
       "observed": [
+        {
+          "time": "11",
+          "temp": 28.3,
+          "humidity": 62,
+          "rainMm": 0,
+          "windDir": "西北风",
+          "windLevel": 3
+        },
         {
           "time": "10",
           "temp": 27.3,
@@ -17302,19 +17310,11 @@
           "rainMm": 0,
           "windDir": "北风",
           "windLevel": 2
-        },
-        {
-          "time": "10",
-          "temp": 25.4,
-          "humidity": 83,
-          "rainMm": 0,
-          "windDir": "北风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097541,
+        "serverTime": 1789098357,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -17458,7 +17458,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -17508,7 +17508,7 @@
         "localIntensity": null
       },
       "today": {
-        "high": 32,
+        "high": 31,
         "low": 24
       }
     },
@@ -17516,16 +17516,16 @@
       "code": "101280102",
       "id": "gzu-uc",
       "name": "番禺",
-      "updatedAt": "07:30更新",
+      "updatedAt": "11:30更新",
       "current": {
         "temp": 28.9,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "62%",
+        "humidity": "61%",
         "windDir": "东北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:10"
+        "updatedAt": "09月11日(星期五) 11:25"
       },
       "hourly": [
         {
@@ -17570,7 +17570,7 @@
         },
         {
           "time": "2026-09-11T12:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -17580,7 +17580,7 @@
         },
         {
           "time": "2026-09-11T13:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -17590,7 +17590,7 @@
         },
         {
           "time": "2026-09-11T14:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -17600,7 +17600,7 @@
         },
         {
           "time": "2026-09-11T15:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -17610,7 +17610,7 @@
         },
         {
           "time": "2026-09-11T16:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 61,
           "weatherCode": "00",
           "weather": "晴",
@@ -17620,7 +17620,7 @@
         },
         {
           "time": "2026-09-11T17:00:00+08:00",
-          "temp": 32,
+          "temp": 31,
           "humidity": 60,
           "weatherCode": "00",
           "weather": "晴",
@@ -17640,7 +17640,7 @@
         },
         {
           "time": "2026-09-11T19:00:00+08:00",
-          "temp": 29,
+          "temp": 28,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -17650,7 +17650,7 @@
         },
         {
           "time": "2026-09-11T20:00:00+08:00",
-          "temp": 28,
+          "temp": 27,
           "humidity": 64,
           "weatherCode": "00",
           "weather": "晴",
@@ -17670,7 +17670,7 @@
         },
         {
           "time": "2026-09-11T22:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -17680,7 +17680,7 @@
         },
         {
           "time": "2026-09-11T23:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -18260,36 +18260,16 @@
         },
         {
           "time": "2026-09-14T11:00:00+08:00",
-          "temp": 31,
+          "temp": 29,
           "humidity": 67,
-          "weatherCode": "09",
-          "weather": "大雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
-          "rainLevel": "heavy"
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-14T14:00:00+08:00",
-          "temp": 31,
-          "humidity": 75,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T17:00:00+08:00",
-          "temp": 31,
-          "humidity": 73,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T20:00:00+08:00",
           "temp": 29,
           "humidity": 75,
           "weatherCode": "01",
@@ -18299,9 +18279,9 @@
           "rainLevel": "none"
         },
         {
-          "time": "2026-09-14T23:00:00+08:00",
-          "temp": 28,
-          "humidity": 83,
+          "time": "2026-09-14T17:00:00+08:00",
+          "temp": 29,
+          "humidity": 73,
           "weatherCode": "01",
           "weather": "多云",
           "windDirCode": "2",
@@ -18309,28 +18289,48 @@
           "rainLevel": "none"
         },
         {
+          "time": "2026-09-14T20:00:00+08:00",
+          "temp": 28,
+          "humidity": 75,
+          "weatherCode": "01",
+          "weather": "多云",
+          "windDirCode": "2",
+          "rain": false,
+          "rainLevel": "none"
+        },
+        {
+          "time": "2026-09-14T23:00:00+08:00",
+          "temp": 27,
+          "humidity": 83,
+          "weatherCode": "07",
+          "weather": "小雨",
+          "windDirCode": "2",
+          "rain": true,
+          "rainLevel": "light"
+        },
+        {
           "time": "2026-09-15T02:00:00+08:00",
           "temp": 27,
           "humidity": 89,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "7",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T05:00:00+08:00",
           "temp": 26,
           "humidity": 88,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T08:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 87,
           "weatherCode": "01",
           "weather": "多云",
@@ -18352,8 +18352,8 @@
           "time": "2026-09-15T14:00:00+08:00",
           "temp": 31,
           "humidity": 71,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
           "rainLevel": "light"
@@ -18362,8 +18362,8 @@
           "time": "2026-09-15T17:00:00+08:00",
           "temp": 33,
           "humidity": 66,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "2",
           "rain": true,
           "rainLevel": "light"
@@ -18372,8 +18372,8 @@
           "time": "2026-09-15T20:00:00+08:00",
           "temp": 30,
           "humidity": 70,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "3",
           "rain": true,
           "rainLevel": "light"
@@ -18382,31 +18382,31 @@
           "time": "2026-09-15T23:00:00+08:00",
           "temp": 27,
           "humidity": 82,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T02:00:00+08:00",
           "temp": 26,
           "humidity": 83,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-16T05:00:00+08:00",
           "temp": 26,
           "humidity": 86,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T08:00:00+08:00",
@@ -18500,47 +18500,47 @@
         },
         {
           "time": "2026-09-17T11:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 59,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "1",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T14:00:00+08:00",
-          "temp": 30,
+          "temp": 32,
           "humidity": 66,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T17:00:00+08:00",
-          "temp": 32,
+          "temp": 33,
           "humidity": 66,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T20:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 69,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T23:00:00+08:00",
-          "temp": 28,
+          "temp": 30,
           "humidity": 77,
           "weatherCode": "00",
           "weather": "晴",
@@ -18550,7 +18550,7 @@
         },
         {
           "time": "2026-09-18T02:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 79,
           "weatherCode": "07",
           "weather": "小雨",
@@ -18560,7 +18560,7 @@
         },
         {
           "time": "2026-09-18T05:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 83,
           "weatherCode": "01",
           "weather": "多云",
@@ -18570,6 +18570,14 @@
         }
       ],
       "observed": [
+        {
+          "time": "11",
+          "temp": 28.3,
+          "humidity": 62,
+          "rainMm": 0,
+          "windDir": "西北风",
+          "windLevel": 3
+        },
         {
           "time": "10",
           "temp": 27.3,
@@ -18761,19 +18769,11 @@
           "rainMm": 0,
           "windDir": "北风",
           "windLevel": 2
-        },
-        {
-          "time": "10",
-          "temp": 25.4,
-          "humidity": 83,
-          "rainMm": 0,
-          "windDir": "北风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097542,
+        "serverTime": 1789098358,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -18917,7 +18917,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -18967,7 +18967,7 @@
         "localIntensity": null
       },
       "today": {
-        "high": 32,
+        "high": 31,
         "low": 24
       }
     },
@@ -18977,14 +18977,14 @@
       "name": "广州",
       "updatedAt": "11:30更新",
       "current": {
-        "temp": 29.4,
+        "temp": 29.3,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "59%",
-        "windDir": "北风",
+        "humidity": "62%",
+        "windDir": "东北风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -20030,6 +20030,14 @@
       ],
       "observed": [
         {
+          "time": "11",
+          "temp": 29.1,
+          "humidity": 61,
+          "rainMm": 0,
+          "windDir": "东北风",
+          "windLevel": 2
+        },
+        {
           "time": "10",
           "temp": 27.5,
           "humidity": 61,
@@ -20220,19 +20228,11 @@
           "rainMm": 0,
           "windDir": "北风",
           "windLevel": 3
-        },
-        {
-          "time": "10",
-          "temp": 28,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "东风",
-          "windLevel": 1
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097542,
+        "serverTime": 1789098358,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -20376,7 +20376,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -20434,16 +20434,16 @@
       "code": "101280102",
       "id": "gzucm-uc",
       "name": "番禺",
-      "updatedAt": "07:30更新",
+      "updatedAt": "11:30更新",
       "current": {
         "temp": 28.9,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "62%",
+        "humidity": "61%",
         "windDir": "东北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:10"
+        "updatedAt": "09月11日(星期五) 11:25"
       },
       "hourly": [
         {
@@ -20488,7 +20488,7 @@
         },
         {
           "time": "2026-09-11T12:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -20498,7 +20498,7 @@
         },
         {
           "time": "2026-09-11T13:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -20508,7 +20508,7 @@
         },
         {
           "time": "2026-09-11T14:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -20518,7 +20518,7 @@
         },
         {
           "time": "2026-09-11T15:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -20528,7 +20528,7 @@
         },
         {
           "time": "2026-09-11T16:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 61,
           "weatherCode": "00",
           "weather": "晴",
@@ -20538,7 +20538,7 @@
         },
         {
           "time": "2026-09-11T17:00:00+08:00",
-          "temp": 32,
+          "temp": 31,
           "humidity": 60,
           "weatherCode": "00",
           "weather": "晴",
@@ -20558,7 +20558,7 @@
         },
         {
           "time": "2026-09-11T19:00:00+08:00",
-          "temp": 29,
+          "temp": 28,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -20568,7 +20568,7 @@
         },
         {
           "time": "2026-09-11T20:00:00+08:00",
-          "temp": 28,
+          "temp": 27,
           "humidity": 64,
           "weatherCode": "00",
           "weather": "晴",
@@ -20588,7 +20588,7 @@
         },
         {
           "time": "2026-09-11T22:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -20598,7 +20598,7 @@
         },
         {
           "time": "2026-09-11T23:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -21178,36 +21178,16 @@
         },
         {
           "time": "2026-09-14T11:00:00+08:00",
-          "temp": 31,
+          "temp": 29,
           "humidity": 67,
-          "weatherCode": "09",
-          "weather": "大雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
-          "rainLevel": "heavy"
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-14T14:00:00+08:00",
-          "temp": 31,
-          "humidity": 75,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T17:00:00+08:00",
-          "temp": 31,
-          "humidity": 73,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T20:00:00+08:00",
           "temp": 29,
           "humidity": 75,
           "weatherCode": "01",
@@ -21217,9 +21197,9 @@
           "rainLevel": "none"
         },
         {
-          "time": "2026-09-14T23:00:00+08:00",
-          "temp": 28,
-          "humidity": 83,
+          "time": "2026-09-14T17:00:00+08:00",
+          "temp": 29,
+          "humidity": 73,
           "weatherCode": "01",
           "weather": "多云",
           "windDirCode": "2",
@@ -21227,28 +21207,48 @@
           "rainLevel": "none"
         },
         {
+          "time": "2026-09-14T20:00:00+08:00",
+          "temp": 28,
+          "humidity": 75,
+          "weatherCode": "01",
+          "weather": "多云",
+          "windDirCode": "2",
+          "rain": false,
+          "rainLevel": "none"
+        },
+        {
+          "time": "2026-09-14T23:00:00+08:00",
+          "temp": 27,
+          "humidity": 83,
+          "weatherCode": "07",
+          "weather": "小雨",
+          "windDirCode": "2",
+          "rain": true,
+          "rainLevel": "light"
+        },
+        {
           "time": "2026-09-15T02:00:00+08:00",
           "temp": 27,
           "humidity": 89,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "7",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T05:00:00+08:00",
           "temp": 26,
           "humidity": 88,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T08:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 87,
           "weatherCode": "01",
           "weather": "多云",
@@ -21270,8 +21270,8 @@
           "time": "2026-09-15T14:00:00+08:00",
           "temp": 31,
           "humidity": 71,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
           "rainLevel": "light"
@@ -21280,8 +21280,8 @@
           "time": "2026-09-15T17:00:00+08:00",
           "temp": 33,
           "humidity": 66,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "2",
           "rain": true,
           "rainLevel": "light"
@@ -21290,8 +21290,8 @@
           "time": "2026-09-15T20:00:00+08:00",
           "temp": 30,
           "humidity": 70,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "3",
           "rain": true,
           "rainLevel": "light"
@@ -21300,31 +21300,31 @@
           "time": "2026-09-15T23:00:00+08:00",
           "temp": 27,
           "humidity": 82,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T02:00:00+08:00",
           "temp": 26,
           "humidity": 83,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-16T05:00:00+08:00",
           "temp": 26,
           "humidity": 86,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T08:00:00+08:00",
@@ -21418,47 +21418,47 @@
         },
         {
           "time": "2026-09-17T11:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 59,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "1",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T14:00:00+08:00",
-          "temp": 30,
+          "temp": 32,
           "humidity": 66,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T17:00:00+08:00",
-          "temp": 32,
+          "temp": 33,
           "humidity": 66,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T20:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 69,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T23:00:00+08:00",
-          "temp": 28,
+          "temp": 30,
           "humidity": 77,
           "weatherCode": "00",
           "weather": "晴",
@@ -21468,7 +21468,7 @@
         },
         {
           "time": "2026-09-18T02:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 79,
           "weatherCode": "07",
           "weather": "小雨",
@@ -21478,7 +21478,7 @@
         },
         {
           "time": "2026-09-18T05:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 83,
           "weatherCode": "01",
           "weather": "多云",
@@ -21488,6 +21488,14 @@
         }
       ],
       "observed": [
+        {
+          "time": "11",
+          "temp": 28.3,
+          "humidity": 62,
+          "rainMm": 0,
+          "windDir": "西北风",
+          "windLevel": 3
+        },
         {
           "time": "10",
           "temp": 27.3,
@@ -21679,19 +21687,11 @@
           "rainMm": 0,
           "windDir": "北风",
           "windLevel": 2
-        },
-        {
-          "time": "10",
-          "temp": 25.4,
-          "humidity": 83,
-          "rainMm": 0,
-          "windDir": "北风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097541,
+        "serverTime": 1789098357,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -21835,7 +21835,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -21885,7 +21885,7 @@
         "localIntensity": null
       },
       "today": {
-        "high": 32,
+        "high": 31,
         "low": 24
       }
     },
@@ -21893,16 +21893,16 @@
       "code": "101280102",
       "id": "gzhmu-panyu",
       "name": "番禺",
-      "updatedAt": "07:30更新",
+      "updatedAt": "11:30更新",
       "current": {
         "temp": 28.9,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "62%",
+        "humidity": "61%",
         "windDir": "东北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:10"
+        "updatedAt": "09月11日(星期五) 11:25"
       },
       "hourly": [
         {
@@ -21947,7 +21947,7 @@
         },
         {
           "time": "2026-09-11T12:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -21957,7 +21957,7 @@
         },
         {
           "time": "2026-09-11T13:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -21967,7 +21967,7 @@
         },
         {
           "time": "2026-09-11T14:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -21977,7 +21977,7 @@
         },
         {
           "time": "2026-09-11T15:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -21987,7 +21987,7 @@
         },
         {
           "time": "2026-09-11T16:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 61,
           "weatherCode": "00",
           "weather": "晴",
@@ -21997,7 +21997,7 @@
         },
         {
           "time": "2026-09-11T17:00:00+08:00",
-          "temp": 32,
+          "temp": 31,
           "humidity": 60,
           "weatherCode": "00",
           "weather": "晴",
@@ -22017,7 +22017,7 @@
         },
         {
           "time": "2026-09-11T19:00:00+08:00",
-          "temp": 29,
+          "temp": 28,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -22027,7 +22027,7 @@
         },
         {
           "time": "2026-09-11T20:00:00+08:00",
-          "temp": 28,
+          "temp": 27,
           "humidity": 64,
           "weatherCode": "00",
           "weather": "晴",
@@ -22047,7 +22047,7 @@
         },
         {
           "time": "2026-09-11T22:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -22057,7 +22057,7 @@
         },
         {
           "time": "2026-09-11T23:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -22637,36 +22637,16 @@
         },
         {
           "time": "2026-09-14T11:00:00+08:00",
-          "temp": 31,
+          "temp": 29,
           "humidity": 67,
-          "weatherCode": "09",
-          "weather": "大雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
-          "rainLevel": "heavy"
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-14T14:00:00+08:00",
-          "temp": 31,
-          "humidity": 75,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T17:00:00+08:00",
-          "temp": 31,
-          "humidity": 73,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T20:00:00+08:00",
           "temp": 29,
           "humidity": 75,
           "weatherCode": "01",
@@ -22676,9 +22656,9 @@
           "rainLevel": "none"
         },
         {
-          "time": "2026-09-14T23:00:00+08:00",
-          "temp": 28,
-          "humidity": 83,
+          "time": "2026-09-14T17:00:00+08:00",
+          "temp": 29,
+          "humidity": 73,
           "weatherCode": "01",
           "weather": "多云",
           "windDirCode": "2",
@@ -22686,28 +22666,48 @@
           "rainLevel": "none"
         },
         {
+          "time": "2026-09-14T20:00:00+08:00",
+          "temp": 28,
+          "humidity": 75,
+          "weatherCode": "01",
+          "weather": "多云",
+          "windDirCode": "2",
+          "rain": false,
+          "rainLevel": "none"
+        },
+        {
+          "time": "2026-09-14T23:00:00+08:00",
+          "temp": 27,
+          "humidity": 83,
+          "weatherCode": "07",
+          "weather": "小雨",
+          "windDirCode": "2",
+          "rain": true,
+          "rainLevel": "light"
+        },
+        {
           "time": "2026-09-15T02:00:00+08:00",
           "temp": 27,
           "humidity": 89,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "7",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T05:00:00+08:00",
           "temp": 26,
           "humidity": 88,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T08:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 87,
           "weatherCode": "01",
           "weather": "多云",
@@ -22729,8 +22729,8 @@
           "time": "2026-09-15T14:00:00+08:00",
           "temp": 31,
           "humidity": 71,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
           "rainLevel": "light"
@@ -22739,8 +22739,8 @@
           "time": "2026-09-15T17:00:00+08:00",
           "temp": 33,
           "humidity": 66,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "2",
           "rain": true,
           "rainLevel": "light"
@@ -22749,8 +22749,8 @@
           "time": "2026-09-15T20:00:00+08:00",
           "temp": 30,
           "humidity": 70,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "3",
           "rain": true,
           "rainLevel": "light"
@@ -22759,31 +22759,31 @@
           "time": "2026-09-15T23:00:00+08:00",
           "temp": 27,
           "humidity": 82,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T02:00:00+08:00",
           "temp": 26,
           "humidity": 83,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-16T05:00:00+08:00",
           "temp": 26,
           "humidity": 86,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T08:00:00+08:00",
@@ -22877,47 +22877,47 @@
         },
         {
           "time": "2026-09-17T11:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 59,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "1",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T14:00:00+08:00",
-          "temp": 30,
+          "temp": 32,
           "humidity": 66,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T17:00:00+08:00",
-          "temp": 32,
+          "temp": 33,
           "humidity": 66,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T20:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 69,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T23:00:00+08:00",
-          "temp": 28,
+          "temp": 30,
           "humidity": 77,
           "weatherCode": "00",
           "weather": "晴",
@@ -22927,7 +22927,7 @@
         },
         {
           "time": "2026-09-18T02:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 79,
           "weatherCode": "07",
           "weather": "小雨",
@@ -22937,7 +22937,7 @@
         },
         {
           "time": "2026-09-18T05:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 83,
           "weatherCode": "01",
           "weather": "多云",
@@ -22947,6 +22947,14 @@
         }
       ],
       "observed": [
+        {
+          "time": "11",
+          "temp": 28.3,
+          "humidity": 62,
+          "rainMm": 0,
+          "windDir": "西北风",
+          "windLevel": 3
+        },
         {
           "time": "10",
           "temp": 27.3,
@@ -23138,19 +23146,11 @@
           "rainMm": 0,
           "windDir": "北风",
           "windLevel": 2
-        },
-        {
-          "time": "10",
-          "temp": 25.4,
-          "humidity": 83,
-          "rainMm": 0,
-          "windDir": "北风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097542,
+        "serverTime": 1789098358,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -23294,7 +23294,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -23344,7 +23344,7 @@
         "localIntensity": null
       },
       "today": {
-        "high": 32,
+        "high": 31,
         "low": 24
       }
     },
@@ -23352,16 +23352,16 @@
       "code": "101280102",
       "id": "gdpu-uc",
       "name": "番禺",
-      "updatedAt": "07:30更新",
+      "updatedAt": "11:30更新",
       "current": {
         "temp": 28.9,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "62%",
+        "humidity": "61%",
         "windDir": "东北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:10"
+        "updatedAt": "09月11日(星期五) 11:25"
       },
       "hourly": [
         {
@@ -23406,7 +23406,7 @@
         },
         {
           "time": "2026-09-11T12:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -23416,7 +23416,7 @@
         },
         {
           "time": "2026-09-11T13:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -23426,7 +23426,7 @@
         },
         {
           "time": "2026-09-11T14:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -23436,7 +23436,7 @@
         },
         {
           "time": "2026-09-11T15:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -23446,7 +23446,7 @@
         },
         {
           "time": "2026-09-11T16:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 61,
           "weatherCode": "00",
           "weather": "晴",
@@ -23456,7 +23456,7 @@
         },
         {
           "time": "2026-09-11T17:00:00+08:00",
-          "temp": 32,
+          "temp": 31,
           "humidity": 60,
           "weatherCode": "00",
           "weather": "晴",
@@ -23476,7 +23476,7 @@
         },
         {
           "time": "2026-09-11T19:00:00+08:00",
-          "temp": 29,
+          "temp": 28,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -23486,7 +23486,7 @@
         },
         {
           "time": "2026-09-11T20:00:00+08:00",
-          "temp": 28,
+          "temp": 27,
           "humidity": 64,
           "weatherCode": "00",
           "weather": "晴",
@@ -23506,7 +23506,7 @@
         },
         {
           "time": "2026-09-11T22:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -23516,7 +23516,7 @@
         },
         {
           "time": "2026-09-11T23:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -24096,36 +24096,16 @@
         },
         {
           "time": "2026-09-14T11:00:00+08:00",
-          "temp": 31,
+          "temp": 29,
           "humidity": 67,
-          "weatherCode": "09",
-          "weather": "大雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
-          "rainLevel": "heavy"
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-14T14:00:00+08:00",
-          "temp": 31,
-          "humidity": 75,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T17:00:00+08:00",
-          "temp": 31,
-          "humidity": 73,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T20:00:00+08:00",
           "temp": 29,
           "humidity": 75,
           "weatherCode": "01",
@@ -24135,9 +24115,9 @@
           "rainLevel": "none"
         },
         {
-          "time": "2026-09-14T23:00:00+08:00",
-          "temp": 28,
-          "humidity": 83,
+          "time": "2026-09-14T17:00:00+08:00",
+          "temp": 29,
+          "humidity": 73,
           "weatherCode": "01",
           "weather": "多云",
           "windDirCode": "2",
@@ -24145,28 +24125,48 @@
           "rainLevel": "none"
         },
         {
+          "time": "2026-09-14T20:00:00+08:00",
+          "temp": 28,
+          "humidity": 75,
+          "weatherCode": "01",
+          "weather": "多云",
+          "windDirCode": "2",
+          "rain": false,
+          "rainLevel": "none"
+        },
+        {
+          "time": "2026-09-14T23:00:00+08:00",
+          "temp": 27,
+          "humidity": 83,
+          "weatherCode": "07",
+          "weather": "小雨",
+          "windDirCode": "2",
+          "rain": true,
+          "rainLevel": "light"
+        },
+        {
           "time": "2026-09-15T02:00:00+08:00",
           "temp": 27,
           "humidity": 89,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "7",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T05:00:00+08:00",
           "temp": 26,
           "humidity": 88,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T08:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 87,
           "weatherCode": "01",
           "weather": "多云",
@@ -24188,8 +24188,8 @@
           "time": "2026-09-15T14:00:00+08:00",
           "temp": 31,
           "humidity": 71,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
           "rainLevel": "light"
@@ -24198,8 +24198,8 @@
           "time": "2026-09-15T17:00:00+08:00",
           "temp": 33,
           "humidity": 66,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "2",
           "rain": true,
           "rainLevel": "light"
@@ -24208,8 +24208,8 @@
           "time": "2026-09-15T20:00:00+08:00",
           "temp": 30,
           "humidity": 70,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "3",
           "rain": true,
           "rainLevel": "light"
@@ -24218,31 +24218,31 @@
           "time": "2026-09-15T23:00:00+08:00",
           "temp": 27,
           "humidity": 82,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T02:00:00+08:00",
           "temp": 26,
           "humidity": 83,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-16T05:00:00+08:00",
           "temp": 26,
           "humidity": 86,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T08:00:00+08:00",
@@ -24336,47 +24336,47 @@
         },
         {
           "time": "2026-09-17T11:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 59,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "1",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T14:00:00+08:00",
-          "temp": 30,
+          "temp": 32,
           "humidity": 66,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T17:00:00+08:00",
-          "temp": 32,
+          "temp": 33,
           "humidity": 66,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T20:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 69,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T23:00:00+08:00",
-          "temp": 28,
+          "temp": 30,
           "humidity": 77,
           "weatherCode": "00",
           "weather": "晴",
@@ -24386,7 +24386,7 @@
         },
         {
           "time": "2026-09-18T02:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 79,
           "weatherCode": "07",
           "weather": "小雨",
@@ -24396,7 +24396,7 @@
         },
         {
           "time": "2026-09-18T05:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 83,
           "weatherCode": "01",
           "weather": "多云",
@@ -24406,6 +24406,14 @@
         }
       ],
       "observed": [
+        {
+          "time": "11",
+          "temp": 28.3,
+          "humidity": 62,
+          "rainMm": 0,
+          "windDir": "西北风",
+          "windLevel": 3
+        },
         {
           "time": "10",
           "temp": 27.3,
@@ -24597,19 +24605,11 @@
           "rainMm": 0,
           "windDir": "北风",
           "windLevel": 2
-        },
-        {
-          "time": "10",
-          "temp": 25.4,
-          "humidity": 83,
-          "rainMm": 0,
-          "windDir": "北风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097541,
+        "serverTime": 1789098357,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -24753,7 +24753,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -24803,7 +24803,7 @@
         "localIntensity": null
       },
       "today": {
-        "high": 32,
+        "high": 31,
         "low": 24
       }
     },
@@ -24813,14 +24813,14 @@
       "name": "广州",
       "updatedAt": "11:30更新",
       "current": {
-        "temp": 29.4,
+        "temp": 29.3,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "59%",
-        "windDir": "北风",
+        "humidity": "62%",
+        "windDir": "东北风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -25866,6 +25866,14 @@
       ],
       "observed": [
         {
+          "time": "11",
+          "temp": 29.1,
+          "humidity": 61,
+          "rainMm": 0,
+          "windDir": "东北风",
+          "windLevel": 2
+        },
+        {
           "time": "10",
           "temp": 27.5,
           "humidity": 61,
@@ -26056,19 +26064,11 @@
           "rainMm": 0,
           "windDir": "北风",
           "windLevel": 3
-        },
-        {
-          "time": "10",
-          "temp": 28,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "东风",
-          "windLevel": 1
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097542,
+        "serverTime": 1789098358,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -26212,7 +26212,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -26272,14 +26272,14 @@
       "name": "广州",
       "updatedAt": "11:30更新",
       "current": {
-        "temp": 29.4,
+        "temp": 29.3,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "59%",
-        "windDir": "北风",
+        "humidity": "62%",
+        "windDir": "东北风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -27325,6 +27325,14 @@
       ],
       "observed": [
         {
+          "time": "11",
+          "temp": 29.1,
+          "humidity": 61,
+          "rainMm": 0,
+          "windDir": "东北风",
+          "windLevel": 2
+        },
+        {
           "time": "10",
           "temp": 27.5,
           "humidity": 61,
@@ -27515,19 +27523,11 @@
           "rainMm": 0,
           "windDir": "北风",
           "windLevel": 3
-        },
-        {
-          "time": "10",
-          "temp": 28,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "东风",
-          "windLevel": 1
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097542,
+        "serverTime": 1789098358,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -27671,7 +27671,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -27729,16 +27729,16 @@
       "code": "101280102",
       "id": "xhyy-uc",
       "name": "番禺",
-      "updatedAt": "07:30更新",
+      "updatedAt": "11:30更新",
       "current": {
         "temp": 28.9,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "62%",
+        "humidity": "61%",
         "windDir": "东北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:10"
+        "updatedAt": "09月11日(星期五) 11:25"
       },
       "hourly": [
         {
@@ -27783,7 +27783,7 @@
         },
         {
           "time": "2026-09-11T12:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -27793,7 +27793,7 @@
         },
         {
           "time": "2026-09-11T13:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -27803,7 +27803,7 @@
         },
         {
           "time": "2026-09-11T14:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -27813,7 +27813,7 @@
         },
         {
           "time": "2026-09-11T15:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -27823,7 +27823,7 @@
         },
         {
           "time": "2026-09-11T16:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 61,
           "weatherCode": "00",
           "weather": "晴",
@@ -27833,7 +27833,7 @@
         },
         {
           "time": "2026-09-11T17:00:00+08:00",
-          "temp": 32,
+          "temp": 31,
           "humidity": 60,
           "weatherCode": "00",
           "weather": "晴",
@@ -27853,7 +27853,7 @@
         },
         {
           "time": "2026-09-11T19:00:00+08:00",
-          "temp": 29,
+          "temp": 28,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -27863,7 +27863,7 @@
         },
         {
           "time": "2026-09-11T20:00:00+08:00",
-          "temp": 28,
+          "temp": 27,
           "humidity": 64,
           "weatherCode": "00",
           "weather": "晴",
@@ -27883,7 +27883,7 @@
         },
         {
           "time": "2026-09-11T22:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -27893,7 +27893,7 @@
         },
         {
           "time": "2026-09-11T23:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -28473,36 +28473,16 @@
         },
         {
           "time": "2026-09-14T11:00:00+08:00",
-          "temp": 31,
+          "temp": 29,
           "humidity": 67,
-          "weatherCode": "09",
-          "weather": "大雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
-          "rainLevel": "heavy"
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-14T14:00:00+08:00",
-          "temp": 31,
-          "humidity": 75,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T17:00:00+08:00",
-          "temp": 31,
-          "humidity": 73,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T20:00:00+08:00",
           "temp": 29,
           "humidity": 75,
           "weatherCode": "01",
@@ -28512,9 +28492,9 @@
           "rainLevel": "none"
         },
         {
-          "time": "2026-09-14T23:00:00+08:00",
-          "temp": 28,
-          "humidity": 83,
+          "time": "2026-09-14T17:00:00+08:00",
+          "temp": 29,
+          "humidity": 73,
           "weatherCode": "01",
           "weather": "多云",
           "windDirCode": "2",
@@ -28522,28 +28502,48 @@
           "rainLevel": "none"
         },
         {
+          "time": "2026-09-14T20:00:00+08:00",
+          "temp": 28,
+          "humidity": 75,
+          "weatherCode": "01",
+          "weather": "多云",
+          "windDirCode": "2",
+          "rain": false,
+          "rainLevel": "none"
+        },
+        {
+          "time": "2026-09-14T23:00:00+08:00",
+          "temp": 27,
+          "humidity": 83,
+          "weatherCode": "07",
+          "weather": "小雨",
+          "windDirCode": "2",
+          "rain": true,
+          "rainLevel": "light"
+        },
+        {
           "time": "2026-09-15T02:00:00+08:00",
           "temp": 27,
           "humidity": 89,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "7",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T05:00:00+08:00",
           "temp": 26,
           "humidity": 88,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T08:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 87,
           "weatherCode": "01",
           "weather": "多云",
@@ -28565,8 +28565,8 @@
           "time": "2026-09-15T14:00:00+08:00",
           "temp": 31,
           "humidity": 71,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
           "rainLevel": "light"
@@ -28575,8 +28575,8 @@
           "time": "2026-09-15T17:00:00+08:00",
           "temp": 33,
           "humidity": 66,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "2",
           "rain": true,
           "rainLevel": "light"
@@ -28585,8 +28585,8 @@
           "time": "2026-09-15T20:00:00+08:00",
           "temp": 30,
           "humidity": 70,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "3",
           "rain": true,
           "rainLevel": "light"
@@ -28595,31 +28595,31 @@
           "time": "2026-09-15T23:00:00+08:00",
           "temp": 27,
           "humidity": 82,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T02:00:00+08:00",
           "temp": 26,
           "humidity": 83,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-16T05:00:00+08:00",
           "temp": 26,
           "humidity": 86,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T08:00:00+08:00",
@@ -28713,47 +28713,47 @@
         },
         {
           "time": "2026-09-17T11:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 59,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "1",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T14:00:00+08:00",
-          "temp": 30,
+          "temp": 32,
           "humidity": 66,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T17:00:00+08:00",
-          "temp": 32,
+          "temp": 33,
           "humidity": 66,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T20:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 69,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T23:00:00+08:00",
-          "temp": 28,
+          "temp": 30,
           "humidity": 77,
           "weatherCode": "00",
           "weather": "晴",
@@ -28763,7 +28763,7 @@
         },
         {
           "time": "2026-09-18T02:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 79,
           "weatherCode": "07",
           "weather": "小雨",
@@ -28773,7 +28773,7 @@
         },
         {
           "time": "2026-09-18T05:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 83,
           "weatherCode": "01",
           "weather": "多云",
@@ -28783,6 +28783,14 @@
         }
       ],
       "observed": [
+        {
+          "time": "11",
+          "temp": 28.3,
+          "humidity": 62,
+          "rainMm": 0,
+          "windDir": "西北风",
+          "windLevel": 3
+        },
         {
           "time": "10",
           "temp": 27.3,
@@ -28974,19 +28982,11 @@
           "rainMm": 0,
           "windDir": "北风",
           "windLevel": 2
-        },
-        {
-          "time": "10",
-          "temp": 25.4,
-          "humidity": 83,
-          "rainMm": 0,
-          "windDir": "北风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097542,
+        "serverTime": 1789098358,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -29130,7 +29130,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -29180,7 +29180,7 @@
         "localIntensity": null
       },
       "today": {
-        "high": 32,
+        "high": 31,
         "low": 24
       }
     },
@@ -29188,16 +29188,16 @@
       "code": "101280102",
       "id": "gafa-uc",
       "name": "番禺",
-      "updatedAt": "07:30更新",
+      "updatedAt": "11:30更新",
       "current": {
         "temp": 28.9,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "62%",
+        "humidity": "61%",
         "windDir": "东北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:10"
+        "updatedAt": "09月11日(星期五) 11:25"
       },
       "hourly": [
         {
@@ -29242,7 +29242,7 @@
         },
         {
           "time": "2026-09-11T12:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -29252,7 +29252,7 @@
         },
         {
           "time": "2026-09-11T13:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -29262,7 +29262,7 @@
         },
         {
           "time": "2026-09-11T14:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -29272,7 +29272,7 @@
         },
         {
           "time": "2026-09-11T15:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 62,
           "weatherCode": "00",
           "weather": "晴",
@@ -29282,7 +29282,7 @@
         },
         {
           "time": "2026-09-11T16:00:00+08:00",
-          "temp": 31,
+          "temp": 30,
           "humidity": 61,
           "weatherCode": "00",
           "weather": "晴",
@@ -29292,7 +29292,7 @@
         },
         {
           "time": "2026-09-11T17:00:00+08:00",
-          "temp": 32,
+          "temp": 31,
           "humidity": 60,
           "weatherCode": "00",
           "weather": "晴",
@@ -29312,7 +29312,7 @@
         },
         {
           "time": "2026-09-11T19:00:00+08:00",
-          "temp": 29,
+          "temp": 28,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -29322,7 +29322,7 @@
         },
         {
           "time": "2026-09-11T20:00:00+08:00",
-          "temp": 28,
+          "temp": 27,
           "humidity": 64,
           "weatherCode": "00",
           "weather": "晴",
@@ -29342,7 +29342,7 @@
         },
         {
           "time": "2026-09-11T22:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -29352,7 +29352,7 @@
         },
         {
           "time": "2026-09-11T23:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -29932,36 +29932,16 @@
         },
         {
           "time": "2026-09-14T11:00:00+08:00",
-          "temp": 31,
+          "temp": 29,
           "humidity": 67,
-          "weatherCode": "09",
-          "weather": "大雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
-          "rainLevel": "heavy"
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-14T14:00:00+08:00",
-          "temp": 31,
-          "humidity": 75,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T17:00:00+08:00",
-          "temp": 31,
-          "humidity": 73,
-          "weatherCode": "01",
-          "weather": "多云",
-          "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
-        },
-        {
-          "time": "2026-09-14T20:00:00+08:00",
           "temp": 29,
           "humidity": 75,
           "weatherCode": "01",
@@ -29971,9 +29951,9 @@
           "rainLevel": "none"
         },
         {
-          "time": "2026-09-14T23:00:00+08:00",
-          "temp": 28,
-          "humidity": 83,
+          "time": "2026-09-14T17:00:00+08:00",
+          "temp": 29,
+          "humidity": 73,
           "weatherCode": "01",
           "weather": "多云",
           "windDirCode": "2",
@@ -29981,28 +29961,48 @@
           "rainLevel": "none"
         },
         {
+          "time": "2026-09-14T20:00:00+08:00",
+          "temp": 28,
+          "humidity": 75,
+          "weatherCode": "01",
+          "weather": "多云",
+          "windDirCode": "2",
+          "rain": false,
+          "rainLevel": "none"
+        },
+        {
+          "time": "2026-09-14T23:00:00+08:00",
+          "temp": 27,
+          "humidity": 83,
+          "weatherCode": "07",
+          "weather": "小雨",
+          "windDirCode": "2",
+          "rain": true,
+          "rainLevel": "light"
+        },
+        {
           "time": "2026-09-15T02:00:00+08:00",
           "temp": 27,
           "humidity": 89,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "7",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T05:00:00+08:00",
           "temp": 26,
           "humidity": 88,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T08:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 87,
           "weatherCode": "01",
           "weather": "多云",
@@ -30024,8 +30024,8 @@
           "time": "2026-09-15T14:00:00+08:00",
           "temp": 31,
           "humidity": 71,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
           "rain": true,
           "rainLevel": "light"
@@ -30034,8 +30034,8 @@
           "time": "2026-09-15T17:00:00+08:00",
           "temp": 33,
           "humidity": 66,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "2",
           "rain": true,
           "rainLevel": "light"
@@ -30044,8 +30044,8 @@
           "time": "2026-09-15T20:00:00+08:00",
           "temp": 30,
           "humidity": 70,
-          "weatherCode": "04",
-          "weather": "雷阵雨",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "3",
           "rain": true,
           "rainLevel": "light"
@@ -30054,31 +30054,31 @@
           "time": "2026-09-15T23:00:00+08:00",
           "temp": 27,
           "humidity": 82,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "2",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T02:00:00+08:00",
           "temp": 26,
           "humidity": 83,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-16T05:00:00+08:00",
           "temp": 26,
           "humidity": 86,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-16T08:00:00+08:00",
@@ -30172,47 +30172,47 @@
         },
         {
           "time": "2026-09-17T11:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 59,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "1",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T14:00:00+08:00",
-          "temp": 30,
+          "temp": 32,
           "humidity": 66,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T17:00:00+08:00",
-          "temp": 32,
+          "temp": 33,
           "humidity": 66,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T20:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 69,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T23:00:00+08:00",
-          "temp": 28,
+          "temp": 30,
           "humidity": 77,
           "weatherCode": "00",
           "weather": "晴",
@@ -30222,7 +30222,7 @@
         },
         {
           "time": "2026-09-18T02:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 79,
           "weatherCode": "07",
           "weather": "小雨",
@@ -30232,7 +30232,7 @@
         },
         {
           "time": "2026-09-18T05:00:00+08:00",
-          "temp": 25,
+          "temp": 27,
           "humidity": 83,
           "weatherCode": "01",
           "weather": "多云",
@@ -30242,6 +30242,14 @@
         }
       ],
       "observed": [
+        {
+          "time": "11",
+          "temp": 28.3,
+          "humidity": 62,
+          "rainMm": 0,
+          "windDir": "西北风",
+          "windLevel": 3
+        },
         {
           "time": "10",
           "temp": 27.3,
@@ -30433,19 +30441,11 @@
           "rainMm": 0,
           "windDir": "北风",
           "windLevel": 2
-        },
-        {
-          "time": "10",
-          "temp": 25.4,
-          "humidity": 83,
-          "rainMm": 0,
-          "windDir": "北风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097542,
+        "serverTime": 1789098358,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -30589,7 +30589,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -30639,7 +30639,7 @@
         "localIntensity": null
       },
       "today": {
-        "high": 32,
+        "high": 31,
         "low": 24
       }
     },
@@ -30649,14 +30649,14 @@
       "name": "广州",
       "updatedAt": "11:30更新",
       "current": {
-        "temp": 29.4,
+        "temp": 29.3,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "59%",
-        "windDir": "北风",
+        "humidity": "62%",
+        "windDir": "东北风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -31702,6 +31702,14 @@
       ],
       "observed": [
         {
+          "time": "11",
+          "temp": 29.1,
+          "humidity": 61,
+          "rainMm": 0,
+          "windDir": "东北风",
+          "windLevel": 2
+        },
+        {
           "time": "10",
           "temp": 27.5,
           "humidity": 61,
@@ -31892,19 +31900,11 @@
           "rainMm": 0,
           "windDir": "北风",
           "windLevel": 3
-        },
-        {
-          "time": "10",
-          "temp": 28,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "东风",
-          "windLevel": 1
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097542,
+        "serverTime": 1789098358,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -32048,7 +32048,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -32108,14 +32108,14 @@
       "name": "深圳",
       "updatedAt": "11:30更新",
       "current": {
-        "temp": 29.7,
+        "temp": 29.9,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "60%",
+        "humidity": "58%",
         "windDir": "北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:10"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -33363,7 +33363,7 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097542,
+        "serverTime": 1789098358,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -33507,7 +33507,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -33567,14 +33567,14 @@
       "name": "深圳",
       "updatedAt": "11:30更新",
       "current": {
-        "temp": 29.7,
+        "temp": 29.9,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "60%",
+        "humidity": "58%",
         "windDir": "北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:10"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -34822,7 +34822,7 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097542,
+        "serverTime": 1789098358,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -34966,7 +34966,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097545,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -35026,14 +35026,14 @@
       "name": "深圳",
       "updatedAt": "11:30更新",
       "current": {
-        "temp": 29.7,
+        "temp": 29.9,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "60%",
+        "humidity": "58%",
         "windDir": "北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:10"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -36281,7 +36281,7 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097543,
+        "serverTime": 1789098359,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -36425,7 +36425,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -36485,14 +36485,14 @@
       "name": "深圳",
       "updatedAt": "11:30更新",
       "current": {
-        "temp": 29.7,
+        "temp": 29.9,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "60%",
+        "humidity": "58%",
         "windDir": "北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:10"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -37740,7 +37740,7 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097543,
+        "serverTime": 1789098359,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -37884,7 +37884,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098361,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -37944,14 +37944,14 @@
       "name": "深圳",
       "updatedAt": "11:30更新",
       "current": {
-        "temp": 29.7,
+        "temp": 29.9,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "60%",
+        "humidity": "58%",
         "windDir": "北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:10"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -39199,7 +39199,7 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097543,
+        "serverTime": 1789098359,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -39343,7 +39343,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -39403,14 +39403,14 @@
       "name": "珠海",
       "updatedAt": "07:30更新",
       "current": {
-        "temp": 29.1,
+        "temp": 29.6,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "62%",
+        "humidity": "61%",
         "windDir": "东北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -40658,7 +40658,7 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097543,
+        "serverTime": 1789098359,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -40802,7 +40802,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -40862,14 +40862,14 @@
       "name": "珠海",
       "updatedAt": "07:30更新",
       "current": {
-        "temp": 29.1,
+        "temp": 29.6,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "62%",
+        "humidity": "61%",
         "windDir": "东北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -42117,7 +42117,7 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097543,
+        "serverTime": 1789098359,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -42261,7 +42261,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -42321,14 +42321,14 @@
       "name": "金湾",
       "updatedAt": "07:30更新",
       "current": {
-        "temp": 29.1,
+        "temp": 29.6,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "62%",
+        "humidity": "61%",
         "windDir": "东北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -43576,7 +43576,7 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097543,
+        "serverTime": 1789098359,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -43714,13 +43714,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 176.83,
+        "nearestRainKm": 178.51,
         "nearestRainIntensity": 0.1875,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -43778,16 +43778,16 @@
       "code": "101280501",
       "id": "stu-shantou",
       "name": "汕头",
-      "updatedAt": "11:30更新",
+      "updatedAt": "07:30更新",
       "current": {
-        "temp": 31.1,
+        "temp": 31.9,
         "weather": "多云",
         "weatherCode": "d01",
         "humidity": "50%",
         "windDir": "东风",
-        "windScale": "2级",
+        "windScale": "1级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:10"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -44524,8 +44524,8 @@
           "time": "2026-09-14T11:00:00+08:00",
           "temp": 31,
           "humidity": 65,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "04",
+          "weather": "雷阵雨",
           "windDirCode": "1",
           "rain": true,
           "rainLevel": "light"
@@ -44534,8 +44534,8 @@
           "time": "2026-09-14T14:00:00+08:00",
           "temp": 33,
           "humidity": 69,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "04",
+          "weather": "雷阵雨",
           "windDirCode": "2",
           "rain": true,
           "rainLevel": "light"
@@ -44544,8 +44544,8 @@
           "time": "2026-09-14T17:00:00+08:00",
           "temp": 32,
           "humidity": 77,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "04",
+          "weather": "雷阵雨",
           "windDirCode": "2",
           "rain": true,
           "rainLevel": "light"
@@ -44554,8 +44554,8 @@
           "time": "2026-09-14T20:00:00+08:00",
           "temp": 26,
           "humidity": 77,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "04",
+          "weather": "雷阵雨",
           "windDirCode": "8",
           "rain": true,
           "rainLevel": "light"
@@ -44564,81 +44564,81 @@
           "time": "2026-09-14T23:00:00+08:00",
           "temp": 26,
           "humidity": 77,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "7",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-15T02:00:00+08:00",
           "temp": 26,
           "humidity": 81,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "7",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-15T05:00:00+08:00",
           "temp": 26,
           "humidity": 82,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "7",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-15T08:00:00+08:00",
           "temp": 28,
           "humidity": 81,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "8",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-15T11:00:00+08:00",
           "temp": 31,
           "humidity": 73,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-15T14:00:00+08:00",
           "temp": 32,
           "humidity": 74,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-15T17:00:00+08:00",
           "temp": 32,
           "humidity": 74,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-15T20:00:00+08:00",
           "temp": 29,
           "humidity": 74,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-15T23:00:00+08:00",
@@ -44764,18 +44764,18 @@
           "time": "2026-09-17T11:00:00+08:00",
           "temp": 30,
           "humidity": 61,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "00",
+          "weather": "晴",
           "windDirCode": "2",
           "rain": false,
           "rainLevel": "none"
         },
         {
           "time": "2026-09-17T14:00:00+08:00",
-          "temp": 32,
+          "temp": 33,
           "humidity": 67,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "00",
+          "weather": "晴",
           "windDirCode": "2",
           "rain": false,
           "rainLevel": "none"
@@ -44784,8 +44784,8 @@
           "time": "2026-09-17T17:00:00+08:00",
           "temp": 31,
           "humidity": 68,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "00",
+          "weather": "晴",
           "windDirCode": "2",
           "rain": false,
           "rainLevel": "none"
@@ -44794,21 +44794,21 @@
           "time": "2026-09-17T20:00:00+08:00",
           "temp": 28,
           "humidity": 68,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "00",
+          "weather": "晴",
           "windDirCode": "2",
           "rain": false,
           "rainLevel": "none"
         },
         {
           "time": "2026-09-17T23:00:00+08:00",
-          "temp": 27,
+          "temp": 28,
           "humidity": 77,
-          "weatherCode": "00",
-          "weather": "晴",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-18T02:00:00+08:00",
@@ -44824,22 +44824,14 @@
           "time": "2026-09-18T05:00:00+08:00",
           "temp": 27,
           "humidity": 72,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "1",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         }
       ],
       "observed": [
-        {
-          "time": "11",
-          "temp": 31.2,
-          "humidity": 50,
-          "rainMm": 0,
-          "windDir": "东南风",
-          "windLevel": 2
-        },
         {
           "time": "10",
           "temp": 30.5,
@@ -45031,11 +45023,19 @@
           "rainMm": 0,
           "windDir": "东风",
           "windLevel": 2
+        },
+        {
+          "time": "10",
+          "temp": 30.5,
+          "humidity": 54,
+          "rainMm": 0,
+          "windDir": "东风",
+          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097543,
+        "serverTime": 1789098359,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -45173,13 +45173,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 175,
+        "nearestRainKm": 167.05,
         "nearestRainIntensity": 0.1875,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097544,
+        "serverTime": 1789098360,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -45209,12 +45209,12 @@
         ],
         "probability": [
           0,
-          0,
           0.01,
           0.01,
           0.01,
           0.01,
           0.01,
+          0.02,
           0.02
         ],
         "rainyMinutes2h": 0,
@@ -45239,14 +45239,14 @@
       "name": "麻章",
       "updatedAt": "11:30更新",
       "current": {
-        "temp": 26.5,
+        "temp": 26.6,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "73%",
+        "humidity": "72%",
         "windDir": "北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -46494,9 +46494,9 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097543,
+        "serverTime": 1789098359,
         "datasource": "radar",
-        "description": "最近的降雨带在西南39公里外呢",
+        "description": "最近的降雨带在西南76公里外呢",
         "probability": [
           0,
           0,
@@ -46632,11 +46632,61 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 39.2,
+        "nearestRainKm": 75.69,
         "nearestRainIntensity": 0.1875,
         "localIntensity": 0
       },
-      "nowcastAlt": null,
+      "nowcastAlt": {
+        "source": "Open-Meteo 15分钟临近预报（无Key）",
+        "serverTime": 1789098360,
+        "intervalMinutes": 15,
+        "precipitation15": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "probability": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rainyMinutes2h": 0,
+        "dryMinutes2h": 120,
+        "maxIntensity": 0.1,
+        "rainNow": false,
+        "rainStartsInMin": 150,
+        "rainEndsInMin": null,
+        "trend": "none",
+        "nearestRainKm": null,
+        "nearestRainIntensity": null,
+        "localIntensity": null
+      },
       "today": {
         "high": 31,
         "low": 25
@@ -46646,16 +46696,16 @@
       "code": "101281107",
       "id": "wyu-jiangmen",
       "name": "蓬江",
-      "updatedAt": "11:30更新",
+      "updatedAt": "07:30更新",
       "current": {
-        "temp": 29.1,
+        "temp": 29.3,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "58%",
-        "windDir": "北风",
-        "windScale": "4级",
+        "humidity": "56%",
+        "windDir": "东北风",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -46690,7 +46740,7 @@
         },
         {
           "time": "2026-09-11T11:00:00+08:00",
-          "temp": 26,
+          "temp": 25,
           "humidity": 69,
           "weatherCode": "00",
           "weather": "晴",
@@ -46710,7 +46760,7 @@
         },
         {
           "time": "2026-09-11T13:00:00+08:00",
-          "temp": 29,
+          "temp": 30,
           "humidity": 65,
           "weatherCode": "00",
           "weather": "晴",
@@ -46720,7 +46770,7 @@
         },
         {
           "time": "2026-09-11T14:00:00+08:00",
-          "temp": 31,
+          "temp": 32,
           "humidity": 61,
           "weatherCode": "00",
           "weather": "晴",
@@ -46750,7 +46800,7 @@
         },
         {
           "time": "2026-09-11T17:00:00+08:00",
-          "temp": 30,
+          "temp": 31,
           "humidity": 61,
           "weatherCode": "00",
           "weather": "晴",
@@ -46790,7 +46840,7 @@
         },
         {
           "time": "2026-09-11T21:00:00+08:00",
-          "temp": 28,
+          "temp": 29,
           "humidity": 63,
           "weatherCode": "00",
           "weather": "晴",
@@ -46830,7 +46880,7 @@
         },
         {
           "time": "2026-09-12T01:00:00+08:00",
-          "temp": 26,
+          "temp": 25,
           "humidity": 67,
           "weatherCode": "00",
           "weather": "晴",
@@ -46870,7 +46920,7 @@
         },
         {
           "time": "2026-09-12T05:00:00+08:00",
-          "temp": 25,
+          "temp": 24,
           "humidity": 74,
           "weatherCode": "00",
           "weather": "晴",
@@ -46900,7 +46950,7 @@
         },
         {
           "time": "2026-09-12T08:00:00+08:00",
-          "temp": 26,
+          "temp": 25,
           "humidity": 69,
           "weatherCode": "00",
           "weather": "晴",
@@ -47390,7 +47440,7 @@
         },
         {
           "time": "2026-09-14T11:00:00+08:00",
-          "temp": 27,
+          "temp": 28,
           "humidity": 68,
           "weatherCode": "08",
           "weather": "中雨",
@@ -47400,17 +47450,17 @@
         },
         {
           "time": "2026-09-14T14:00:00+08:00",
-          "temp": 29,
+          "temp": 31,
           "humidity": 75,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "2",
           "rain": true,
-          "rainLevel": "light"
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-14T17:00:00+08:00",
-          "temp": 29,
+          "temp": 30,
           "humidity": 76,
           "weatherCode": "07",
           "weather": "小雨",
@@ -47422,11 +47472,11 @@
           "time": "2026-09-14T20:00:00+08:00",
           "temp": 27,
           "humidity": 83,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "1",
           "rain": true,
-          "rainLevel": "light"
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-14T23:00:00+08:00",
@@ -47450,7 +47500,7 @@
         },
         {
           "time": "2026-09-15T05:00:00+08:00",
-          "temp": 26,
+          "temp": 25,
           "humidity": 91,
           "weatherCode": "01",
           "weather": "多云",
@@ -47460,7 +47510,7 @@
         },
         {
           "time": "2026-09-15T08:00:00+08:00",
-          "temp": 27,
+          "temp": 28,
           "humidity": 91,
           "weatherCode": "01",
           "weather": "多云",
@@ -47482,8 +47532,8 @@
           "time": "2026-09-15T14:00:00+08:00",
           "temp": 32,
           "humidity": 67,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "04",
+          "weather": "雷阵雨",
           "windDirCode": "1",
           "rain": true,
           "rainLevel": "light"
@@ -47492,8 +47542,8 @@
           "time": "2026-09-15T17:00:00+08:00",
           "temp": 31,
           "humidity": 73,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "04",
+          "weather": "雷阵雨",
           "windDirCode": "1",
           "rain": true,
           "rainLevel": "light"
@@ -47502,8 +47552,8 @@
           "time": "2026-09-15T20:00:00+08:00",
           "temp": 30,
           "humidity": 76,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "04",
+          "weather": "雷阵雨",
           "windDirCode": "1",
           "rain": true,
           "rainLevel": "light"
@@ -47512,41 +47562,41 @@
           "time": "2026-09-15T23:00:00+08:00",
           "temp": 29,
           "humidity": 79,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "1",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-16T02:00:00+08:00",
           "temp": 25,
           "humidity": 88,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "1",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-16T05:00:00+08:00",
           "temp": 25,
           "humidity": 85,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "1",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-16T08:00:00+08:00",
           "temp": 25,
           "humidity": 84,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "01",
+          "weather": "多云",
           "windDirCode": "1",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-16T11:00:00+08:00",
@@ -47632,51 +47682,51 @@
           "time": "2026-09-17T11:00:00+08:00",
           "temp": 29,
           "humidity": 62,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "09",
+          "weather": "大雨",
           "windDirCode": "1",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "heavy"
         },
         {
           "time": "2026-09-17T14:00:00+08:00",
           "temp": 33,
           "humidity": 68,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "3",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-17T17:00:00+08:00",
           "temp": 32,
           "humidity": 69,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "09",
+          "weather": "大雨",
           "windDirCode": "3",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "heavy"
         },
         {
           "time": "2026-09-17T20:00:00+08:00",
           "temp": 30,
           "humidity": 78,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "3",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-17T23:00:00+08:00",
-          "temp": 27,
+          "temp": 28,
           "humidity": 87,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "3",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-18T02:00:00+08:00",
@@ -47692,22 +47742,14 @@
           "time": "2026-09-18T05:00:00+08:00",
           "temp": 27,
           "humidity": 86,
-          "weatherCode": "01",
-          "weather": "多云",
+          "weatherCode": "07",
+          "weather": "小雨",
           "windDirCode": "8",
-          "rain": false,
-          "rainLevel": "none"
+          "rain": true,
+          "rainLevel": "light"
         }
       ],
       "observed": [
-        {
-          "time": "11",
-          "temp": 29.4,
-          "humidity": 57,
-          "rainMm": 0,
-          "windDir": "东北风",
-          "windLevel": 3
-        },
         {
           "time": "10",
           "temp": 28,
@@ -47899,11 +47941,19 @@
           "rainMm": 0,
           "windDir": "东北风",
           "windLevel": 3
+        },
+        {
+          "time": "10",
+          "temp": 25.3,
+          "humidity": 83,
+          "rainMm": 0,
+          "windDir": "东北风",
+          "windLevel": 3
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097543,
+        "serverTime": 1789098359,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -48045,9 +48095,59 @@
         "nearestRainIntensity": 0,
         "localIntensity": 0
       },
-      "nowcastAlt": null,
+      "nowcastAlt": {
+        "source": "Open-Meteo 15分钟临近预报（无Key）",
+        "serverTime": 1789098360,
+        "intervalMinutes": 15,
+        "precipitation15": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "probability": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rainyMinutes2h": 0,
+        "dryMinutes2h": 120,
+        "maxIntensity": 0,
+        "rainNow": false,
+        "rainStartsInMin": null,
+        "rainEndsInMin": null,
+        "trend": "none",
+        "nearestRainKm": null,
+        "nearestRainIntensity": null,
+        "localIntensity": null
+      },
       "today": {
-        "high": 31,
+        "high": 32,
         "low": 24
       }
     },
@@ -48057,14 +48157,14 @@
       "name": "东莞",
       "updatedAt": "11:30更新",
       "current": {
-        "temp": 29.1,
+        "temp": 29.4,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "60%",
-        "windDir": "北风",
+        "humidity": "61%",
+        "windDir": "西北风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -49312,7 +49412,7 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097543,
+        "serverTime": 1789098359,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -49456,7 +49556,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097545,
+        "serverTime": 1789098361,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -49516,14 +49616,14 @@
       "name": "南海",
       "updatedAt": "07:30更新",
       "current": {
-        "temp": 28.6,
+        "temp": 29,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "55%",
+        "humidity": "54%",
         "windDir": "北风",
         "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -50771,7 +50871,7 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097543,
+        "serverTime": 1789098359,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -50915,7 +51015,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097545,
+        "serverTime": 1789098361,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -50975,14 +51075,14 @@
       "name": "惠州",
       "updatedAt": "07:30更新",
       "current": {
-        "temp": 28.5,
+        "temp": 28.9,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "62%",
+        "humidity": "63%",
         "windDir": "东北风",
-        "windScale": "3级",
+        "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -52230,7 +52330,7 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097543,
+        "serverTime": 1789098359,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -52374,7 +52474,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097545,
+        "serverTime": 1789098361,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -52434,14 +52534,14 @@
       "name": "茂名",
       "updatedAt": "07:30更新",
       "current": {
-        "temp": 27.6,
+        "temp": 28.1,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "70%",
+        "humidity": "66%",
         "windDir": "西北风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -53689,9 +53789,9 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097543,
+        "serverTime": 1789098359,
         "datasource": "radar",
-        "description": "最近的降雨带在东南114公里外呢",
+        "description": "最近的降雨带在东南101公里外呢",
         "probability": [
           0,
           0,
@@ -53827,13 +53927,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 113.85,
+        "nearestRainKm": 101.32,
         "nearestRainIntensity": 0.1875,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097545,
+        "serverTime": 1789098361,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -53846,11 +53946,11 @@
           0,
           0,
           0,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
           0,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
           0,
           0,
           0,
@@ -53862,20 +53962,20 @@
           0
         ],
         "probability": [
-          0.06,
           0.05,
           0.04,
           0.04,
           0.03,
           0.02,
           0.02,
-          0.01
+          0.01,
+          0
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
         "maxIntensity": 0.1,
         "rainNow": false,
-        "rainStartsInMin": 165,
+        "rainStartsInMin": 150,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -53893,14 +53993,14 @@
       "name": "韶关",
       "updatedAt": "07:30更新",
       "current": {
-        "temp": 27.1,
+        "temp": 27.3,
         "weather": "晴",
         "weatherCode": "d00",
         "humidity": "54%",
-        "windDir": "北风",
-        "windScale": "2级",
+        "windDir": "东北风",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -55148,7 +55248,7 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097543,
+        "serverTime": 1789098359,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -55292,7 +55392,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097545,
+        "serverTime": 1789098361,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -55352,14 +55452,14 @@
       "name": "潮州",
       "updatedAt": "07:30更新",
       "current": {
-        "temp": 31,
+        "temp": 31.4,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "51%",
-        "windDir": "南风",
+        "humidity": "52%",
+        "windDir": "东南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -56607,7 +56707,7 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097543,
+        "serverTime": 1789098359,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -56745,13 +56845,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 174.26,
+        "nearestRainKm": 164.37,
         "nearestRainIntensity": 0.1875,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097545,
+        "serverTime": 1789098361,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -56811,14 +56911,14 @@
       "name": "梅州",
       "updatedAt": "07:30更新",
       "current": {
-        "temp": 29.5,
+        "temp": 30.1,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "58%",
-        "windDir": "北风",
+        "humidity": "62%",
+        "windDir": "东风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -58066,9 +58166,9 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097543,
+        "serverTime": 1789098359,
         "datasource": "radar",
-        "description": "最近的降雨带在北边96公里外呢",
+        "description": "最近的降雨带在北边98公里外呢",
         "probability": [
           0,
           0,
@@ -58204,13 +58304,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 96.03,
+        "nearestRainKm": 98.06,
         "nearestRainIntensity": 0.1875,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097545,
+        "serverTime": 1789098361,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -58268,16 +58368,16 @@
       "code": "101281006",
       "id": "lingnan-zhanjiang",
       "name": "赤坎",
-      "updatedAt": "11:30更新",
+      "updatedAt": "07:30更新",
       "current": {
-        "temp": 26.5,
+        "temp": 26.6,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "73%",
+        "humidity": "72%",
         "windDir": "北风",
-        "windScale": "2级",
+        "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -59012,23 +59112,23 @@
         },
         {
           "time": "2026-09-14T11:00:00+08:00",
-          "temp": 27,
+          "temp": 26,
           "humidity": 86,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "2",
           "rain": true,
-          "rainLevel": "light"
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-14T14:00:00+08:00",
           "temp": 28,
           "humidity": 86,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "08",
+          "weather": "中雨",
           "windDirCode": "2",
           "rain": true,
-          "rainLevel": "light"
+          "rainLevel": "moderate"
         },
         {
           "time": "2026-09-14T17:00:00+08:00",
@@ -59074,38 +59174,38 @@
           "time": "2026-09-15T05:00:00+08:00",
           "temp": 24,
           "humidity": 94,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "04",
+          "weather": "雷阵雨",
           "windDirCode": "2",
           "rain": true,
-          "rainLevel": "moderate"
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T08:00:00+08:00",
           "temp": 26,
           "humidity": 92,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "04",
+          "weather": "雷阵雨",
           "windDirCode": "2",
           "rain": true,
-          "rainLevel": "moderate"
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T11:00:00+08:00",
           "temp": 27,
           "humidity": 84,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "04",
+          "weather": "雷阵雨",
           "windDirCode": "2",
           "rain": true,
-          "rainLevel": "moderate"
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-15T14:00:00+08:00",
-          "temp": 28,
+          "temp": 29,
           "humidity": 82,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "04",
+          "weather": "雷阵雨",
           "windDirCode": "3",
           "rain": true,
           "rainLevel": "light"
@@ -59134,18 +59234,18 @@
           "time": "2026-09-15T23:00:00+08:00",
           "temp": 25,
           "humidity": 89,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "00",
+          "weather": "晴",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-16T02:00:00+08:00",
           "temp": 25,
           "humidity": 93,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "04",
+          "weather": "雷阵雨",
           "windDirCode": "3",
           "rain": true,
           "rainLevel": "light"
@@ -59154,18 +59254,18 @@
           "time": "2026-09-16T05:00:00+08:00",
           "temp": 25,
           "humidity": 93,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "00",
+          "weather": "晴",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-16T08:00:00+08:00",
           "temp": 25,
           "humidity": 93,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "04",
+          "weather": "雷阵雨",
           "windDirCode": "1",
           "rain": true,
           "rainLevel": "light"
@@ -59174,18 +59274,18 @@
           "time": "2026-09-16T11:00:00+08:00",
           "temp": 28,
           "humidity": 74,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "04",
+          "weather": "雷阵雨",
           "windDirCode": "2",
           "rain": true,
-          "rainLevel": "moderate"
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-16T14:00:00+08:00",
           "temp": 30,
           "humidity": 81,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "04",
+          "weather": "雷阵雨",
           "windDirCode": "2",
           "rain": true,
           "rainLevel": "light"
@@ -59194,11 +59294,11 @@
           "time": "2026-09-16T17:00:00+08:00",
           "temp": 28,
           "humidity": 83,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "04",
+          "weather": "雷阵雨",
           "windDirCode": "2",
           "rain": true,
-          "rainLevel": "moderate"
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-16T20:00:00+08:00",
@@ -59214,11 +59314,11 @@
           "time": "2026-09-16T23:00:00+08:00",
           "temp": 27,
           "humidity": 92,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "04",
+          "weather": "雷阵雨",
           "windDirCode": "2",
           "rain": true,
-          "rainLevel": "moderate"
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-17T02:00:00+08:00",
@@ -59234,51 +59334,51 @@
           "time": "2026-09-17T05:00:00+08:00",
           "temp": 26,
           "humidity": 91,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "04",
+          "weather": "雷阵雨",
           "windDirCode": "2",
           "rain": true,
-          "rainLevel": "moderate"
+          "rainLevel": "light"
         },
         {
           "time": "2026-09-17T08:00:00+08:00",
           "temp": 26,
           "humidity": 90,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "04",
+          "weather": "雷阵雨",
           "windDirCode": "2",
           "rain": true,
           "rainLevel": "light"
         },
         {
           "time": "2026-09-17T11:00:00+08:00",
-          "temp": 29,
+          "temp": 30,
           "humidity": 73,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "00",
+          "weather": "晴",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T14:00:00+08:00",
-          "temp": 30,
+          "temp": 31,
           "humidity": 79,
-          "weatherCode": "07",
-          "weather": "小雨",
+          "weatherCode": "00",
+          "weather": "晴",
           "windDirCode": "3",
-          "rain": true,
-          "rainLevel": "light"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T17:00:00+08:00",
           "temp": 30,
           "humidity": 82,
-          "weatherCode": "08",
-          "weather": "中雨",
+          "weatherCode": "00",
+          "weather": "晴",
           "windDirCode": "2",
-          "rain": true,
-          "rainLevel": "moderate"
+          "rain": false,
+          "rainLevel": "none"
         },
         {
           "time": "2026-09-17T20:00:00+08:00",
@@ -59322,14 +59422,6 @@
         }
       ],
       "observed": [
-        {
-          "time": "11",
-          "temp": 26.1,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "北风",
-          "windLevel": 3
-        },
         {
           "time": "10",
           "temp": 26.2,
@@ -59521,13 +59613,21 @@
           "rainMm": 0,
           "windDir": "东风",
           "windLevel": 3
+        },
+        {
+          "time": "10",
+          "temp": 28,
+          "humidity": 77,
+          "rainMm": 0,
+          "windDir": "东风",
+          "windLevel": 4
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097543,
+        "serverTime": 1789098359,
         "datasource": "radar",
-        "description": "最近的降雨带在西南52公里外呢",
+        "description": "最近的降雨带在西南89公里外呢",
         "probability": [
           0,
           0,
@@ -59663,13 +59763,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 51.66,
+        "nearestRainKm": 88.87,
         "nearestRainIntensity": 0.1875,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097545,
+        "serverTime": 1789098361,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -59678,19 +59778,19 @@
           0,
           0,
           0,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
           0,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
           0,
           0,
           0,
@@ -59707,11 +59807,11 @@
           0,
           0
         ],
-        "rainyMinutes2h": 15,
-        "dryMinutes2h": 105,
+        "rainyMinutes2h": 30,
+        "dryMinutes2h": 90,
         "maxIntensity": 0.2,
         "rainNow": false,
-        "rainStartsInMin": 105,
+        "rainStartsInMin": 90,
         "rainEndsInMin": null,
         "trend": "up",
         "nearestRainKm": null,
@@ -59729,14 +59829,14 @@
       "name": "肇庆",
       "updatedAt": "11:30更新",
       "current": {
-        "temp": 27.8,
+        "temp": 27.9,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "61%",
+        "humidity": "59%",
         "windDir": "东北风",
-        "windScale": "3级",
+        "windScale": "4级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -60984,7 +61084,7 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097543,
+        "serverTime": 1789098359,
         "datasource": "radar",
         "description": "未来两小时不会下雨，放心出门吧",
         "probability": [
@@ -61128,7 +61228,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097545,
+        "serverTime": 1789098361,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -61188,14 +61288,14 @@
       "name": "阳江",
       "updatedAt": "07:30更新",
       "current": {
-        "temp": 28.6,
+        "temp": 29,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "62%",
+        "humidity": "65%",
         "windDir": "东北风",
         "windScale": "3级",
         "rain24h": 0,
-        "updatedAt": "09月11日(星期五) 11:15"
+        "updatedAt": "09月11日(星期五) 11:30"
       },
       "hourly": [
         {
@@ -62443,9 +62543,9 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1789097543,
+        "serverTime": 1789098359,
         "datasource": "radar",
-        "description": "最近的降雨带在南边100公里外呢",
+        "description": "最近的降雨带在南边93公里外呢",
         "probability": [
           0,
           0,
@@ -62581,13 +62681,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 99.82,
+        "nearestRainKm": 92.66,
         "nearestRainIntensity": 0.1875,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1789097545,
+        "serverTime": 1789098361,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -62620,10 +62720,10 @@
           0,
           0,
           0,
-          0,
           0.01,
           0.01,
-          0.01
+          0.01,
+          0.02
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
