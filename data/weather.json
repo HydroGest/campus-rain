@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T14:46:42.105Z",
+  "generatedAt": "2026-09-30T15:46:44.708Z",
   "source": "彩云天气雷达临近预报与中国天气网公开数据（第三方整理）",
   "method": "playwright",
   "locationCount": 43,
@@ -10,14 +10,14 @@
       "name": "广州",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 30.2,
+        "temp": 30,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "80%",
-        "windDir": "南风",
+        "humidity": "79%",
+        "windDir": "东南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -1225,9 +1225,9 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779597,
+        "serverTime": 1790783199,
         "datasource": "radar",
-        "description": "最近的降雨带在北边39公里外呢",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -1363,13 +1363,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 39.05,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783203,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -1394,24 +1394,24 @@
           0,
           0,
           0,
-          0,
-          0
+          0.1,
+          0.1
         ],
         "probability": [
-          0.06,
-          0.04,
-          0.03,
-          0.02,
           0.01,
+          0,
+          0,
+          0,
+          0,
           0,
           0,
           0
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.1,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -1429,14 +1429,14 @@
       "name": "番禺",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 30.3,
+        "temp": 29.7,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "78%",
-        "windDir": "南风",
+        "humidity": "80%",
+        "windDir": "东南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -2442,6 +2442,14 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 29.9,
+          "humidity": 80,
+          "rainMm": 0,
+          "windDir": "东南风",
+          "windLevel": 2
+        },
+        {
           "time": "22",
           "temp": 30.5,
           "humidity": 77,
@@ -2632,21 +2640,13 @@
           "rainMm": 0,
           "windDir": "西风",
           "windLevel": 1
-        },
-        {
-          "time": "22",
-          "temp": 30.4,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "南风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779597,
+        "serverTime": 1790783199,
         "datasource": "radar",
-        "description": "最近的降雨带在北边44公里外呢",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -2782,13 +2782,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 44.38,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783203,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -2813,24 +2813,24 @@
           0,
           0,
           0,
-          0,
-          0
+          0.1,
+          0.1
         ],
         "probability": [
           0.02,
-          0.02,
-          0.02,
-          0.02,
-          0.02,
+          0.01,
+          0.01,
+          0.01,
+          0.01,
           0.01,
           0.01,
           0.01
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.1,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -2848,14 +2848,14 @@
       "name": "广州",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 30.2,
+        "temp": 30,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "80%",
-        "windDir": "南风",
+        "humidity": "79%",
+        "windDir": "东南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -4063,9 +4063,9 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779597,
+        "serverTime": 1790783199,
         "datasource": "radar",
-        "description": "最近的降雨带在北边36公里外呢",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -4201,13 +4201,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 36.01,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783203,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -4232,24 +4232,24 @@
           0,
           0,
           0,
-          0,
-          0
+          0.3,
+          0.3
         ],
         "probability": [
-          0.04,
-          0.02,
+          0,
+          0,
+          0,
           0.01,
-          0,
-          0,
-          0,
-          0,
-          0.01
+          0.02,
+          0.03,
+          0.05,
+          0.06
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.3,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -4267,14 +4267,14 @@
       "name": "珠海",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 29,
+        "temp": 28.8,
         "weather": "多云",
         "weatherCode": "d01",
         "humidity": "78%",
         "windDir": "南风",
-        "windScale": "3级",
+        "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -5482,9 +5482,9 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779597,
+        "serverTime": 1790783199,
         "datasource": "radar",
-        "description": "未来两小时不会下雨，放心出门吧",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -5626,7 +5626,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783203,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -5686,14 +5686,14 @@
       "name": "深圳",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 28.6,
-        "weather": "多云",
-        "weatherCode": "d01",
-        "humidity": "82%",
-        "windDir": "西南风",
+        "temp": 28.3,
+        "weather": "阴",
+        "weatherCode": "d02",
+        "humidity": "84%",
+        "windDir": "西风",
         "windScale": "1级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:20"
       },
       "hourly": [
         {
@@ -6699,6 +6699,22 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 28.4,
+          "humidity": 83,
+          "rainMm": 0,
+          "windDir": "西南风",
+          "windLevel": 2
+        },
+        {
+          "time": "22",
+          "temp": 28.9,
+          "humidity": 80,
+          "rainMm": 0,
+          "windDir": "西南风",
+          "windLevel": 3
+        },
+        {
           "time": "21",
           "temp": 29,
           "humidity": 83,
@@ -6881,29 +6897,13 @@
           "rainMm": 0,
           "windDir": "西南风",
           "windLevel": 2
-        },
-        {
-          "time": "22",
-          "temp": 28.6,
-          "humidity": 88,
-          "rainMm": 0,
-          "windDir": "西南风",
-          "windLevel": 1
-        },
-        {
-          "time": "21",
-          "temp": 28.7,
-          "humidity": 87,
-          "rainMm": 0,
-          "windDir": "西南风",
-          "windLevel": 1
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779597,
+        "serverTime": 1790783199,
         "datasource": "radar",
-        "description": "未来两小时不会下雨，放心出门吧",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -7045,7 +7045,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783203,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -7070,8 +7070,8 @@
           0,
           0,
           0,
-          0,
-          0
+          0.1,
+          0.1
         ],
         "probability": [
           0,
@@ -7085,9 +7085,9 @@
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.1,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -7105,14 +7105,14 @@
       "name": "广州",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 30.2,
+        "temp": 30,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "80%",
-        "windDir": "南风",
+        "humidity": "79%",
+        "windDir": "东南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -8320,9 +8320,9 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779597,
+        "serverTime": 1790783199,
         "datasource": "radar",
-        "description": "最近的降雨带在北边33公里外呢",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -8458,13 +8458,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 32.56,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783203,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -8489,24 +8489,24 @@
           0,
           0,
           0,
-          0,
-          0
+          0.3,
+          0.3
         ],
         "probability": [
-          0.04,
-          0.02,
+          0,
+          0,
+          0,
           0.01,
-          0,
-          0,
-          0,
-          0,
-          0.01
+          0.02,
+          0.03,
+          0.05,
+          0.06
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.3,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -8524,14 +8524,14 @@
       "name": "番禺",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 30.3,
+        "temp": 29.7,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "78%",
-        "windDir": "南风",
+        "humidity": "80%",
+        "windDir": "东南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -9537,6 +9537,14 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 29.9,
+          "humidity": 80,
+          "rainMm": 0,
+          "windDir": "东南风",
+          "windLevel": 2
+        },
+        {
           "time": "22",
           "temp": 30.5,
           "humidity": 77,
@@ -9727,21 +9735,13 @@
           "rainMm": 0,
           "windDir": "西风",
           "windLevel": 1
-        },
-        {
-          "time": "22",
-          "temp": 30.4,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "南风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779597,
+        "serverTime": 1790783199,
         "datasource": "radar",
-        "description": "最近的降雨带在北边47公里外呢",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -9877,13 +9877,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 46.84,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783203,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -9908,24 +9908,24 @@
           0,
           0,
           0,
-          0,
-          0
+          0.1,
+          0.1
         ],
         "probability": [
           0.02,
-          0.02,
-          0.02,
-          0.02,
-          0.02,
+          0.01,
+          0.01,
+          0.01,
+          0.01,
           0.01,
           0.01,
           0.01
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.1,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -9943,14 +9943,14 @@
       "name": "广州",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 30.2,
+        "temp": 30,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "80%",
-        "windDir": "南风",
+        "humidity": "79%",
+        "windDir": "东南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -11158,9 +11158,9 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779597,
+        "serverTime": 1790783199,
         "datasource": "radar",
-        "description": "最近的降雨带在北边36公里外呢",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -11296,13 +11296,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 35.69,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783203,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -11327,24 +11327,24 @@
           0,
           0,
           0,
-          0,
-          0
+          0.1,
+          0.1
         ],
         "probability": [
-          0.04,
-          0.02,
+          0,
+          0,
+          0,
           0.01,
-          0,
-          0,
-          0,
-          0,
-          0.01
+          0.02,
+          0.03,
+          0.05,
+          0.06
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.1,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -11362,14 +11362,14 @@
       "name": "番禺",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 30.3,
+        "temp": 29.7,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "78%",
-        "windDir": "南风",
+        "humidity": "80%",
+        "windDir": "东南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -12375,6 +12375,14 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 29.9,
+          "humidity": 80,
+          "rainMm": 0,
+          "windDir": "东南风",
+          "windLevel": 2
+        },
+        {
           "time": "22",
           "temp": 30.5,
           "humidity": 77,
@@ -12565,21 +12573,13 @@
           "rainMm": 0,
           "windDir": "西风",
           "windLevel": 1
-        },
-        {
-          "time": "22",
-          "temp": 30.4,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "南风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779598,
+        "serverTime": 1790783200,
         "datasource": "radar",
-        "description": "最近的降雨带在北边50公里外呢",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -12715,13 +12715,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 50,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783203,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -12746,24 +12746,24 @@
           0,
           0,
           0,
-          0,
-          0
+          0.1,
+          0.1
         ],
         "probability": [
           0.02,
-          0.02,
-          0.02,
-          0.02,
-          0.02,
+          0.01,
+          0.01,
+          0.01,
+          0.01,
           0.01,
           0.01,
           0.01
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.1,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -12781,14 +12781,14 @@
       "name": "广州",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 30.2,
+        "temp": 30,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "80%",
-        "windDir": "南风",
+        "humidity": "79%",
+        "windDir": "东南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -13996,9 +13996,9 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779598,
+        "serverTime": 1790783200,
         "datasource": "radar",
-        "description": "最近的降雨带在北边35公里外呢",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -14134,13 +14134,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 34.71,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783203,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -14165,24 +14165,24 @@
           0,
           0,
           0,
-          0,
-          0
+          0.3,
+          0.3
         ],
         "probability": [
-          0.04,
-          0.02,
+          0,
+          0,
+          0,
           0.01,
-          0,
-          0,
-          0,
-          0,
-          0.01
+          0.02,
+          0.03,
+          0.05,
+          0.06
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.3,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -14200,14 +14200,14 @@
       "name": "番禺",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 30.3,
+        "temp": 29.7,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "78%",
-        "windDir": "南风",
+        "humidity": "80%",
+        "windDir": "东南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -15213,6 +15213,14 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 29.9,
+          "humidity": 80,
+          "rainMm": 0,
+          "windDir": "东南风",
+          "windLevel": 2
+        },
+        {
           "time": "22",
           "temp": 30.5,
           "humidity": 77,
@@ -15403,21 +15411,13 @@
           "rainMm": 0,
           "windDir": "西风",
           "windLevel": 1
-        },
-        {
-          "time": "22",
-          "temp": 30.4,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "南风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779597,
+        "serverTime": 1790783199,
         "datasource": "radar",
-        "description": "最近的降雨带在北边44公里外呢",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -15553,13 +15553,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 44.38,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783203,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -15584,24 +15584,24 @@
           0,
           0,
           0,
-          0,
-          0
+          0.1,
+          0.1
         ],
         "probability": [
           0.02,
-          0.02,
-          0.02,
-          0.02,
-          0.02,
+          0.01,
+          0.01,
+          0.01,
+          0.01,
           0.01,
           0.01,
           0.01
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.1,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -15619,14 +15619,14 @@
       "name": "番禺",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 30.3,
+        "temp": 29.7,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "78%",
-        "windDir": "南风",
+        "humidity": "80%",
+        "windDir": "东南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -16632,6 +16632,14 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 29.9,
+          "humidity": 80,
+          "rainMm": 0,
+          "windDir": "东南风",
+          "windLevel": 2
+        },
+        {
           "time": "22",
           "temp": 30.5,
           "humidity": 77,
@@ -16822,21 +16830,13 @@
           "rainMm": 0,
           "windDir": "西风",
           "windLevel": 1
-        },
-        {
-          "time": "22",
-          "temp": 30.4,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "南风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779597,
+        "serverTime": 1790783199,
         "datasource": "radar",
-        "description": "最近的降雨带在北边47公里外呢",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -16972,13 +16972,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 46.84,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783203,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -17003,24 +17003,24 @@
           0,
           0,
           0,
-          0,
-          0
+          0.1,
+          0.1
         ],
         "probability": [
           0.02,
-          0.02,
-          0.02,
-          0.02,
-          0.02,
+          0.01,
+          0.01,
+          0.01,
+          0.01,
           0.01,
           0.01,
           0.01
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.1,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -17038,14 +17038,14 @@
       "name": "番禺",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 30.3,
+        "temp": 29.7,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "78%",
-        "windDir": "南风",
+        "humidity": "80%",
+        "windDir": "东南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -18051,6 +18051,14 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 29.9,
+          "humidity": 80,
+          "rainMm": 0,
+          "windDir": "东南风",
+          "windLevel": 2
+        },
+        {
           "time": "22",
           "temp": 30.5,
           "humidity": 77,
@@ -18241,21 +18249,13 @@
           "rainMm": 0,
           "windDir": "西风",
           "windLevel": 1
-        },
-        {
-          "time": "22",
-          "temp": 30.4,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "南风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779598,
+        "serverTime": 1790783200,
         "datasource": "radar",
-        "description": "最近的降雨带在北边46公里外呢",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -18391,13 +18391,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 45.89,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783203,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -18426,11 +18426,11 @@
           0
         ],
         "probability": [
-          0.06,
-          0.04,
-          0.03,
-          0.02,
           0.01,
+          0,
+          0,
+          0,
+          0,
           0,
           0,
           0
@@ -18457,14 +18457,14 @@
       "name": "广州",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 30.2,
+        "temp": 30,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "80%",
-        "windDir": "南风",
+        "humidity": "79%",
+        "windDir": "东南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -19672,9 +19672,9 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779598,
+        "serverTime": 1790783200,
         "datasource": "radar",
-        "description": "您北边28公里正在下小雨哦",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -19810,13 +19810,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 28.02,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783203,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -19841,24 +19841,24 @@
           0,
           0,
           0,
-          0,
-          0
+          0.2,
+          0.2
         ],
         "probability": [
-          0.04,
-          0.02,
+          0,
+          0,
+          0,
           0.01,
-          0,
-          0,
-          0,
-          0,
-          0.01
+          0.02,
+          0.03,
+          0.05,
+          0.06
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.2,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -19876,14 +19876,14 @@
       "name": "番禺",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 30.3,
+        "temp": 29.7,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "78%",
-        "windDir": "南风",
+        "humidity": "80%",
+        "windDir": "东南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -20889,6 +20889,14 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 29.9,
+          "humidity": 80,
+          "rainMm": 0,
+          "windDir": "东南风",
+          "windLevel": 2
+        },
+        {
           "time": "22",
           "temp": 30.5,
           "humidity": 77,
@@ -21079,21 +21087,13 @@
           "rainMm": 0,
           "windDir": "西风",
           "windLevel": 1
-        },
-        {
-          "time": "22",
-          "temp": 30.4,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "南风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779597,
+        "serverTime": 1790783199,
         "datasource": "radar",
-        "description": "最近的降雨带在北边44公里外呢",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -21229,13 +21229,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 44.38,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783203,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -21260,24 +21260,24 @@
           0,
           0,
           0,
-          0,
-          0
+          0.1,
+          0.1
         ],
         "probability": [
           0.02,
-          0.02,
-          0.02,
-          0.02,
-          0.02,
+          0.01,
+          0.01,
+          0.01,
+          0.01,
           0.01,
           0.01,
           0.01
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.1,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -21295,14 +21295,14 @@
       "name": "番禺",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 30.3,
+        "temp": 29.7,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "78%",
-        "windDir": "南风",
+        "humidity": "80%",
+        "windDir": "东南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -22308,6 +22308,14 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 29.9,
+          "humidity": 80,
+          "rainMm": 0,
+          "windDir": "东南风",
+          "windLevel": 2
+        },
+        {
           "time": "22",
           "temp": 30.5,
           "humidity": 77,
@@ -22498,21 +22506,13 @@
           "rainMm": 0,
           "windDir": "西风",
           "windLevel": 1
-        },
-        {
-          "time": "22",
-          "temp": 30.4,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "南风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779598,
+        "serverTime": 1790783200,
         "datasource": "radar",
-        "description": "最近的降雨带在北边47公里外呢",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -22648,13 +22648,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 47.43,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783203,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -22679,24 +22679,24 @@
           0,
           0,
           0,
-          0,
-          0
+          0.1,
+          0.1
         ],
         "probability": [
           0.02,
-          0.02,
-          0.02,
-          0.02,
-          0.02,
+          0.01,
+          0.01,
+          0.01,
+          0.01,
           0.01,
           0.01,
           0.01
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.1,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -22714,14 +22714,14 @@
       "name": "番禺",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 30.3,
+        "temp": 29.7,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "78%",
-        "windDir": "南风",
+        "humidity": "80%",
+        "windDir": "东南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -23727,6 +23727,14 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 29.9,
+          "humidity": 80,
+          "rainMm": 0,
+          "windDir": "东南风",
+          "windLevel": 2
+        },
+        {
           "time": "22",
           "temp": 30.5,
           "humidity": 77,
@@ -23917,21 +23925,13 @@
           "rainMm": 0,
           "windDir": "西风",
           "windLevel": 1
-        },
-        {
-          "time": "22",
-          "temp": 30.4,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "南风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779597,
+        "serverTime": 1790783199,
         "datasource": "radar",
-        "description": "最近的降雨带在北边47公里外呢",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -24067,13 +24067,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 46.84,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -24098,24 +24098,24 @@
           0,
           0,
           0,
-          0,
-          0
+          0.1,
+          0.1
         ],
         "probability": [
           0.02,
-          0.02,
-          0.02,
-          0.02,
-          0.02,
+          0.01,
+          0.01,
+          0.01,
+          0.01,
           0.01,
           0.01,
           0.01
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.1,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -24133,14 +24133,14 @@
       "name": "广州",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 30.2,
+        "temp": 30,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "80%",
-        "windDir": "南风",
+        "humidity": "79%",
+        "windDir": "东南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -25348,9 +25348,9 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779598,
+        "serverTime": 1790783201,
         "datasource": "radar",
-        "description": "最近的降雨带在北边41公里外呢",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -25486,13 +25486,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 40.61,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -25517,24 +25517,24 @@
           0,
           0,
           0,
-          0,
-          0
+          0.1,
+          0.1
         ],
         "probability": [
-          0.06,
-          0.04,
-          0.03,
-          0.02,
           0.01,
+          0,
+          0,
+          0,
+          0,
           0,
           0,
           0
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.1,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -25552,14 +25552,14 @@
       "name": "广州",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 30.2,
+        "temp": 30,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "80%",
-        "windDir": "南风",
+        "humidity": "79%",
+        "windDir": "东南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -26767,9 +26767,9 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779598,
+        "serverTime": 1790783201,
         "datasource": "radar",
-        "description": "您北边29公里正在下小雨哦",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -26905,13 +26905,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 29.43,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -26936,24 +26936,24 @@
           0,
           0,
           0,
-          0,
-          0
+          0.3,
+          0.3
         ],
         "probability": [
-          0.04,
-          0.02,
+          0,
+          0,
+          0,
           0.01,
-          0,
-          0,
-          0,
-          0,
-          0.01
+          0.02,
+          0.03,
+          0.05,
+          0.06
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.3,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -26971,14 +26971,14 @@
       "name": "番禺",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 30.3,
+        "temp": 29.7,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "78%",
-        "windDir": "南风",
+        "humidity": "80%",
+        "windDir": "东南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -27984,6 +27984,14 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 29.9,
+          "humidity": 80,
+          "rainMm": 0,
+          "windDir": "东南风",
+          "windLevel": 2
+        },
+        {
           "time": "22",
           "temp": 30.5,
           "humidity": 77,
@@ -28174,21 +28182,13 @@
           "rainMm": 0,
           "windDir": "西风",
           "windLevel": 1
-        },
-        {
-          "time": "22",
-          "temp": 30.4,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "南风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779598,
+        "serverTime": 1790783201,
         "datasource": "radar",
-        "description": "最近的降雨带在北边45公里外呢",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -28324,13 +28324,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 45.12,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -28355,24 +28355,24 @@
           0,
           0,
           0,
-          0,
-          0
+          0.1,
+          0.1
         ],
         "probability": [
           0.02,
-          0.02,
-          0.02,
-          0.02,
-          0.02,
+          0.01,
+          0.01,
+          0.01,
+          0.01,
           0.01,
           0.01,
           0.01
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.1,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -28390,14 +28390,14 @@
       "name": "番禺",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 30.3,
+        "temp": 29.7,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "78%",
-        "windDir": "南风",
+        "humidity": "80%",
+        "windDir": "东南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -29403,6 +29403,14 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 29.9,
+          "humidity": 80,
+          "rainMm": 0,
+          "windDir": "东南风",
+          "windLevel": 2
+        },
+        {
           "time": "22",
           "temp": 30.5,
           "humidity": 77,
@@ -29593,21 +29601,13 @@
           "rainMm": 0,
           "windDir": "西风",
           "windLevel": 1
-        },
-        {
-          "time": "22",
-          "temp": 30.4,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "南风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779598,
+        "serverTime": 1790783201,
         "datasource": "radar",
-        "description": "最近的降雨带在北边47公里外呢",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -29743,13 +29743,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 47.07,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -29774,24 +29774,24 @@
           0,
           0,
           0,
-          0,
-          0
+          0.1,
+          0.1
         ],
         "probability": [
           0.02,
-          0.02,
-          0.02,
-          0.02,
-          0.02,
+          0.01,
+          0.01,
+          0.01,
+          0.01,
           0.01,
           0.01,
           0.01
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.1,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -29809,14 +29809,14 @@
       "name": "广州",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 30.2,
+        "temp": 30,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "80%",
-        "windDir": "南风",
+        "humidity": "79%",
+        "windDir": "东南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -31024,9 +31024,9 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779598,
+        "serverTime": 1790783201,
         "datasource": "radar",
-        "description": "您北边22公里正在下小雨哦",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -31162,61 +31162,11 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 22.09,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
-      "nowcastAlt": {
-        "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
-        "intervalMinutes": 15,
-        "precipitation15": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "probability": [
-          0.04,
-          0.02,
-          0.01,
-          0,
-          0,
-          0,
-          0,
-          0.01
-        ],
-        "rainyMinutes2h": 0,
-        "dryMinutes2h": 120,
-        "maxIntensity": 0,
-        "rainNow": false,
-        "rainStartsInMin": null,
-        "rainEndsInMin": null,
-        "trend": "none",
-        "nearestRainKm": null,
-        "nearestRainIntensity": null,
-        "localIntensity": null
-      },
+      "nowcastAlt": null,
       "today": {
         "high": 32,
         "low": 25
@@ -31228,14 +31178,14 @@
       "name": "深圳",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 28.6,
-        "weather": "多云",
-        "weatherCode": "d01",
-        "humidity": "82%",
-        "windDir": "西南风",
+        "temp": 28.3,
+        "weather": "阴",
+        "weatherCode": "d02",
+        "humidity": "84%",
+        "windDir": "西风",
         "windScale": "1级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:20"
       },
       "hourly": [
         {
@@ -32241,6 +32191,22 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 28.4,
+          "humidity": 83,
+          "rainMm": 0,
+          "windDir": "西南风",
+          "windLevel": 2
+        },
+        {
+          "time": "22",
+          "temp": 28.9,
+          "humidity": 80,
+          "rainMm": 0,
+          "windDir": "西南风",
+          "windLevel": 3
+        },
+        {
           "time": "21",
           "temp": 29,
           "humidity": 83,
@@ -32423,29 +32389,13 @@
           "rainMm": 0,
           "windDir": "西南风",
           "windLevel": 2
-        },
-        {
-          "time": "22",
-          "temp": 28.6,
-          "humidity": 88,
-          "rainMm": 0,
-          "windDir": "西南风",
-          "windLevel": 1
-        },
-        {
-          "time": "21",
-          "temp": 28.7,
-          "humidity": 87,
-          "rainMm": 0,
-          "windDir": "西南风",
-          "windLevel": 1
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779598,
+        "serverTime": 1790783201,
         "datasource": "radar",
-        "description": "未来两小时不会下雨，放心出门吧",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -32585,57 +32535,7 @@
         "nearestRainIntensity": 0,
         "localIntensity": 0
       },
-      "nowcastAlt": {
-        "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
-        "intervalMinutes": 15,
-        "precipitation15": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "probability": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "rainyMinutes2h": 0,
-        "dryMinutes2h": 120,
-        "maxIntensity": 0,
-        "rainNow": false,
-        "rainStartsInMin": null,
-        "rainEndsInMin": null,
-        "trend": "none",
-        "nearestRainKm": null,
-        "nearestRainIntensity": null,
-        "localIntensity": null
-      },
+      "nowcastAlt": null,
       "today": {
         "high": 32,
         "low": 28
@@ -32647,14 +32547,14 @@
       "name": "深圳",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 28.6,
-        "weather": "多云",
-        "weatherCode": "d01",
-        "humidity": "82%",
-        "windDir": "西南风",
+        "temp": 28.3,
+        "weather": "阴",
+        "weatherCode": "d02",
+        "humidity": "84%",
+        "windDir": "西风",
         "windScale": "1级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:20"
       },
       "hourly": [
         {
@@ -33660,6 +33560,22 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 28.4,
+          "humidity": 83,
+          "rainMm": 0,
+          "windDir": "西南风",
+          "windLevel": 2
+        },
+        {
+          "time": "22",
+          "temp": 28.9,
+          "humidity": 80,
+          "rainMm": 0,
+          "windDir": "西南风",
+          "windLevel": 3
+        },
+        {
           "time": "21",
           "temp": 29,
           "humidity": 83,
@@ -33842,29 +33758,13 @@
           "rainMm": 0,
           "windDir": "西南风",
           "windLevel": 2
-        },
-        {
-          "time": "22",
-          "temp": 28.6,
-          "humidity": 88,
-          "rainMm": 0,
-          "windDir": "西南风",
-          "windLevel": 1
-        },
-        {
-          "time": "21",
-          "temp": 28.7,
-          "humidity": 87,
-          "rainMm": 0,
-          "windDir": "西南风",
-          "windLevel": 1
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779598,
+        "serverTime": 1790783201,
         "datasource": "radar",
-        "description": "未来两小时不会下雨，放心出门吧",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -34004,57 +33904,7 @@
         "nearestRainIntensity": 0,
         "localIntensity": 0
       },
-      "nowcastAlt": {
-        "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
-        "intervalMinutes": 15,
-        "precipitation15": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "probability": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "rainyMinutes2h": 0,
-        "dryMinutes2h": 120,
-        "maxIntensity": 0,
-        "rainNow": false,
-        "rainStartsInMin": null,
-        "rainEndsInMin": null,
-        "trend": "none",
-        "nearestRainKm": null,
-        "nearestRainIntensity": null,
-        "localIntensity": null
-      },
+      "nowcastAlt": null,
       "today": {
         "high": 32,
         "low": 28
@@ -34066,14 +33916,14 @@
       "name": "深圳",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 28.6,
-        "weather": "多云",
-        "weatherCode": "d01",
-        "humidity": "82%",
-        "windDir": "西南风",
+        "temp": 28.3,
+        "weather": "阴",
+        "weatherCode": "d02",
+        "humidity": "84%",
+        "windDir": "西风",
         "windScale": "1级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:20"
       },
       "hourly": [
         {
@@ -35079,6 +34929,22 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 28.4,
+          "humidity": 83,
+          "rainMm": 0,
+          "windDir": "西南风",
+          "windLevel": 2
+        },
+        {
+          "time": "22",
+          "temp": 28.9,
+          "humidity": 80,
+          "rainMm": 0,
+          "windDir": "西南风",
+          "windLevel": 3
+        },
+        {
           "time": "21",
           "temp": 29,
           "humidity": 83,
@@ -35261,29 +35127,13 @@
           "rainMm": 0,
           "windDir": "西南风",
           "windLevel": 2
-        },
-        {
-          "time": "22",
-          "temp": 28.6,
-          "humidity": 88,
-          "rainMm": 0,
-          "windDir": "西南风",
-          "windLevel": 1
-        },
-        {
-          "time": "21",
-          "temp": 28.7,
-          "humidity": 87,
-          "rainMm": 0,
-          "windDir": "西南风",
-          "windLevel": 1
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779598,
+        "serverTime": 1790783201,
         "datasource": "radar",
-        "description": "未来两小时不会下雨，放心出门吧",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -35425,7 +35275,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -35450,8 +35300,8 @@
           0,
           0,
           0,
-          0,
-          0
+          0.1,
+          0.1
         ],
         "probability": [
           0,
@@ -35465,9 +35315,9 @@
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.1,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -35485,14 +35335,14 @@
       "name": "深圳",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 28.6,
-        "weather": "多云",
-        "weatherCode": "d01",
-        "humidity": "82%",
-        "windDir": "西南风",
+        "temp": 28.3,
+        "weather": "阴",
+        "weatherCode": "d02",
+        "humidity": "84%",
+        "windDir": "西风",
         "windScale": "1级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:20"
       },
       "hourly": [
         {
@@ -36498,6 +36348,22 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 28.4,
+          "humidity": 83,
+          "rainMm": 0,
+          "windDir": "西南风",
+          "windLevel": 2
+        },
+        {
+          "time": "22",
+          "temp": 28.9,
+          "humidity": 80,
+          "rainMm": 0,
+          "windDir": "西南风",
+          "windLevel": 3
+        },
+        {
           "time": "21",
           "temp": 29,
           "humidity": 83,
@@ -36680,29 +36546,13 @@
           "rainMm": 0,
           "windDir": "西南风",
           "windLevel": 2
-        },
-        {
-          "time": "22",
-          "temp": 28.6,
-          "humidity": 88,
-          "rainMm": 0,
-          "windDir": "西南风",
-          "windLevel": 1
-        },
-        {
-          "time": "21",
-          "temp": 28.7,
-          "humidity": 87,
-          "rainMm": 0,
-          "windDir": "西南风",
-          "windLevel": 1
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779598,
+        "serverTime": 1790783201,
         "datasource": "radar",
-        "description": "未来两小时不会下雨，放心出门吧",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -36844,7 +36694,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -36873,7 +36723,7 @@
           0
         ],
         "probability": [
-          0.01,
+          0,
           0,
           0,
           0,
@@ -36904,14 +36754,14 @@
       "name": "深圳",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 28.6,
-        "weather": "多云",
-        "weatherCode": "d01",
-        "humidity": "82%",
-        "windDir": "西南风",
+        "temp": 28.3,
+        "weather": "阴",
+        "weatherCode": "d02",
+        "humidity": "84%",
+        "windDir": "西风",
         "windScale": "1级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:20"
       },
       "hourly": [
         {
@@ -37917,6 +37767,22 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 28.4,
+          "humidity": 83,
+          "rainMm": 0,
+          "windDir": "西南风",
+          "windLevel": 2
+        },
+        {
+          "time": "22",
+          "temp": 28.9,
+          "humidity": 80,
+          "rainMm": 0,
+          "windDir": "西南风",
+          "windLevel": 3
+        },
+        {
           "time": "21",
           "temp": 29,
           "humidity": 83,
@@ -38099,29 +37965,13 @@
           "rainMm": 0,
           "windDir": "西南风",
           "windLevel": 2
-        },
-        {
-          "time": "22",
-          "temp": 28.6,
-          "humidity": 88,
-          "rainMm": 0,
-          "windDir": "西南风",
-          "windLevel": 1
-        },
-        {
-          "time": "21",
-          "temp": 28.7,
-          "humidity": 87,
-          "rainMm": 0,
-          "windDir": "西南风",
-          "windLevel": 1
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779598,
+        "serverTime": 1790783201,
         "datasource": "radar",
-        "description": "未来两小时不会下雨，放心出门吧",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -38263,7 +38113,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -38288,8 +38138,8 @@
           0,
           0,
           0,
-          0,
-          0
+          0.1,
+          0.1
         ],
         "probability": [
           0,
@@ -38303,9 +38153,9 @@
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.1,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -38323,14 +38173,14 @@
       "name": "珠海",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 29,
+        "temp": 28.8,
         "weather": "多云",
         "weatherCode": "d01",
         "humidity": "78%",
         "windDir": "南风",
-        "windScale": "3级",
+        "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -39538,9 +39388,9 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779599,
+        "serverTime": 1790783201,
         "datasource": "radar",
-        "description": "未来两小时不会下雨，放心出门吧",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -39682,7 +39532,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -39742,14 +39592,14 @@
       "name": "珠海",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 29,
+        "temp": 28.8,
         "weather": "多云",
         "weatherCode": "d01",
         "humidity": "78%",
         "windDir": "南风",
-        "windScale": "3级",
+        "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -40957,9 +40807,9 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779599,
+        "serverTime": 1790783201,
         "datasource": "radar",
-        "description": "未来两小时不会下雨，放心出门吧",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -41101,7 +40951,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -41161,14 +41011,14 @@
       "name": "金湾",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 29,
-        "weather": "多云",
-        "weatherCode": "d01",
+        "temp": 28.8,
+        "weather": "阴",
+        "weatherCode": "d02",
         "humidity": "78%",
         "windDir": "南风",
-        "windScale": "3级",
+        "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -42376,9 +42226,9 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779599,
+        "serverTime": 1790783201,
         "datasource": "radar",
-        "description": "未来两小时不会下雨，放心出门吧",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -42520,7 +42370,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -42580,14 +42430,14 @@
       "name": "汕头",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 29.9,
+        "temp": 29.7,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "81%",
+        "humidity": "82%",
         "windDir": "西风",
         "windScale": "1级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -43795,9 +43645,9 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779599,
+        "serverTime": 1790783201,
         "datasource": "radar",
-        "description": "最近的降雨带在东北73公里外呢",
+        "description": "最近的降雨带在西北78公里外呢",
         "probability": [
           0,
           0,
@@ -43933,13 +43783,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 72.9,
+        "nearestRainKm": 77.83,
         "nearestRainIntensity": 0.1875,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -43968,14 +43818,14 @@
           0
         ],
         "probability": [
-          0.01,
-          0,
-          0,
-          0,
           0,
           0.01,
           0.02,
-          0.04
+          0.04,
+          0.05,
+          0.07,
+          0.09,
+          0.11
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
@@ -43999,14 +43849,14 @@
       "name": "麻章",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 28.9,
+        "temp": 29,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "86%",
-        "windDir": "东南风",
+        "humidity": "85%",
+        "windDir": "南风",
         "windScale": "1级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -45012,6 +44862,14 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 29.2,
+          "humidity": 85,
+          "rainMm": 0,
+          "windDir": "南风",
+          "windLevel": 1
+        },
+        {
           "time": "22",
           "temp": 29.4,
           "humidity": 85,
@@ -45202,21 +45060,13 @@
           "rainMm": 0,
           "windDir": "西风",
           "windLevel": 1
-        },
-        {
-          "time": "22",
-          "temp": 27.2,
-          "humidity": 85,
-          "rainMm": 0,
-          "windDir": "",
-          "windLevel": 0
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779599,
+        "serverTime": 1790783201,
         "datasource": "radar",
-        "description": "未来两小时不会下雨，放心出门吧",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -45358,7 +45208,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -45387,14 +45237,14 @@
           0
         ],
         "probability": [
-          0.27,
-          0.25,
-          0.23,
-          0.21,
           0.19,
           0.16,
           0.14,
-          0.11
+          0.11,
+          0.09,
+          0.07,
+          0.05,
+          0.03
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
@@ -45418,14 +45268,14 @@
       "name": "蓬江",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 29.1,
+        "temp": 28.7,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "81%",
+        "humidity": "83%",
         "windDir": "西风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -46431,6 +46281,14 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 28.9,
+          "humidity": 81,
+          "rainMm": 0,
+          "windDir": "西风",
+          "windLevel": 2
+        },
+        {
           "time": "22",
           "temp": 29.2,
           "humidity": 81,
@@ -46621,21 +46479,13 @@
           "rainMm": 0,
           "windDir": "西风",
           "windLevel": 2
-        },
-        {
-          "time": "22",
-          "temp": 29.3,
-          "humidity": 80,
-          "rainMm": 0,
-          "windDir": "西风",
-          "windLevel": 1
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779599,
+        "serverTime": 1790783202,
         "datasource": "radar",
-        "description": "最近的降雨带在北边97公里外呢",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -46771,13 +46621,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 96.69,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -46837,14 +46687,14 @@
       "name": "东莞",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 29.4,
+        "temp": 29.1,
         "weather": "多云",
         "weatherCode": "d01",
         "humidity": "83%",
         "windDir": "南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:20"
       },
       "hourly": [
         {
@@ -47850,6 +47700,14 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 29.2,
+          "humidity": 83,
+          "rainMm": 0,
+          "windDir": "南风",
+          "windLevel": 2
+        },
+        {
           "time": "22",
           "temp": 29.5,
           "humidity": 83,
@@ -48040,21 +47898,13 @@
           "rainMm": 0,
           "windDir": "南风",
           "windLevel": 1
-        },
-        {
-          "time": "22",
-          "temp": 29.3,
-          "humidity": 85,
-          "rainMm": 0,
-          "windDir": "南风",
-          "windLevel": 1
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779599,
+        "serverTime": 1790783202,
         "datasource": "radar",
-        "description": "最近的降雨带在西北86公里外呢",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -48190,13 +48040,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 85.59,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -48217,20 +48067,20 @@
           0,
           0,
           0,
-          0,
-          0,
-          0,
-          0,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
           0.1,
           0.1
         ],
         "probability": [
           0.02,
           0.02,
-          0.02,
-          0.02,
-          0.02,
-          0.02,
+          0.01,
+          0.01,
+          0.01,
+          0.01,
           0.01,
           0.01
         ],
@@ -48238,7 +48088,7 @@
         "dryMinutes2h": 120,
         "maxIntensity": 0.1,
         "rainNow": false,
-        "rainStartsInMin": 330,
+        "rainStartsInMin": 270,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -48256,14 +48106,14 @@
       "name": "南海",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 31.1,
-        "weather": "晴",
-        "weatherCode": "d00",
-        "humidity": "72%",
-        "windDir": "南风",
+        "temp": 30.8,
+        "weather": "阴",
+        "weatherCode": "d02",
+        "humidity": "73%",
+        "windDir": "西南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -49471,9 +49321,9 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779599,
+        "serverTime": 1790783202,
         "datasource": "radar",
-        "description": "最近的降雨带在东北40公里外呢",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -49609,13 +49459,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 39.82,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -49640,8 +49490,8 @@
           0,
           0,
           0,
-          0,
-          0
+          0.1,
+          0.1
         ],
         "probability": [
           0.02,
@@ -49649,15 +49499,15 @@
           0.02,
           0.02,
           0.02,
-          0.02,
-          0.02,
-          0.02
+          0.03,
+          0.03,
+          0.03
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
-        "maxIntensity": 0,
+        "maxIntensity": 0.1,
         "rainNow": false,
-        "rainStartsInMin": null,
+        "rainStartsInMin": 330,
         "rainEndsInMin": null,
         "trend": "none",
         "nearestRainKm": null,
@@ -49675,14 +49525,14 @@
       "name": "惠州",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 29.7,
-        "weather": "晴",
-        "weatherCode": "d00",
-        "humidity": "80%",
+        "temp": 29.2,
+        "weather": "阴",
+        "weatherCode": "d02",
+        "humidity": "83%",
         "windDir": "东南风",
-        "windScale": "2级",
+        "windScale": "1级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -50688,6 +50538,14 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 29.4,
+          "humidity": 82,
+          "rainMm": 0,
+          "windDir": "东南风",
+          "windLevel": 2
+        },
+        {
           "time": "22",
           "temp": 30,
           "humidity": 78,
@@ -50878,21 +50736,13 @@
           "rainMm": 0,
           "windDir": "西北风",
           "windLevel": 1
-        },
-        {
-          "time": "22",
-          "temp": 29.3,
-          "humidity": 75,
-          "rainMm": 0,
-          "windDir": "西北风",
-          "windLevel": 1
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779599,
+        "serverTime": 1790783202,
         "datasource": "radar",
-        "description": "未来两小时不会下雨，放心出门吧",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -51034,7 +50884,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -51094,14 +50944,14 @@
       "name": "茂名",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 29.1,
+        "temp": 28.7,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "85%",
+        "humidity": "87%",
         "windDir": "东风",
-        "windScale": "2级",
+        "windScale": "1级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -52309,9 +52159,9 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779599,
+        "serverTime": 1790783202,
         "datasource": "radar",
-        "description": "未来两小时不会下雨，放心出门吧",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -52453,7 +52303,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -52483,13 +52333,13 @@
         ],
         "probability": [
           0,
-          0,
-          0,
-          0,
-          0,
           0.01,
           0.01,
-          0.01
+          0.01,
+          0.01,
+          0.01,
+          0.01,
+          0.02
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
@@ -52513,14 +52363,14 @@
       "name": "韶关",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 28.3,
-        "weather": "多云",
-        "weatherCode": "d01",
-        "humidity": "77%",
+        "temp": 27.9,
+        "weather": "阴",
+        "weatherCode": "d02",
+        "humidity": "79%",
         "windDir": "南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -53526,6 +53376,14 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 28.2,
+          "humidity": 78,
+          "rainMm": 0,
+          "windDir": "南风",
+          "windLevel": 1
+        },
+        {
           "time": "22",
           "temp": 28.6,
           "humidity": 77,
@@ -53716,21 +53574,13 @@
           "rainMm": 0,
           "windDir": "东南风",
           "windLevel": 2
-        },
-        {
-          "time": "22",
-          "temp": 28.4,
-          "humidity": 78,
-          "rainMm": 0,
-          "windDir": "南风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779599,
+        "serverTime": 1790783202,
         "datasource": "radar",
-        "description": "最近的降雨带在东边94公里外呢",
+        "description": "最近的降雨带在西北73公里外呢",
         "probability": [
           0,
           0,
@@ -53866,29 +53716,29 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 94.09,
+        "nearestRainKm": 72.84,
         "nearestRainIntensity": 0.1875,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
           0,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
           0,
           0,
           0,
           0,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
           0,
           0,
           0,
@@ -53901,20 +53751,20 @@
           0
         ],
         "probability": [
-          0.13,
-          0.16,
-          0.2,
-          0.24,
           0.29,
           0.35,
           0.41,
-          0.48
+          0.48,
+          0.54,
+          0.59,
+          0.64,
+          0.68
         ],
-        "rainyMinutes2h": 30,
-        "dryMinutes2h": 90,
+        "rainyMinutes2h": 90,
+        "dryMinutes2h": 30,
         "maxIntensity": 0.1,
         "rainNow": false,
-        "rainStartsInMin": 90,
+        "rainStartsInMin": 30,
         "rainEndsInMin": null,
         "trend": "up",
         "nearestRainKm": null,
@@ -53932,14 +53782,14 @@
       "name": "潮州",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 27.6,
+        "temp": 27.4,
         "weather": "雾",
         "weatherCode": "d18",
-        "humidity": "96%",
+        "humidity": "97%",
         "windDir": "北风",
-        "windScale": "1级",
+        "windScale": "0级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -54945,6 +54795,14 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 27.5,
+          "humidity": 96,
+          "rainMm": 0,
+          "windDir": "东北风",
+          "windLevel": 1
+        },
+        {
           "time": "22",
           "temp": 27.8,
           "humidity": 95,
@@ -55135,21 +54993,13 @@
           "rainMm": 0,
           "windDir": "东南风",
           "windLevel": 1
-        },
-        {
-          "time": "22",
-          "temp": 26.7,
-          "humidity": 88,
-          "rainMm": 0,
-          "windDir": "南风",
-          "windLevel": 1
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779599,
+        "serverTime": 1790783202,
         "datasource": "radar",
-        "description": "最近的降雨带在东边62公里外呢",
+        "description": "最近的降雨带在西北57公里外呢",
         "probability": [
           0,
           0,
@@ -55285,19 +55135,15 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 62.39,
+        "nearestRainKm": 57.31,
         "nearestRainIntensity": 0.1875,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
-          0,
-          0,
-          0.2,
-          0.2,
           0.2,
           0.2,
           0,
@@ -55317,25 +55163,29 @@
           0.8,
           0.8,
           0.1,
-          0.1
+          0.1,
+          0.1,
+          0.1,
+          0,
+          0
         ],
         "probability": [
-          0.02,
-          0.02,
-          0.02,
-          0.03,
           0.04,
           0.06,
           0.08,
-          0.1
+          0.1,
+          0.12,
+          0.14,
+          0.16,
+          0.18
         ],
-        "rainyMinutes2h": 60,
-        "dryMinutes2h": 60,
+        "rainyMinutes2h": 30,
+        "dryMinutes2h": 90,
         "maxIntensity": 0.8,
-        "rainNow": false,
-        "rainStartsInMin": 30,
-        "rainEndsInMin": null,
-        "trend": "steady",
+        "rainNow": true,
+        "rainStartsInMin": 0,
+        "rainEndsInMin": 30,
+        "trend": "down",
         "nearestRainKm": null,
         "nearestRainIntensity": null,
         "localIntensity": null
@@ -55351,14 +55201,14 @@
       "name": "梅州",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 29.2,
+        "temp": 28.5,
         "weather": "阴",
         "weatherCode": "d02",
-        "humidity": "78%",
-        "windDir": "西南风",
-        "windScale": "1级",
+        "humidity": "82%",
+        "windDir": "北风",
+        "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -56364,6 +56214,14 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 29,
+          "humidity": 80,
+          "rainMm": 0,
+          "windDir": "北风",
+          "windLevel": 1
+        },
+        {
           "time": "22",
           "temp": 29.6,
           "humidity": 76,
@@ -56554,21 +56412,13 @@
           "rainMm": 0,
           "windDir": "南风",
           "windLevel": 1
-        },
-        {
-          "time": "22",
-          "temp": 29,
-          "humidity": 78,
-          "rainMm": 0,
-          "windDir": "南风",
-          "windLevel": 1
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779599,
+        "serverTime": 1790783202,
         "datasource": "radar",
-        "description": "您东南16公里正在下小雨哦",
+        "description": "您东南17公里正在下小雨哦",
         "probability": [
           0,
           0,
@@ -56704,13 +56554,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 15.65,
+        "nearestRainKm": 17.2,
         "nearestRainIntensity": 0.1875,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -56739,14 +56589,14 @@
           0
         ],
         "probability": [
-          0.19,
-          0.18,
-          0.17,
-          0.17,
           0.16,
           0.16,
           0.16,
-          0.16
+          0.16,
+          0.16,
+          0.16,
+          0.16,
+          0.17
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
@@ -56770,14 +56620,14 @@
       "name": "赤坎",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 28.9,
+        "temp": 29,
         "weather": "多云",
         "weatherCode": "d01",
-        "humidity": "86%",
-        "windDir": "东南风",
+        "humidity": "85%",
+        "windDir": "南风",
         "windScale": "1级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -57985,9 +57835,9 @@
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779600,
+        "serverTime": 1790783202,
         "datasource": "radar",
-        "description": "未来两小时不会下雨，放心出门吧",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -58129,7 +57979,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -58158,14 +58008,14 @@
           0
         ],
         "probability": [
-          0.27,
-          0.25,
-          0.23,
-          0.21,
           0.19,
           0.16,
           0.14,
-          0.11
+          0.11,
+          0.09,
+          0.07,
+          0.05,
+          0.03
         ],
         "rainyMinutes2h": 0,
         "dryMinutes2h": 120,
@@ -58189,14 +58039,14 @@
       "name": "肇庆",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 29.1,
+        "temp": 28.6,
         "weather": "晴",
         "weatherCode": "d00",
-        "humidity": "81%",
-        "windDir": "东南风",
+        "humidity": "84%",
+        "windDir": "东风",
         "windScale": "1级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:20"
       },
       "hourly": [
         {
@@ -59202,6 +59052,14 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 28.8,
+          "humidity": 82,
+          "rainMm": 0,
+          "windDir": "东南风",
+          "windLevel": 1
+        },
+        {
           "time": "22",
           "temp": 29.5,
           "humidity": 79,
@@ -59392,21 +59250,13 @@
           "rainMm": 0,
           "windDir": "东风",
           "windLevel": 1
-        },
-        {
-          "time": "22",
-          "temp": 29.3,
-          "humidity": 78,
-          "rainMm": 0,
-          "windDir": "东风",
-          "windLevel": 1
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779600,
+        "serverTime": 1790783202,
         "datasource": "radar",
-        "description": "最近的降雨带在东北85公里外呢",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -59542,13 +59392,13 @@
         "rainStartsInMin": null,
         "rainEndsInMin": null,
         "trend": "none",
-        "nearestRainKm": 85,
-        "nearestRainIntensity": 0.1875,
+        "nearestRainKm": 10000,
+        "nearestRainIntensity": 0,
         "localIntensity": 0
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779601,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
@@ -59608,14 +59458,14 @@
       "name": "阳江",
       "updatedAt": "18:00更新",
       "current": {
-        "temp": 28.7,
+        "temp": 28.6,
         "weather": "阴",
         "weatherCode": "d02",
         "humidity": "85%",
-        "windDir": "南风",
+        "windDir": "西南风",
         "windScale": "2级",
         "rain24h": 0,
-        "updatedAt": "09月30日(星期三) 22:30"
+        "updatedAt": "09月30日(星期三) 23:25"
       },
       "hourly": [
         {
@@ -60621,6 +60471,14 @@
       ],
       "observed": [
         {
+          "time": "23",
+          "temp": 28.7,
+          "humidity": 84,
+          "rainMm": 0,
+          "windDir": "南风",
+          "windLevel": 2
+        },
+        {
           "time": "22",
           "temp": 28.9,
           "humidity": 84,
@@ -60811,21 +60669,13 @@
           "rainMm": 0,
           "windDir": "南风",
           "windLevel": 2
-        },
-        {
-          "time": "22",
-          "temp": 29,
-          "humidity": 83,
-          "rainMm": 0,
-          "windDir": "南风",
-          "windLevel": 2
         }
       ],
       "nowcast": {
         "source": "彩云天气 · 雷达临近预报",
-        "serverTime": 1790779600,
+        "serverTime": 1790783202,
         "datasource": "radar",
-        "description": "未来两小时不会下雨，放心出门吧",
+        "description": "未来两小时不会有雨。夜深了，注意休息哦～",
         "probability": [
           0,
           0,
@@ -60967,7 +60817,7 @@
       },
       "nowcastAlt": {
         "source": "Open-Meteo 15分钟临近预报（无Key）",
-        "serverTime": 1790779602,
+        "serverTime": 1790783204,
         "intervalMinutes": 15,
         "precipitation15": [
           0,
